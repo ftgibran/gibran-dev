@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page matches snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="w-full typo"
+    >
+      <div
+        class="container h-16 flex items-center"
+      >
+        <div
+          class="mr-4 font-bold text-3xl"
+        >
+          <img
+            alt="Logo"
+            class="transition h-10 cursor-pointer transform hover:scale-105"
+            src="/img/logo.png"
+          />
+        </div>
+        <div
+          class="mr-2 flex-1 flex flex-row-reverse"
+        >
+          <div
+            class="w-full sm:w-96"
+          >
+            <div
+              class="relative flex flex-row-reverse"
+            >
+              <div
+                class="absolute top-0 right-0"
+                style="z-index: 1;"
+              >
+                <button
+                  class="btn btn--icon"
+                  style="transition: all ease-in-out 400ms; min-width: 2.5rem; text-align: left; opacity: 1; width: 0px;"
+                >
+                  <div
+                    class="w-8 text-center"
+                  >
+                    <i
+                      class="fas fa-search"
+                    />
+                  </div>
+                </button>
+              </div>
+              <div
+                class="relative"
+                style="transition: all ease-in-out 400ms; width: 0px; min-width: 2.5rem;"
+              >
+                <div
+                  class="absolute"
+                >
+                  <div
+                    class="fade-blur-appear fade-blur-appear-active"
+                    name="search"
+                  >
+                    <i
+                      class="p-3 text-pal-primary fas fa-search"
+                    />
+                  </div>
+                </div>
+                <input
+                  class="w-full h-full input input--circular"
+                  style="padding-left: 0px;"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex"
+        >
+          <button
+            class="btn btn--icon"
+          >
+            <i
+              class="fas fa-adjust"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="relative typo min-h-screen-no-nav"
+  >
+    <main
+      class="container"
+    >
+      <div
+        class="min-h-screen-no-nav fade-blur-exit fade-blur-exit-active"
+        name="hardQuery"
+      >
+        <div
+          class="mb-4 fade-blur-appear fade-blur-appear-active"
+          name="softQuery"
+        >
+          <div
+            class="flex"
+          >
+            <div
+              class="mr-2 flex-1"
+            >
+              <button
+                class="sm:hidden btn btn--icon btn--flat "
+              >
+                <i
+                  class="far fa-star"
+                />
+              </button>
+              <button
+                class="hidden sm:block font-sm btn btn--flat "
+              >
+                <i
+                  class="mr-1 far fa-star"
+                />
+                Only Favorite
+              </button>
+            </div>
+            <div
+              class="flex items-center text-right text-lg font-light"
+            >
+              No results for this query
+            </div>
+          </div>
+        </div>
+        <div
+          class="mb-8"
+        >
+          <div
+            class="transform scale-75 sm:scale-100 flex justify-center text fade-blur-appear fade-blur-appear-active"
+            name="softQuery"
+            style="min-height: 2rem;"
+          />
+        </div>
+        <div
+          class="mb-16 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+        />
+        <div
+          class="mb-8"
+        >
+          <div
+            class="transform scale-75 sm:scale-100 flex justify-center text fade-blur-appear fade-blur-appear-active"
+            name="softQuery"
+            style="min-height: 2rem;"
+          />
+        </div>
+      </div>
+    </main>
+  </div>
+</DocumentFragment>
+`;

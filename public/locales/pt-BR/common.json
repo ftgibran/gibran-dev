@@ -1,0 +1,9 @@
+{
+  "lang": {
+    "pt-BR": "Português",
+    "en-US": "Inglês"
+  },
+  "app": {
+    "hello_world": "Olá mundo"
+  }
+}
