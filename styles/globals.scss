@@ -23,6 +23,10 @@ html {
   }
 }
 
+main, section, footer {
+  position: relative;
+}
+
 a {
   @apply transition cursor-pointer text-pal-darker hover:text-pal-primary dark:text-pal-white dark:hover:text-pal-primary;
   color: inherit;
@@ -64,18 +68,23 @@ a {
   h1 {
     @apply mx-0 text-2xl font-medium clear-both;
   }
+
   h2 {
     @apply mx-0 text-pal-primary text-xl font-medium border-b border-solid border-pal-primary clear-both;
   }
+
   h3 {
     @apply text-lg font-medium;
   }
+
   h4 {
     @apply text-base font-bold;
   }
+
   h5 {
     @apply text-sm font-bold;
   }
+
   h6 {
     @apply text-xs font-bold;
   }
@@ -107,7 +116,15 @@ a {
 }
 
 .input {
-  @apply transition h-10 px-2 text-sm shadow-inner rounded-md border border-gray-200 dark:border-pal-darker dark:border-opacity-50 focus:border-pal-primary dark:text-pal-white dark:focus:border-pal-primary bg-white bg-opacity-50 dark:bg-pal-primary dark:bg-opacity-25 focus:outline-none focus:ring focus:ring-pal-primary;
+  @apply transition p-2 text-sm shadow-inner rounded-md border border-pal-lighter dark:border-pal-darker dark:border-opacity-50 focus:border-pal-primary dark:text-pal-white dark:focus:border-pal-primary bg-white bg-opacity-50 dark:bg-pal-primary dark:bg-opacity-25 focus:outline-none focus:ring focus:ring-pal-primary;
+
+  &::placeholder {
+    @apply text-pal-primary opacity-75;
+  }
+
+  min-height: 2.5rem;
+  resize: none;
+  backdrop-filter: blur(5px);
 
   &--circular {
     @apply rounded-full;
@@ -115,7 +132,9 @@ a {
 }
 
 .card {
-  @apply transition p-2 md:p-4 text-pal-black dark:text-pal-white bg-white dark:bg-pal-darker dark:bg-opacity-50 shadow-lg rounded-lg;
+  @apply transition p-2 md:p-4 text-pal-black dark:text-pal-white bg-opacity-50 bg-white dark:bg-pal-darker dark:bg-opacity-50 shadow-lg rounded-lg;
+
+  backdrop-filter: blur(5px);
 
   &--mobile-square {
     @apply rounded-none sm:rounded-lg;
@@ -170,5 +189,79 @@ a {
         }
       }
     }
+  }
+}
+
+@layer utilities {
+  @variants dark {
+    .bg-navbar {
+      @apply shadow-lg bg-white bg-opacity-50;
+      transition: all 600ms ease-in-out;
+      backdrop-filter: blur(10px);
+
+      &--none {
+        @apply shadow-none bg-transparent;
+        backdrop-filter: blur(0);
+      }
+
+      &--dark {
+        @apply bg-black bg-opacity-50;
+      }
+    }
+
+    .bg-gradient {
+      @apply transition absolute inset-0 w-screen min-h-screen;
+      background: linear-gradient(180deg, var(--color-pal-white) 0%, #ffffff00 20%, #ffffff00 80%, var(--color-pal-white) 100%);
+
+      &--dark {
+        background: linear-gradient(180deg, var(--color-pal-darkest) 0%, #ffffff00 20%, #ffffff00 80%, var(--color-pal-darkest) 100%);
+      }
+    }
+
+    .bg-wave-pattern {
+      @apply transition absolute inset-0 w-screen min-h-screen;
+
+      background-color: var(--color-pal-white);
+      opacity: 0.15;
+      background-image: repeating-radial-gradient(circle at 0 0, transparent 0, var(--color-pal-white) 2rem), repeating-linear-gradient(var(--color-pal-primary), var(--color-pal-primary));
+
+      &--dark {
+        background-color: var(--color-pal-darkest);
+        background-image: repeating-radial-gradient(circle at 0 0, transparent 0, var(--color-pal-darkest) 2rem), repeating-linear-gradient(var(--color-pal-primary), var(--color-pal-primary));
+      }
+    }
+
+    .bg-animated {
+      @apply transition absolute inset-0 w-screen min-h-screen object-cover;
+      filter: opacity(0.3) invert(1) hue-rotate(180deg);
+
+      &--dark {
+        filter: opacity(0.3);
+      }
+    }
+  }
+}
+
+.run-toasty {
+  animation-name: toasty;
+  animation-duration: 3s;
+  transform: translate(10rem, 10rem);
+}
+
+@keyframes toasty {
+  0% {
+    transform: translate(10rem, 10rem);
+  }
+
+  20% {
+    transform: translate(0, 0);
+  }
+
+  80% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(10rem, 10rem);
   }
 }

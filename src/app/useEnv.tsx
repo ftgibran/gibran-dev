@@ -2,6 +2,9 @@ import {useMemo} from 'react'
 
 export function useEnv() {
   const factory = () => ({
+    LOCALES: process.env.NEXT_PUBLIC_LOCALES?.split(',') ?? [],
+    DEFAULT_LOCALE: process.env.NEXT_PUBLIC_DEFAULT_LOCALE ?? '',
+    DISCORD_HOOK_URL: process.env.NEXT_PUBLIC_DISCORD_HOOK_URL ?? '',
     PALETTE_BLACK: process.env.NEXT_PUBLIC_PALETTE_BLACK ?? '',
     PALETTE_WHITE: process.env.NEXT_PUBLIC_PALETTE_WHITE ?? '',
     PALETTE_DARKEST: process.env.NEXT_PUBLIC_PALETTE_DARKEST ?? '',

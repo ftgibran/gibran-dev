@@ -4,6 +4,8 @@
     "en-US": "Inglês"
   },
   "app": {
-    "hello_world": "Olá mundo"
+    "name": "gibran.dev",
+    "title": "Codando em todos os lugares",
+    "body": "Olá, meu nome Felipe Gibran.<br />Este é meu espaço que compartilho à todos. Seja meu convidado."
   }
 }

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect} from 'react'
 import BarLoader from 'react-spinners/BarLoader'
 import {RequestConfig, RequestListener} from '@simpli/serialized-request'
 import {useAxios} from '~src/app/useAxios'
@@ -13,7 +13,6 @@ export type Props = {
 }
 
 export function AppProvider(props: Props) {
-  const [mounted, setMounted] = useState(false)
   const env = useEnv()
   const axiosInstance = useAxios()
 
@@ -42,8 +41,6 @@ export function AppProvider(props: Props) {
     } else {
       dispatch(RootStore.app.actions.setDark(false))
     }
-
-    setMounted(true)
   }
 
   return (
@@ -51,7 +48,7 @@ export function AppProvider(props: Props) {
       name={'screen'}
       loadingView={<CircleLoader color={env.PALETTE_PRIMARY} size={150} />}
     >
-      {mounted ? props.children : <></>}
+      {props.children}
     </AwaitActivity>
   )
 }

@@ -4,6 +4,8 @@
     "en-US": "English"
   },
   "app": {
-    "hello_world": "Hello world"
+    "name": "gibran.dev",
+    "title": "Coding everywhere",
+    "body": "Hello, I'm Felipe Gibran.<br />This is my space that I share to everyone. Be my guest."
   }
 }
