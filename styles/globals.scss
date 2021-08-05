@@ -45,53 +45,12 @@ a {
   @apply transition text-pal-black dark:text-pal-white;
 }
 
-.paragraph {
-  @apply text-sm text-justify;
-
-  * {
-    @apply mb-4;
-    max-width: calc(100vw - 2rem);
-  }
-
-  figure {
-    @apply mx-auto sm:mr-0 sm:ml-8 sm:float-right sm:max-w-sm clear-both;
-  }
-
-  figcaption {
-    @apply text-center text-xs italic;
-  }
-
-  img {
-    @apply shadow rounded w-full;
-  }
-
-  h1 {
-    @apply mx-0 text-2xl font-medium clear-both;
-  }
-
-  h2 {
-    @apply mx-0 text-pal-primary text-xl font-medium border-b border-solid border-pal-primary clear-both;
-  }
-
-  h3 {
-    @apply text-lg font-medium;
-  }
-
-  h4 {
-    @apply text-base font-bold;
-  }
-
-  h5 {
-    @apply text-sm font-bold;
-  }
-
-  h6 {
-    @apply text-xs font-bold;
-  }
+.title {
+  @apply text-center text-2xl sm:text-3xl lg:text-4xl;
 }
 
-.title {
-  @apply pb-2 text-lg font-medium text-pal-darker dark:text-pal-white border-b-2 border-pal-white dark:border-pal-darkest dark:border-opacity-25;
+.subtitle {
+  @apply pb-2 text-lg font-medium text-pal-black dark:text-pal-white border-b-2 border-pal-primary border-opacity-25;
 }
 
 .btn {
@@ -132,9 +91,12 @@ a {
 }
 
 .card {
-  @apply transition p-2 md:p-4 text-pal-black dark:text-pal-white bg-opacity-50 bg-white dark:bg-pal-darker dark:bg-opacity-50 shadow-lg rounded-lg;
+  @apply transition p-2 md:p-4 text-pal-black dark:text-pal-white bg-pal-white dark:bg-pal-darker shadow-lg rounded-lg;
 
-  backdrop-filter: blur(5px);
+  &--glass {
+    @apply bg-opacity-50 bg-white dark:bg-pal-darker dark:bg-opacity-50;
+    backdrop-filter: blur(5px);
+  }
 
   &--mobile-square {
     @apply rounded-none sm:rounded-lg;
@@ -196,7 +158,7 @@ a {
   @variants dark {
     .bg-navbar {
       @apply shadow-lg bg-white bg-opacity-50;
-      transition: all 600ms ease-in-out;
+      transition: all 400ms ease-in-out;
       backdrop-filter: blur(10px);
 
       &--none {
@@ -232,7 +194,7 @@ a {
     }
 
     .bg-animated {
-      @apply transition absolute inset-0 w-screen min-h-screen object-cover;
+      @apply absolute inset-0 w-screen min-h-screen object-cover;
       filter: opacity(0.3) invert(1) hue-rotate(180deg);
 
       &--dark {

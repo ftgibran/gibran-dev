@@ -44,12 +44,14 @@ export const ButtonLanguageSelect = (props: HTMLProps) => {
         <TransitionShow if={isActive} effect={'fade'}>
           <div
             onClick={() => setActive(!isActive)}
-            className={'fixed inset-0 bg-black bg-opacity-10'}
+            className={
+              'fixed left-0 top-0 w-screen h-screen bg-black bg-opacity-10'
+            }
           />
         </TransitionShow>
 
         <TransitionShow if={isActive} effect={'fade-down'}>
-          <div className={'absolute w-40 top-12 right-0 select-none'}>
+          <div className={'absolute w-40 top-16 right-0 select-none'}>
             <div className={'card card--padding-sm grid gap-2'}>
               {renderOption('pt-BR')}
               {renderOption('en-US')}

@@ -1,0 +1,43 @@
+{
+  "title": "What I can bring for your application",
+  "feat1": {
+    "name": "technology",
+    "title": "Ultimate Technology Tools",
+    "description": "Your application will be up to date with the best technologies and services of present day."
+  },
+  "feat2": {
+    "name": "code",
+    "title": "Clean & Structured code",
+    "description": "Good codes are better for maintenance and third-parties implementations."
+  },
+  "feat3": {
+    "name": "automation",
+    "title": "Automation and Customization",
+    "description": "The sky is the limit. Determine how automatic and customizable your application is, based on your budget."
+  },
+  "feat4": {
+    "name": "security",
+    "title": "Security",
+    "description": "Safety above all. All security standards will be applied for your application."
+  },
+  "feat5": {
+    "name": "responsiveness",
+    "title": "Responsiveness",
+    "description": "80% of users prefer to browse web on smartphones rather than computers."
+  },
+  "feat6": {
+    "name": "ux",
+    "title": "Highest User Experience (UX)",
+    "description": "The best experience that users can ever have. Engaged users means low rejection rate."
+  },
+  "feat7": {
+    "name": "fastness",
+    "title": "Fastness",
+    "description": "Time is money. Good performance is also important to keep users."
+  },
+  "feat8": {
+    "name": "seo",
+    "title": "SEO patterns",
+    "description": "Search Engine Optimization (SEO) makes your application easier to get new users."
+  }
+}

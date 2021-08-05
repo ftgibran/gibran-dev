@@ -14,7 +14,7 @@ export const ToastyEasterEgg = (props: HTMLProps) => {
     <div {...props}>
       <div className={'fixed right-0 bottom-0 select-none'}>
         <img
-          src="/img/toasty.png"
+          src="/img/home/toasty.png"
           alt="Toasty"
           className={`${toasty ? 'run-toasty' : ''} w-48`}
           style={{
@@ -26,7 +26,7 @@ export const ToastyEasterEgg = (props: HTMLProps) => {
       {!toasty && (
         <div className={'absolute right-0 bottom-0 select-none'}>
           <img
-            src="/img/dont-click.png"
+            src="/img/home/dont-click.png"
             alt="Don't click"
             className={'w-20'}
             onClick={runToast}

@@ -1,5 +1,10 @@
 import {useEffect, useMemo, useState} from 'react'
 
+interface HookOptions {
+  scrollableElement?: Element
+  asBottomReference?: boolean
+}
+
 interface ScrollListener extends ScrollListenerOptions {
   state?: ScrollListenerEvent
 }
@@ -23,13 +28,10 @@ interface ScrollCoordination {
   y: number
 }
 
-export function useScroll(asBottomReference = false) {
+export function useScroll(options?: HookOptions) {
   const listeners: ScrollListener[] = []
-
   const scrollPosition: ScrollCoordination = {x: 0, y: 0}
   const scrollSpeed: ScrollCoordination = {x: 0, y: 0}
-
-  const bottomOffset = asBottomReference ? window.innerHeight : 0
 
   const [scrollPositionX, setScrollPositionX] = useState(0)
   const [scrollPositionY, setScrollPositionY] = useState(0)
@@ -37,18 +39,18 @@ export function useScroll(asBottomReference = false) {
   const [scrollSpeedX, setScrollSpeedX] = useState(0)
   const [scrollSpeedY, setScrollSpeedY] = useState(0)
 
+  const getBottomOffset = () =>
+    options?.asBottomReference ? window.innerHeight : 0
+
   const getPositionByDirection = (direction: keyof ScrollCoordination) => {
+    const el = options?.scrollableElement ?? document.documentElement
+
     const coordination: ScrollCoordination = {
-      x: document.documentElement.scrollLeft ?? document.body.scrollLeft ?? 0,
-      y: document.documentElement.scrollTop ?? document.body.scrollTop ?? 0,
+      x: el.scrollLeft,
+      y: el.scrollTop,
     }
 
-    if (window.pageYOffset !== undefined) {
-      coordination.x = pageXOffset
-      coordination.y = pageYOffset
-    }
-
-    coordination.y += bottomOffset
+    coordination.y += getBottomOffset()
 
     return coordination[direction]
   }
@@ -85,7 +87,7 @@ export function useScroll(asBottomReference = false) {
 
       targetPosition =
         scrollPositionY -
-        bottomOffset +
+        getBottomOffset() +
         (el?.getBoundingClientRect()[listener.position ?? 'top'] ?? 0)
     }
 
@@ -112,10 +114,10 @@ export function useScroll(asBottomReference = false) {
 
   const scrollToElement = (id: string, offset = 0) => {
     const el = document.getElementById(id)
-    const reference = asBottomReference ? 'bottom' : 'top'
+    const reference = options?.asBottomReference ? 'bottom' : 'top'
     const y = el?.getBoundingClientRect()[reference] ?? 0
 
-    scrollTo(y + scrollPositionY - bottomOffset + offset)
+    scrollTo(y + scrollPositionY - getBottomOffset() + offset)
   }
 
   const scrollEvent = async () => {
@@ -163,13 +165,13 @@ export function useScroll(asBottomReference = false) {
       scrollSpeedY,
       onCross,
       onCrossTopElement,
-      onceCrossTopElement,
       onCrossBottomElement,
+      onceCrossTopElement,
       onceCrossBottomElement,
       scrollTo,
       scrollToCoordination,
       scrollToElement,
     }),
-    [listeners, scrollPositionX, scrollPositionY, scrollSpeedX, scrollSpeedY]
+    [scrollPositionX, scrollPositionY, scrollSpeedX, scrollSpeedY]
   )
 }
