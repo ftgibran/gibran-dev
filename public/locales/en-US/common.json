@@ -4,8 +4,6 @@
     "en-US": "English"
   },
   "app": {
-    "name": "gibran.dev",
-    "title": "Coding everywhere",
-    "body": "Hello, I'm Felipe Gibran.<br />This is my space that I share to everyone. Be my guest."
+    "name": "gibran.dev"
   }
 }

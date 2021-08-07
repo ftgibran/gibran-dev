@@ -18,6 +18,7 @@ import {ToastProvider} from 'react-toast-notifications'
 import {i18n} from '~/next-i18next.config'
 import {AppHead} from '~src/app/AppHead'
 import {AppProvider} from '~src/app/AppProvider'
+import {CookiePopup} from '~src/components/utils/CookiePopup'
 import {RootStore} from '~src/store/RootStore'
 
 const settings = require('~src/app/settings.json')
@@ -37,6 +38,8 @@ export const App = ({Component, pageProps}: AppProps) => {
       <ToastProvider {...settings.toast}>
         <AppProvider>
           <Component {...pageProps} />
+
+          <CookiePopup />
         </AppProvider>
       </ToastProvider>
     </Provider>

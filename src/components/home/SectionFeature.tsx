@@ -3,7 +3,7 @@ import {useTranslation} from 'next-i18next'
 import {range} from 'lodash'
 
 export const SectionFeature = (props: HTMLProps) => {
-  const {t} = useTranslation('section_feature')
+  const {t} = useTranslation('page_home')
 
   const renderFeat = (name: string, title: string, description?: string) => (
     <div className={'flex flex-col items-center'}>
@@ -21,7 +21,7 @@ export const SectionFeature = (props: HTMLProps) => {
   return (
     <section {...props}>
       <div className={'container my-24 sm:36 md:my-48 typo'}>
-        <h2 className={'mb-24 title'}>{t('title')}</h2>
+        <h2 className={'mb-24 title'}>{t('feature.title')}</h2>
 
         <div
           className={
@@ -31,9 +31,9 @@ export const SectionFeature = (props: HTMLProps) => {
           {range(1, 9).map((it) => (
             <div key={it}>
               {renderFeat(
-                t(`feat${it}.name`),
-                t(`feat${it}.title`),
-                t(`feat${it}.description`)
+                t(`feature.feat${it}.name`),
+                t(`feature.feat${it}.title`),
+                t(`feature.feat${it}.description`)
               )}
             </div>
           ))}

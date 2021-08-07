@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import {useTranslation} from 'next-i18next'
 import classNames from 'classnames'
-import Link from 'next/link'
 import {RootStore} from '~src/store/RootStore'
 import TransitionShow from '~src/components/utils/TransitionShow'
 import {useScroll} from '~src/app/useScroll'
@@ -17,7 +16,7 @@ export const Navbar = (props: Props & HTMLProps) => {
 
   const {app} = useSelector(RootStore.app.getters)
   const {t} = useTranslation()
-  const {onCross} = useScroll()
+  const {onCross, scrollTo} = useScroll()
 
   const dispatch = useDispatch()
 
@@ -26,10 +25,12 @@ export const Navbar = (props: Props & HTMLProps) => {
   }
 
   useEffect(() => {
-    onCross({
+    const listener = onCross({
       offset: 30,
-      callback: (e) => setHasBackground(e.target === 'above'),
+      callback: (e) => setHasBackground(e.isAbove),
     })
+
+    setHasBackground(listener.current.isAbove)
   }, [])
 
   return (
@@ -42,7 +43,7 @@ export const Navbar = (props: Props & HTMLProps) => {
       >
         <div className={'container h-16 flex items-center typo'}>
           <div className={'mr-4 font-bold text-3xl'}>
-            <Link href={'/'}>
+            <a onClick={() => scrollTo(0)} className={'no-underline'}>
               <div
                 className={
                   'flex items-center transition cursor-pointer transform hover:scale-105'
@@ -57,7 +58,7 @@ export const Navbar = (props: Props & HTMLProps) => {
                   {t('app.name')}
                 </span>
               </div>
-            </Link>
+            </a>
           </div>
 
           <div className={'mr-2 flex-1 flex flex-row-reverse'}>

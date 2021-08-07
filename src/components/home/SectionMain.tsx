@@ -4,7 +4,7 @@ import {FormContact} from '~src/components/forms/FormContact'
 import {useTranslation} from 'next-i18next'
 
 export const SectionMain = (props: HTMLProps) => {
-  const {t} = useTranslation()
+  const {t} = useTranslation('page_home')
 
   return (
     <main {...props}>
@@ -20,7 +20,7 @@ export const SectionMain = (props: HTMLProps) => {
             'mb-8 md:mb-0 md:mr-20 lg:mr-32 flex-1 lg:max-w-sm flex flex-col items-center'
           }
         >
-          <h1 className={'mb-4 sm:mb-8 title'}>{t('app.title')}</h1>
+          <h1 className={'mb-4 sm:mb-8 title'}>{t('main.title')}</h1>
 
           <img
             src="/img/home/avatar.jpg"
@@ -30,7 +30,7 @@ export const SectionMain = (props: HTMLProps) => {
 
           <p
             className={'text-center'}
-            dangerouslySetInnerHTML={{__html: t('app.body')}}
+            dangerouslySetInnerHTML={{__html: t('main.body')}}
           />
         </div>
 

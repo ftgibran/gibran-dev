@@ -70,3 +70,28 @@
   opacity: 0;
 }
 
+
+.fade-up-enter, .fade-up-appear {
+  transition: all var(--timeout);
+  transform: translateY(2rem);
+  opacity: 0;
+}
+
+.fade-up-enter-active, .fade-up-appear-active {
+  transition: all var(--timeout);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.fade-up-exit {
+  transition: all var(--timeout);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.fade-up-exit-active {
+  transition: all var(--timeout);
+  transform: translateY(2rem);
+  opacity: 0;
+}
+
