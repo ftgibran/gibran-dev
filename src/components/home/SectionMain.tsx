@@ -46,14 +46,17 @@ export const SectionMain = (props: HTMLProps) => {
         </div>
 
         <div className={'absolute inset-x bottom-0 flex flex-col items-center'}>
-          <a
-            onClick={() => scrollToElement('about-me', -100)}
+          <div
+            onClick={() => {
+              scrollToElement('about-me', -100)
+              event.clickToGoToNextSectionEvent()
+            }}
             className={
-              'm-2 text-pal-primary dark:text-pal-primary transition transform hover:scale-125 cursor-pointer select-none no-underline'
+              'm-2 text-pal-primary dark:text-pal-primary transition transform hover:scale-125 cursor-pointer select-none'
             }
           >
             <i className={'fas fa-2x fa-angle-double-down'} />
-          </a>
+          </div>
         </div>
       </div>
     </main>

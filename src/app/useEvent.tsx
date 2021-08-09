@@ -1,11 +1,8 @@
 import {useMemo} from 'react'
-import {RootStore} from '~src/store/RootStore'
 import TagManager from 'react-gtm-module'
-import {useSelector} from 'react-redux'
 import {useRouter} from 'next/router'
 
 export function useEvent() {
-  const {app} = useSelector(RootStore.app.getters)
   const {pathname} = useRouter()
 
   const page = pathname
@@ -58,10 +55,8 @@ export function useEvent() {
     })
   }
 
-  const toggleDarkModeEvent = () => {
-    const label = app.isDark
-      ? 'Toggled into dark mode'
-      : 'Toggled into light mode'
+  const toggleDarkModeEvent = (isDark: boolean) => {
+    const label = isDark ? 'Toggled into dark mode' : 'Toggled into light mode'
 
     TagManager.dataLayer({
       dataLayer: {

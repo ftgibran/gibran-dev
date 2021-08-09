@@ -45,9 +45,9 @@ export const Navbar = (props: Props & HTMLProps) => {
     event.openExternalLinkEvent(url)
   }
 
-  const toggleDark = () => {
-    dispatch(RootStore.app.actions.toggleDark())
-    event.toggleDarkModeEvent()
+  const toggleDark = async () => {
+    await dispatch(RootStore.app.actions.toggleDark())
+    event.toggleDarkModeEvent(!app.isDark)
   }
 
   const renderLogo = () => (
