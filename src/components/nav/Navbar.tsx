@@ -13,16 +13,13 @@ export type Props = {
 
 export const Navbar = (props: Props & HTMLProps) => {
   const [hasBackground, setHasBackground] = useState(false)
+  const [isMenuOpen, setMenuOpen] = useState(false)
 
   const {app} = useSelector(RootStore.app.getters)
-  const {t} = useTranslation()
-  const {onCross, scrollTo} = useScroll()
+  const {t} = useTranslation('navbar')
+  const {onCross, scrollTo, scrollToElement} = useScroll()
 
   const dispatch = useDispatch()
-
-  function toggleDark() {
-    dispatch(RootStore.app.actions.toggleDark())
-  }
 
   useEffect(() => {
     const listener = onCross({
@@ -33,6 +30,119 @@ export const Navbar = (props: Props & HTMLProps) => {
     setHasBackground(listener.current.isAbove)
   }, [])
 
+  const toggleDark = () => {
+    dispatch(RootStore.app.actions.toggleDark())
+  }
+
+  const scrollToSection = (id: string, offset?: number) => {
+    scrollToElement(id, offset)
+    setMenuOpen(false)
+  }
+
+  const renderLogo = () => (
+    <a onClick={() => scrollTo(0)} className={'no-underline select-none'}>
+      <div
+        className={
+          'flex items-center transition cursor-pointer transform hover:scale-105'
+        }
+      >
+        <img
+          src={'/img/logo.png'}
+          alt={'Logo'}
+          className={'mr-2 h-8 sm:h-10'}
+        />
+
+        <span className={'text-base sm:text-lg text-pal-primary'}>
+          {t('app')}
+        </span>
+      </div>
+    </a>
+  )
+
+  const renderLinks = () => (
+    <>
+      <button
+        onClick={() => scrollToSection('about-me', -100)}
+        className={'mx-2 h-10 btn btn--flat font-medium opacity-75'}
+      >
+        {t('about')}
+      </button>
+
+      <button
+        onClick={() => scrollToSection('feature', -100)}
+        className={'mx-2 h-10 btn btn--flat font-medium opacity-75'}
+      >
+        {t('features')}
+      </button>
+
+      <button
+        onClick={() => scrollToSection('technology', -100)}
+        className={'mx-2 h-10 btn btn--flat font-medium opacity-75'}
+      >
+        {t('technologies')}
+      </button>
+
+      <button
+        onClick={() => scrollToSection('timeline', -100)}
+        className={'mx-2 h-10 btn btn--flat font-medium opacity-75'}
+      >
+        {t('timeline')}
+      </button>
+
+      <button
+        onClick={() => scrollToSection('footer')}
+        className={'mx-2 h-10 btn btn--flat font-medium opacity-75'}
+      >
+        {t('contact')}
+      </button>
+    </>
+  )
+
+  const renderSocialLinks = () => (
+    <>
+      <button
+        onClick={() => window.open('https://github.com/ftgibran', '__blank')}
+        className={'ml-1 sm:ml-2 btn btn--icon btn--flat text-2xl opacity-75'}
+      >
+        <i className={'fab fa-github'} />
+      </button>
+
+      <button
+        onClick={() =>
+          window.open('https://www.linkedin.com/in/ftgibran', '__blank')
+        }
+        className={'ml-1 sm:ml-2 btn btn--icon btn--flat text-2xl opacity-75'}
+      >
+        <i className={'fab fa-linkedin'} />
+      </button>
+    </>
+  )
+
+  const renderOptions = () => (
+    <>
+      <button
+        onClick={toggleDark}
+        className={'btn btn--icon btn--flat text-2xl'}
+      >
+        <TransitionShow
+          if={app.isDark}
+          elseView={<i className={'text-pal-darker fas fa-moon'} />}
+        >
+          <i className={'text-yellow-500 fas fa-sun'} />
+        </TransitionShow>
+      </button>
+
+      <ButtonLanguageSelect className={'ml-2'} />
+
+      <button
+        onClick={() => setMenuOpen(true)}
+        className={'lg:hidden ml-2 btn btn--icon btn--flat'}
+      >
+        <i className={'fas fa-bars'} />
+      </button>
+    </>
+  )
+
   return (
     <div {...props}>
       <div
@@ -42,43 +152,57 @@ export const Navbar = (props: Props & HTMLProps) => {
         })}
       >
         <div className={'container h-16 flex items-center typo'}>
-          <div className={'mr-4 font-bold text-3xl'}>
-            <a onClick={() => scrollTo(0)} className={'no-underline'}>
-              <div
-                className={
-                  'flex items-center transition cursor-pointer transform hover:scale-105'
-                }
-              >
-                <img
-                  src={'/img/logo.png'}
-                  alt={'Logo'}
-                  className={'mr-2 h-10'}
-                />
-                <span className={'text-lg text-pal-primary'}>
-                  {t('app.name')}
-                </span>
-              </div>
-            </a>
+          <div className={'mr-4 font-bold text-3xl'}>{renderLogo()}</div>
+
+          <div className={'hidden lg:flex mr-2 lg:text-xs xl:text-sm'}>
+            {renderLinks()}
           </div>
 
           <div className={'mr-2 flex-1 flex flex-row-reverse'}>
             {props.children}
           </div>
 
-          <div className={'flex items-center'}>
-            <ButtonLanguageSelect />
+          <div className={'hidden lg:flex mr-8'}>{renderSocialLinks()}</div>
 
-            <button onClick={toggleDark} className={'ml-2 btn btn--icon'}>
-              <TransitionShow
-                if={app.isDark}
-                elseView={<i className={'fas fa-moon'} />}
-              >
-                <i className={'fas fa-sun'} />
-              </TransitionShow>
-            </button>
-          </div>
+          <div className={'flex'}>{renderOptions()}</div>
         </div>
       </div>
+
+      <TransitionShow if={isMenuOpen} effect={'fade'}>
+        <div
+          onClick={() => setMenuOpen(!isMenuOpen)}
+          className={
+            'fixed left-0 top-0 w-screen h-screen bg-pal-primary bg-opacity-25 dark:bg-black dark:bg-opacity-25 backdrop-filter backdrop-blur-md'
+          }
+        />
+      </TransitionShow>
+
+      <TransitionShow if={isMenuOpen} effect={'fade-right'}>
+        <div className={'fixed top-0 right-0 max-w-xs w-full'}>
+          <div
+            className={
+              'h-screen flex flex-col items-end card card--square card--transparent'
+            }
+          >
+            <div className={'mb-8 py-1 px-2'}>
+              <button
+                onClick={() => setMenuOpen(false)}
+                className={'btn btn--icon btn--flat'}
+              >
+                <i className={'fas fa-arrow-right'} />
+              </button>
+            </div>
+
+            <div className={'mb-8 w-full flex justify-center'}>
+              {renderSocialLinks()}
+            </div>
+
+            <div className={'mb-24 w-full flex-1 overflow-y-auto'}>
+              <div className={'grid gap-4'}>{renderLinks()}</div>
+            </div>
+          </div>
+        </div>
+      </TransitionShow>
     </div>
   )
 }

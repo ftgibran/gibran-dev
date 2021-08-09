@@ -45,7 +45,7 @@ export const ButtonLanguageSelect = (props: HTMLProps) => {
           <div
             onClick={() => setActive(!isActive)}
             className={
-              'fixed left-0 top-0 w-screen h-screen bg-black bg-opacity-10'
+              'fixed left-0 top-0 w-screen h-screen bg-black bg-opacity-10 dark:bg-white dark:bg-opacity-10'
             }
           />
         </TransitionShow>
