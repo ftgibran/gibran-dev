@@ -49,5 +49,44 @@
       "title": "SEO patterns",
       "description": "Search Engine Optimization (SEO) makes your application easier to get new users."
     }
+  },
+  "timeline": {
+    "title": "Timeline of my relevant works",
+    "item1": {
+      "name": "ndapp",
+      "url": "https://ndapp.org",
+      "title": "NDapp",
+      "description": "Get news, information, and data on all of the latest decentralized applications build using the Neo blockchain. <br /><br/> <p>I worked as: Desenvolvedor Fullstack</p> <p>Year: 2021</p>"
+    },
+    "item2": {
+      "name": "wow",
+      "url": "https://wowtalents.com.br",
+      "title": "WOW Talent",
+      "description": "Where talents grow and appear. Press Play and meet wow Ambassadors. WOW, even though they are young, each one of them has been treading their own path of professional success, with experiences and achievements that are a reference for the Talents who are starting the same journey. Meet all our ambassadors. Be part of it! <br /><br/> <p>I worked as: Fullstack Developer</p> <p>Year: 2021</p>"
+    },
+    "item3": {
+      "name": "apptite",
+      "url": "https://apptite.com",
+      "title": "Apptite Web",
+      "description": "Apptite is the first delivery that connects independent chefs to customers looking for handcrafted meals! Order your lunch box in São Paulo! <br /><br/> <p>I worked as: Frontend Developer</p> <p>Year: 2020</p>"
+    },
+    "item4": {
+      "name": "sharity",
+      "url": "https://sharity.com.br",
+      "title": "Sharity",
+      "description": "Sharity is the easiest and most efficient online crowdfunding platform for you to create campaigns and raise money for the causes and people you care about. Access and know! <br /><br /> <p>I worked as: Fullstack Developer</p> <p>Year: 2019</p>"
+    },
+    "item5": {
+      "name": "itrack",
+      "url": "https://itrackbrasil.com.br",
+      "title": "iTrack",
+      "description": "Monitoring, verification and management of deliveries and/or collections. Full tracking to the last mile in the palm of your hand! Click and learn more. <br /><br /> <p>I worked as: Fullstack Developer</p> <p>Year: 2018</p>"
+    },
+    "item6": {
+      "name": "illsim",
+      "url": "https://illsim.gibran.dev",
+      "title": "Illness Simulator",
+      "description": "Welcome to Illsim! This is a college project developed in 2017 that studies the behavior of a virus spreading around a population. This study is to explore the best vaccination strategies as the virus spreads. <br /><br /> <p>I worked as: Frontend Developer</p> <p>Year: 2017</p>"
+    }
   }
 }

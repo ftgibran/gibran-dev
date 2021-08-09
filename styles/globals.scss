@@ -154,6 +154,78 @@ a {
   }
 }
 
+.timeline {
+  @apply py-24 relative flex flex-col;
+
+  &:before {
+    @apply absolute top-0 inset-y-0 h-full bg-pal-primary;
+
+    content: ' ';
+    border-radius: 0.25rem;
+    width: 0.25rem;
+    left: calc(50% - 0.125rem);
+  }
+
+  &__content {
+    @apply relative w-full max-w-lg even:self-end;
+
+    &:before {
+      @apply hidden xl:block absolute inset-x-0 w-full bg-pal-primary;
+
+      content: ' ';
+      border-radius: 0.75rem;
+      width: 50%;
+      height: 0.25rem;
+      top: calc(10rem - 0.125rem);
+      left: calc(640px - 50% - 1rem);
+
+      @screen 2xl {
+        left: calc(768px - 50% - 1rem);
+      }
+    }
+
+    &:after {
+      @apply hidden xl:block absolute inset-x-0 h-80 w-full bg-pal-primary;
+
+      content: ' ';
+      border-radius: 0.75rem;
+      width: 1rem;
+      height: 1rem;
+      top: calc(10rem - 0.5rem);
+      left: calc(640px - 1.5rem);
+      box-shadow: 0 0 20px 10px var(--color-pal-primary);
+
+      @screen 2xl {
+        left: calc(768px - 1.5rem);
+      }
+    }
+
+    &:nth-child(even) {
+      &:before {
+        left: auto;
+        right: calc(640px - 50% - 1rem);
+
+        @screen 2xl {
+          right: calc(768px - 50% - 1rem);
+        }
+      }
+
+      &:after {
+        left: auto;
+        right: calc(640px - 1.5rem);
+
+        @screen 2xl {
+          right: calc(768px - 1.5rem);
+        }
+      }
+    }
+  }
+
+  &__tilt {
+    @apply relative h-80 select-none cursor-pointer;
+  }
+}
+
 @layer utilities {
   @variants dark {
     .bg-navbar {
@@ -190,6 +262,21 @@ a {
       &--dark {
         background-color: var(--color-pal-darkest);
         background-image: repeating-radial-gradient(circle at 0 0, transparent 0, var(--color-pal-darkest) 2rem), repeating-linear-gradient(var(--color-pal-primary), var(--color-pal-primary));
+      }
+    }
+
+    .bg-circular-pattern {
+      @apply transition absolute inset-0 w-screen min-h-screen;
+
+      background-color: var(--color-pal-white);
+      opacity: 0.2;
+      background-blend-mode: multiply;
+      background-image: radial-gradient(circle at center center, var(--color-pal-primary), var(--color-pal-white)), repeating-radial-gradient(circle at center center, var(--color-pal-primary), var(--color-pal-primary), 35px, transparent 70px, transparent 35px);
+
+      &--dark {
+        opacity: 1;
+        background-color: var(--color-pal-darkest);
+        background-image: radial-gradient(circle at center center, var(--color-pal-primary), var(--color-pal-darkest)), repeating-radial-gradient(circle at center center, var(--color-pal-primary), var(--color-pal-primary), 35px, transparent 70px, transparent 35px);
       }
     }
 

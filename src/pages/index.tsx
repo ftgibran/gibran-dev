@@ -10,6 +10,7 @@ import {SectionAboutMe} from '~src/components/home/SectionAboutMe'
 import {SectionFooter} from '~src/components/home/SectionFooter'
 import {ToastyEasterEgg} from '~src/components/home/ToastyEasterEgg'
 import {SectionFeature} from '~src/components/home/SectionFeature'
+import {SectionTimeline} from '~src/components/home/SectionTimeline'
 
 export const getStaticProps: GetStaticProps = async (props) => {
   const {populateSSRConfig} = serverHelper()
@@ -42,6 +43,8 @@ const HomePage: NextPage = () => {
       <SectionAboutMe id={'about-me'} />
 
       <SectionFeature id={'feature'} />
+
+      <SectionTimeline id={'timeline'} />
 
       <SectionFooter id={'footer'}>
         <TransitionShow if={toasty}>

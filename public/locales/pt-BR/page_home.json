@@ -49,5 +49,44 @@
       "title": "Padrões SEO",
       "description": "O Search Engine Optimization (SEO) torna seu aplicativo mais fácil de conseguir novos usuários."
     }
+  },
+  "timeline": {
+    "title": "Linha do tempo dos meu trabalhos relevantes",
+    "item1": {
+      "name": "ndapp",
+      "url": "https://ndapp.org",
+      "title": "NDapp",
+      "description": "Notícias, informações, e dados de todas as recentes aplicações decentralizadas da rede blockchain Neo. <br /><br/> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2021</p>"
+    },
+    "item2": {
+      "name": "wow",
+      "url": "https://wowtalents.com.br",
+      "title": "WOW Talent",
+      "description": "Onde os talentos crescem e aparecem. Aperte o Play e conheça a wow Embaixadores. WOW mesmo tão jovens, cada um deles vem trilhando sua própria trajetória de sucesso profissional, com experiências e conquistas que são referência para os Talentos que estão iniciando a mesma jornada. Conheça todos nossos embaixadores. Faça parte! <br /><br/> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2021</p>"
+    },
+    "item3": {
+      "name": "apptite",
+      "url": "https://apptite.com",
+      "title": "Apptite Web",
+      "description": "O Apptite é o primeiro delivery que conecta chefs independentes a clientes que buscam refeições feitas artesanalmente! Peça já sua marmita em São Paulo! <br /><br/> <p>Trabalhei como: Desenvolvedor Frontend</p> <p>Ano: 2020</p>"
+    },
+    "item4": {
+      "name": "sharity",
+      "url": "https://sharity.com.br",
+      "title": "Sharity",
+      "description": "A Sharity é a plataforma de crowdfunding/vaquinha online mais fácil e eficiente para você criar campanhas e arrecadar dinheiro para as causas e pessoas que você gosta. Acesse e conheça! <br /><br /> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2019</p>"
+    },
+    "item5": {
+      "name": "itrack",
+      "url": "https://itrackbrasil.com.br",
+      "title": "iTrack",
+      "description": "Monitoramento, comprovação e gestão de entregas e/ou coletas. Rastreamento total até a última milha na palma da sua mão! Clique e saiba mais. <br /><br /> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2018</p>"
+    },
+    "item6": {
+      "name": "illsim",
+      "url": "https://illsim.gibran.dev",
+      "title": "Illness Simulator",
+      "description": "Bem vindo ao Illsim! Este é um projeto de faculdade elaborado em 2017 que estuda o comportamento da propagação de um vírus em torno de uma população. Este estudo consiste em explorar as melhores estratégias de vacinação conforme o vírus se espalha. <br /><br /> <p>Trabalhei como: Desenvolvedor Frontend</p> <p>Ano: 2017</p>"
+    }
   }
 }

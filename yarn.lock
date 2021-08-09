@@ -2980,11 +2980,6 @@ i18next-fs-backend@^1.0.7:
   resolved "https://registry.yarnpkg.com/i18next-fs-backend/-/i18next-fs-backend-1.1.1.tgz#1d8028926803f63784ffa0f2b1478fb369f92735"
   integrity sha512-RFkfy10hNxJqc7MVAp5iAZq0Tum6msBCNebEe3OelOBvrROvzHUPaR8Qe10RQrOGokTm0W4vJGEJzruFkEt+hQ==
 
-i18next-hmr@^1.7.4:
-  version "1.7.4"
-  resolved "https://registry.yarnpkg.com/i18next-hmr/-/i18next-hmr-1.7.4.tgz#4e5bbb422286cd414452d771cd4a46ae4ccdcb34"
-  integrity sha512-qJU1KVoZuaxqx+GEJ8uOMrOnbCttnBZsHRvd7JKX+oZSoMHBN1cNSwyF/iJ51q2g0TjSfRp98GMhYuAJl3eJCQ==
-
 i18next@^19.7.0:
   version "19.9.2"
   resolved "https://registry.yarnpkg.com/i18next/-/i18next-19.9.2.tgz#ea5a124416e3c5ab85fddca2c8e3c3669a8da397"
@@ -4815,6 +4810,11 @@ react-loading-skeleton@^2.2.0:
   integrity sha512-HH37uj9aobrUJSqFglHqO9KQt5zGQe+Svutv8LIq7Iq6gpJqCwIzJOsEVfkQy7ReirbI2uLhCtKloBGQIDP0BQ==
   dependencies:
     "@emotion/core" "^10.0.22"
+
+react-parallax-tilt@^1.5.54:
+  version "1.5.54"
+  resolved "https://registry.yarnpkg.com/react-parallax-tilt/-/react-parallax-tilt-1.5.54.tgz#2a00a8b004e89646cfc9a6aec5fba2a79a96db6b"
+  integrity sha512-X4mf97kJdf8gwIGE4gu971S6jUC8JZRTlpfbnfwEwAKG3K+diRfIXKO4I3GyE+UutAa03Ugu7AVNfPa7aJ/Ydw==
 
 react-redux@^7.2.4:
   version "7.2.4"

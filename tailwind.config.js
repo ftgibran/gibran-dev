@@ -28,7 +28,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      alignSelf: ['even'],
+    },
   },
   plugins: [
     // tailwind variables as css variables

@@ -1,10 +1,11 @@
 import {MutableRefObject, useEffect, useMemo, useState} from 'react'
 
 export type ScrollListenerName =
-  | 'move'
-  | 'move-up'
-  | 'move-down'
-  | 'complete'
+  | 'scroll'
+  | 'scroll-up'
+  | 'scroll-down'
+  | 'scroll-top'
+  | 'scroll-bottom'
   | 'cross'
 export type ScrollListenerTarget = 'below' | 'above'
 export type ScrollListenerPositionReference = 'top' | 'bottom'
@@ -114,29 +115,35 @@ export function useScroll(options?: HookOptions) {
     scrollTo(y + scrollPositionY - getBottomOffset() - getClientTop() + offset)
   }
 
-  const onMove = (callback: ScrollListenerCallback) =>
-    addEventListener('move', {callback})
+  const onScroll = (callback: ScrollListenerCallback) =>
+    addEventListener('scroll', {callback})
 
-  const onceMove = (callback: ScrollListenerCallback) =>
-    addEventListener('move', {once: true, callback})
+  const onceScroll = (callback: ScrollListenerCallback) =>
+    addEventListener('scroll', {once: true, callback})
 
-  const onMoveUp = (callback: ScrollListenerCallback) =>
-    addEventListener('move-up', {callback})
+  const onScrollUp = (callback: ScrollListenerCallback) =>
+    addEventListener('scroll-up', {callback})
 
-  const onceMoveUp = (callback: ScrollListenerCallback) =>
-    addEventListener('move-up', {once: true, callback})
+  const onceScrollUp = (callback: ScrollListenerCallback) =>
+    addEventListener('scroll-up', {once: true, callback})
 
-  const onMoveDown = (callback: ScrollListenerCallback) =>
-    addEventListener('move-down', {callback})
+  const onScrollDown = (callback: ScrollListenerCallback) =>
+    addEventListener('scroll-down', {callback})
 
-  const onceMoveDown = (callback: ScrollListenerCallback) =>
-    addEventListener('move-down', {once: true, callback})
+  const onceScrollDown = (callback: ScrollListenerCallback) =>
+    addEventListener('scroll-down', {once: true, callback})
 
-  const onComplete = (callback: ScrollListenerCallback) =>
-    addEventListener('complete', {callback})
+  const onScrollTop = (callback: ScrollListenerCallback) =>
+    addEventListener('scroll-top', {callback})
 
-  const onceComplete = (callback: ScrollListenerCallback) =>
-    addEventListener('complete', {once: true, callback})
+  const onceScrollTop = (callback: ScrollListenerCallback) =>
+    addEventListener('scroll-top', {once: true, callback})
+
+  const onScrollBottom = (callback: ScrollListenerCallback) =>
+    addEventListener('scroll-bottom', {callback})
+
+  const onceScrollBottom = (callback: ScrollListenerCallback) =>
+    addEventListener('scroll-bottom', {once: true, callback})
 
   const onCross = (options: ScrollListenerOptions<'cross'>) =>
     addEventListener('cross', options)
@@ -229,17 +236,20 @@ export function useScroll(options?: HookOptions) {
 
     listeners.forEach((it) => {
       switch (it.name) {
-        case 'move':
+        case 'scroll':
           callbackEvent(it)
           break
-        case 'move-up':
-          moveUpEvent(it)
+        case 'scroll-up':
+          scrollUpEvent(it)
           break
-        case 'move-down':
-          moveDownEvent(it)
+        case 'scroll-down':
+          scrollDownEvent(it)
           break
-        case 'complete':
-          completeEvent(it)
+        case 'scroll-top':
+          scrollTopEvent(it)
+          break
+        case 'scroll-bottom':
+          scrollBottomEvent(it)
           break
         case 'cross':
           crossEvent(it)
@@ -256,19 +266,25 @@ export function useScroll(options?: HookOptions) {
     }
   }
 
-  const moveUpEvent = (listener: ScrollListener) => {
-    if (listener.current.speed.y > 0) {
-      callbackEvent(listener)
-    }
-  }
-
-  const moveDownEvent = (listener: ScrollListener) => {
+  const scrollUpEvent = (listener: ScrollListener) => {
     if (listener.current.speed.y < 0) {
       callbackEvent(listener)
     }
   }
 
-  const completeEvent = (listener: ScrollListener) => {
+  const scrollDownEvent = (listener: ScrollListener) => {
+    if (listener.current.speed.y > 0) {
+      callbackEvent(listener)
+    }
+  }
+
+  const scrollTopEvent = (listener: ScrollListener) => {
+    if (listener.current.position.y === 0) {
+      callbackEvent(listener)
+    }
+  }
+
+  const scrollBottomEvent = (listener: ScrollListener) => {
     if (
       listener.current.position.y >=
       getContainer().scrollHeight - getClientHeight() + getBottomOffset()
@@ -281,9 +297,7 @@ export function useScroll(options?: HookOptions) {
     const oldTarget = listener.current.target
     listener.current = buildCurrentState(listener.name, listener.options)
 
-    const hasCrossed = listener.current.target !== oldTarget
-
-    if (hasCrossed) callbackEvent(listener)
+    if (listener.current.target !== oldTarget) callbackEvent(listener)
   }
 
   return useMemo(
@@ -295,14 +309,16 @@ export function useScroll(options?: HookOptions) {
       scrollTo,
       scrollToCoordination,
       scrollToElement,
-      onMove,
-      onceMove,
-      onMoveUp,
-      onceMoveUp,
-      onMoveDown,
-      onceMoveDown,
-      onComplete,
-      onceComplete,
+      onScroll,
+      onceScroll,
+      onScrollUp,
+      onceScrollUp,
+      onScrollDown,
+      onceScrollDown,
+      onScrollTop,
+      onceScrollTop,
+      onScrollBottom,
+      onceScrollBottom,
       onCross,
       onCrossTopElement,
       onCrossBottomElement,
