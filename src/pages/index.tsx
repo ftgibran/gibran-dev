@@ -54,7 +54,13 @@ const HomePage: NextPage = () => {
     <>
       <AppHead />
 
-      <Navbar id={'navbar'} className={'z-10 fixed top-0 w-full'} />
+      <Navbar
+        id={'navbar'}
+        className={'z-10 fixed top-0 w-full'}
+        style={{
+          transform: 'translateZ(200px)',
+        }}
+      />
 
       <SectionMain id={sections[0]} />
       <SectionAboutMe id={sections[1]} />

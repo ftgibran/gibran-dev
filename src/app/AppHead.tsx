@@ -125,6 +125,13 @@ export function AppHead(props: HeadProps) {
         content="/img/favicons/ms-icon-144x144.png"
       />
       <meta name="theme-color" content="#ffffff" />
+
+      <script
+        defer
+        src={
+          'https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js'
+        }
+      />
     </Head>
   )
 }

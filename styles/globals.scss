@@ -256,7 +256,7 @@ a {
       background: linear-gradient(180deg, var(--color-pal-white) 0%, #ffffff00 20%, #ffffff00 80%, var(--color-pal-white) 100%);
 
       &--dark {
-        background: linear-gradient(180deg, var(--color-pal-darkest) 0%, #ffffff00 20%, #ffffff00 80%, var(--color-pal-darkest) 100%);
+        background: linear-gradient(180deg, var(--color-pal-darkest) 0%, #00000000 20%, #00000000 80%, var(--color-pal-darkest) 100%);
       }
     }
 
