@@ -4,6 +4,7 @@ import TransitionShow from '~src/components/utils/TransitionShow'
 import {serverHelper} from '~src/app/serverHelper'
 import {AppHead} from '~src/app/AppHead'
 import {Navbar} from '~src/components/nav/Navbar'
+import {useEvent} from '~src/app/useEvent'
 import {useScroll} from '~src/app/useScroll'
 import {SectionMain} from '~src/components/home/SectionMain'
 import {SectionAboutMe} from '~src/components/home/SectionAboutMe'
@@ -26,10 +27,26 @@ export const getStaticProps: GetStaticProps = async (props) => {
 
 const HomePage: NextPage = () => {
   const [toasty, setToasty] = useState(false)
+  const event = useEvent()
 
   const {onceCrossTopElement} = useScroll({asBottomReference: true})
 
+  const sections = [
+    'main',
+    'about-me',
+    'feature',
+    'technology',
+    'timeline',
+    'footer',
+  ]
+
   useEffect(() => {
+    sections.forEach((it, i) => {
+      if (i !== 0) {
+        onceCrossTopElement(it, () => event.scrollEvent(it), 200)
+      }
+    })
+
     onceCrossTopElement('footer', () => setToasty(true))
   }, [])
 
@@ -39,12 +56,12 @@ const HomePage: NextPage = () => {
 
       <Navbar id={'navbar'} className={'z-10 fixed top-0 w-full'} />
 
-      <SectionMain id={'main'} />
-      <SectionAboutMe id={'about-me'} />
-      <SectionFeature id={'feature'} />
-      <SectionTechnology id={'technology'} />
-      <SectionTimeline id={'timeline'} />
-      <SectionFooter id={'footer'}>
+      <SectionMain id={sections[0]} />
+      <SectionAboutMe id={sections[1]} />
+      <SectionFeature id={sections[2]} />
+      <SectionTechnology id={sections[3]} />
+      <SectionTimeline id={sections[4]} />
+      <SectionFooter id={sections[5]}>
         <TransitionShow if={toasty}>
           <ToastyEasterEgg />
         </TransitionShow>

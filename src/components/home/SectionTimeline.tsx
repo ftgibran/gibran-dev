@@ -2,9 +2,11 @@ import React from 'react'
 import {useTranslation} from 'next-i18next'
 import ReactParallaxTilt from 'react-parallax-tilt'
 import {range} from 'lodash'
+import {useEvent} from '~src/app/useEvent'
 
 export const SectionTimeline = (props: HTMLProps) => {
   const {t} = useTranslation('page_home')
+  const event = useEvent()
 
   const renderItem = (
     name: string,
@@ -13,7 +15,12 @@ export const SectionTimeline = (props: HTMLProps) => {
     description: string
   ) => (
     <div className={'my-4 timeline__content'}>
-      <a href={url} target={'_blank'} rel="noreferrer">
+      <a
+        href={url}
+        target={'_blank'}
+        rel="noreferrer"
+        onClick={() => event.openExternalLinkEvent(url)}
+      >
         <ReactParallaxTilt
           className={'mb-20 lg:mb-16 timeline__tilt card'}
           tiltReverse={true}

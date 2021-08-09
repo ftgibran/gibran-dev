@@ -4,6 +4,7 @@ export function useEnv() {
   const factory = () => ({
     LOCALES: process.env.NEXT_PUBLIC_LOCALES?.split(',') ?? [],
     DEFAULT_LOCALE: process.env.NEXT_PUBLIC_DEFAULT_LOCALE ?? '',
+    GTM_ID: process.env.NEXT_PUBLIC_GTM_ID ?? '',
     DISCORD_HOOK_URL: process.env.NEXT_PUBLIC_DISCORD_HOOK_URL ?? '',
     PALETTE_BLACK: process.env.NEXT_PUBLIC_PALETTE_BLACK ?? '',
     PALETTE_WHITE: process.env.NEXT_PUBLIC_PALETTE_WHITE ?? '',

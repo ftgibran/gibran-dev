@@ -3,6 +3,7 @@ import {useDispatch, useSelector} from 'react-redux'
 import {useTranslation} from 'next-i18next'
 import classNames from 'classnames'
 import {RootStore} from '~src/store/RootStore'
+import {useEvent} from '~src/app/useEvent'
 import TransitionShow from '~src/components/utils/TransitionShow'
 import {useScroll} from '~src/app/useScroll'
 import {ButtonLanguageSelect} from '~src/components/nav/ButtonLanguageSelect'
@@ -16,8 +17,11 @@ export const Navbar = (props: Props & HTMLProps) => {
   const [isMenuOpen, setMenuOpen] = useState(false)
 
   const {app} = useSelector(RootStore.app.getters)
+
   const {t} = useTranslation('navbar')
-  const {onCross, scrollTo, scrollToElement} = useScroll()
+  const event = useEvent()
+
+  const {onCross, scrollToElement} = useScroll()
 
   const dispatch = useDispatch()
 
@@ -30,17 +34,27 @@ export const Navbar = (props: Props & HTMLProps) => {
     setHasBackground(listener.current.isAbove)
   }, [])
 
-  const toggleDark = () => {
-    dispatch(RootStore.app.actions.toggleDark())
-  }
-
   const scrollToSection = (id: string, offset?: number) => {
     scrollToElement(id, offset)
     setMenuOpen(false)
+    event.navigateEvent(id)
+  }
+
+  const openExternalLink = (url: string) => {
+    window.open(url, '_blank')
+    event.openExternalLinkEvent(url)
+  }
+
+  const toggleDark = () => {
+    dispatch(RootStore.app.actions.toggleDark())
+    event.toggleDarkModeEvent()
   }
 
   const renderLogo = () => (
-    <a onClick={() => scrollTo(0)} className={'no-underline select-none'}>
+    <a
+      onClick={() => scrollToSection('main')}
+      className={'no-underline select-none'}
+    >
       <div
         className={
           'flex items-center transition cursor-pointer transform hover:scale-105'
@@ -101,16 +115,14 @@ export const Navbar = (props: Props & HTMLProps) => {
   const renderSocialLinks = () => (
     <>
       <button
-        onClick={() => window.open('https://github.com/ftgibran', '__blank')}
+        onClick={() => openExternalLink('https://github.com/ftgibran')}
         className={'ml-1 sm:ml-2 btn btn--icon btn--flat text-2xl opacity-75'}
       >
         <i className={'fab fa-github'} />
       </button>
 
       <button
-        onClick={() =>
-          window.open('https://www.linkedin.com/in/ftgibran', '__blank')
-        }
+        onClick={() => openExternalLink('https://www.linkedin.com/in/ftgibran')}
         className={'ml-1 sm:ml-2 btn btn--icon btn--flat text-2xl opacity-75'}
       >
         <i className={'fab fa-linkedin'} />
@@ -135,7 +147,10 @@ export const Navbar = (props: Props & HTMLProps) => {
       <ButtonLanguageSelect className={'ml-2'} />
 
       <button
-        onClick={() => setMenuOpen(true)}
+        onClick={() => {
+          setMenuOpen(true)
+          event.openMenuEvent()
+        }}
         className={'lg:hidden ml-2 btn btn--icon btn--flat'}
       >
         <i className={'fas fa-bars'} />

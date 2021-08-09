@@ -1,10 +1,12 @@
 import React, {useState} from 'react'
 import {useHelper} from '~src/app/useHelper'
+import {useEvent} from '~src/app/useEvent'
 
 export const ToastyEasterEgg = (props: HTMLProps) => {
   const [toasty, setToasty] = useState(false)
   const [killed, setKilled] = useState(false)
   const {sleep} = useHelper()
+  const event = useEvent()
 
   const isEnabled = () => toasty && !killed
 
@@ -17,6 +19,7 @@ export const ToastyEasterEgg = (props: HTMLProps) => {
     await sleep(3000)
 
     setKilled(true)
+    event.clickOnDontClickCorner()
   }
 
   return (

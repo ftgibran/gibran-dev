@@ -2,10 +2,13 @@ import React, {useState} from 'react'
 import {useRouter} from 'next/router'
 import TransitionShow from '~src/components/utils/TransitionShow'
 import {useTranslation} from 'next-i18next'
+import {useEvent} from '~src/app/useEvent'
 import Link from 'next/link'
 
 export const ButtonLanguageSelect = (props: HTMLProps) => {
   const router = useRouter()
+  const event = useEvent()
+
   const {t} = useTranslation()
 
   const [isActive, setActive] = useState(false)
@@ -14,6 +17,7 @@ export const ButtonLanguageSelect = (props: HTMLProps) => {
     return (
       <Link href={router} locale={lang}>
         <div
+          onClick={() => event.changeLocaleEvent(lang)}
           className={
             'p-2 cursor-pointer flex items-center transition rounded hover:bg-pal-primary hover:bg-opacity-50'
           }

@@ -7,15 +7,17 @@ import '@fortawesome/fontawesome-free/css/all.css'
 
 import type {AppProps} from 'next/app'
 
-import React from 'react'
+import React, {useEffect} from 'react'
 import {applyMiddleware, createStore} from 'redux'
 import thunk from 'redux-thunk'
+import TagManager from 'react-gtm-module'
 import {Provider} from 'react-redux'
 import NProgress from 'nprogress'
 import Router from 'next/router'
 import {appWithTranslation} from 'next-i18next'
 import {ToastProvider} from 'react-toast-notifications'
 import {i18n} from '~/next-i18next.config'
+import {useEnv} from '~src/app/useEnv'
 import {AppHead} from '~src/app/AppHead'
 import {AppProvider} from '~src/app/AppProvider'
 import {CookiePopup} from '~src/components/utils/CookiePopup'
@@ -31,6 +33,12 @@ Router.events.on('routeChangeComplete', () => NProgress.done())
 Router.events.on('routeChangeError', () => NProgress.done())
 
 export const App = ({Component, pageProps}: AppProps) => {
+  const {GTM_ID} = useEnv()
+
+  useEffect(() => {
+    TagManager.initialize({gtmId: GTM_ID})
+  }, [])
+
   return (
     <Provider store={store}>
       <AppHead {...pageProps.head} />

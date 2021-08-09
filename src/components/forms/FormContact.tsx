@@ -1,12 +1,16 @@
 import React, {useState} from 'react'
 import {useTranslation} from 'next-i18next'
+import {useToasts} from 'react-toast-notifications'
 import moment from 'moment'
 import axios from 'axios'
 import {useEnv} from '~src/app/useEnv'
 import {Await, AwaitActivity} from '~src/app/await'
-import {useToasts} from 'react-toast-notifications'
 
-export const FormContact = (props: HTMLProps) => {
+export interface Props {
+  onSubmit?: (name: string, email: string, message: string) => void
+}
+
+export const FormContact = (props: Props & HTMLProps) => {
   const {t} = useTranslation('form_contact')
   const {addToast} = useToasts()
   const {DISCORD_HOOK_URL} = useEnv()
@@ -37,6 +41,8 @@ export const FormContact = (props: HTMLProps) => {
     }
 
     await axios.post(DISCORD_HOOK_URL, body)
+
+    props.onSubmit?.(name, email, message)
 
     setName('')
     setEmail('')

@@ -2,9 +2,14 @@ import React from 'react'
 import {BgVideo} from '~src/components/home/BgVideo'
 import {FormContact} from '~src/components/forms/FormContact'
 import {useTranslation} from 'next-i18next'
+import {useEvent} from '~src/app/useEvent'
+import {useScroll} from '~src/app/useScroll'
 
 export const SectionMain = (props: HTMLProps) => {
+  const event = useEvent()
+
   const {t} = useTranslation('page_home')
+  const {scrollToElement} = useScroll()
 
   return (
     <main {...props}>
@@ -35,7 +40,20 @@ export const SectionMain = (props: HTMLProps) => {
         </div>
 
         <div className={'flex-1 lg:max-w-sm w-full md:w-auto'}>
-          <FormContact />
+          <FormContact
+            onSubmit={() => event.submitContactEvent('on main section')}
+          />
+        </div>
+
+        <div className={'absolute inset-x bottom-0 flex flex-col items-center'}>
+          <a
+            onClick={() => scrollToElement('about-me', -100)}
+            className={
+              'm-2 text-pal-primary dark:text-pal-primary transition transform hover:scale-125 cursor-pointer select-none no-underline'
+            }
+          >
+            <i className={'fas fa-2x fa-angle-double-down'} />
+          </a>
         </div>
       </div>
     </main>
