@@ -5,88 +5,106 @@
   },
   "about_me": {
     "title": "Who I am",
-    "body": "I'm fullstack web software engineer with 5+ years of experience. I've been working with several technologies that ensured me the ability to solve problems and develop many types of application. My responsibility is to show the best solution for clients. As a result, they will have a top quality application with low operating and maintenance costs."
+    "body": "I'm fullstack web software engineer with 5+ years of experience. I've been working with several technologies that ensured me the ability to solve problems and develop many types of application. My responsibility is to show the best solution for clients. As a result, they will have a top quality application with lower operating and maintenance costs."
   },
   "feature": {
     "title": "What I can bring for your application",
-    "feat1": {
-      "name": "technology",
-      "title": "Ultimate Technology Tools",
-      "description": "Your application will be up to date with the best technologies and services of present day."
-    },
-    "feat2": {
-      "name": "code",
-      "title": "Clean & Structured code",
-      "description": "Good codes are better for maintenance and third-parties implementations."
-    },
-    "feat3": {
-      "name": "automation",
-      "title": "Automation and Customization",
-      "description": "The sky is the limit. Determine how automatic and customizable your application is, based on your budget."
-    },
-    "feat4": {
-      "name": "security",
-      "title": "Security",
-      "description": "Safety above all. All security standards will be applied for your application."
-    },
-    "feat5": {
-      "name": "responsiveness",
-      "title": "Responsiveness",
-      "description": "80% of users prefer to browse web on smartphones rather than computers."
-    },
-    "feat6": {
-      "name": "ux",
-      "title": "Highest User Experience (UX)",
-      "description": "The best experience that users can ever have. Engaged users means low rejection rate."
-    },
-    "feat7": {
-      "name": "fastness",
-      "title": "Fastness",
-      "description": "Time is money. Good performance is also important to keep users."
-    },
-    "feat8": {
-      "name": "seo",
-      "title": "SEO patterns",
-      "description": "Search Engine Optimization (SEO) makes your application easier to get new users."
-    }
+    "items": [
+      {
+        "name": "technology",
+        "title": "Ultimate Technology Tools",
+        "description": "Your application will be up to date with the best technologies and services of present day."
+      },
+      {
+        "name": "code",
+        "title": "Clean & Structured code",
+        "description": "Good codes are better for maintenance and third-parties implementations."
+      },
+      {
+        "name": "automation",
+        "title": "Automation and Customization",
+        "description": "The sky is the limit. Determine how automatic and customizable your application is, based on your budget."
+      },
+      {
+        "name": "security",
+        "title": "Security",
+        "description": "Safety above all. All security standards will be applied for your application."
+      },
+      {
+        "name": "responsiveness",
+        "title": "Responsiveness",
+        "description": "80% of users prefer to browse web on smartphones rather than computers."
+      },
+      {
+        "name": "ux",
+        "title": "Highest User Experience (UX)",
+        "description": "The best experience that users can ever have. Engaged users means low rejection rate."
+      },
+      {
+        "name": "fastness",
+        "title": "Fastness",
+        "description": "Time is money. Good performance is also important to keep users."
+      },
+      {
+        "name": "seo",
+        "title": "SEO patterns",
+        "description": "Search Engine Optimization (SEO) makes your application easier to be found by new users."
+      }
+    ]
   },
   "timeline": {
     "title": "Timeline of my relevant works",
-    "item1": {
-      "name": "ndapp",
-      "url": "https://ndapp.org",
-      "title": "NDapp",
-      "description": "Get news, information, and data on all of the latest decentralized applications build using the Neo blockchain. <br /><br/> <p>I worked as: Desenvolvedor Fullstack</p> <p>Year: 2021</p>"
-    },
-    "item2": {
-      "name": "wow",
-      "url": "https://wowtalents.com.br",
-      "title": "WOW Talent",
-      "description": "Where talents grow and appear. Press Play and meet wow Ambassadors. WOW, even though they are young, each one of them has been treading their own path of professional success, with experiences and achievements that are a reference for the Talents who are starting the same journey. Meet all our ambassadors. Be part of it! <br /><br/> <p>I worked as: Fullstack Developer</p> <p>Year: 2021</p>"
-    },
-    "item3": {
-      "name": "apptite",
-      "url": "https://apptite.com",
-      "title": "Apptite Web",
-      "description": "Apptite is the first delivery that connects independent chefs to customers looking for handcrafted meals! Order your lunch box in São Paulo! <br /><br/> <p>I worked as: Frontend Developer</p> <p>Year: 2020</p>"
-    },
-    "item4": {
-      "name": "sharity",
-      "url": "https://sharity.com.br",
-      "title": "Sharity",
-      "description": "Sharity is the easiest and most efficient online crowdfunding platform for you to create campaigns and raise money for the causes and people you care about. Access and know! <br /><br /> <p>I worked as: Fullstack Developer</p> <p>Year: 2019</p>"
-    },
-    "item5": {
-      "name": "itrack",
-      "url": "https://itrackbrasil.com.br",
-      "title": "iTrack",
-      "description": "Monitoring, verification and management of deliveries and/or collections. Full tracking to the last mile in the palm of your hand! Click and learn more. <br /><br /> <p>I worked as: Fullstack Developer</p> <p>Year: 2018</p>"
-    },
-    "item6": {
-      "name": "illsim",
-      "url": "https://illsim.gibran.dev",
-      "title": "Illness Simulator",
-      "description": "Welcome to Illsim! This is a college project developed in 2017 that studies the behavior of a virus spreading around a population. This study is to explore the best vaccination strategies as the virus spreads. <br /><br /> <p>I worked as: Frontend Developer</p> <p>Year: 2017</p>"
-    }
+    "items": [
+      {
+        "name": "ndapp",
+        "url": "https://ndapp.org",
+        "title": "NDapp",
+        "description": "<i class='fas fa-quote-left'></i> <i>Get news, information, and data on all of the latest decentralized applications build using the Neo blockchain.</i> <br /><br/> <p>I worked as: Desenvolvedor Fullstack</p> <p>Year: 2021</p>"
+      },
+      {
+        "name": "wow",
+        "url": "https://wowtalents.com.br",
+        "title": "WOW Talent",
+        "description": "<i class='fas fa-quote-left'></i> <i>Where talents grow and appear. Press Play and meet wow Ambassadors. WOW, even though they are young, each one of them has been treading their own path of professional success, with experiences and achievements that are a reference for the Talents who are starting the same journey. Meet all our ambassadors. Be part of it!</i> <br /><br/> <p>I worked as: Fullstack Developer</p> <p>Year: 2021</p>"
+      },
+      {
+        "name": "apptite",
+        "url": "https://apptite.com",
+        "title": "Apptite Web",
+        "description": "<i class='fas fa-quote-left'></i> <i>Apptite is the first delivery that connects independent chefs to customers looking for handcrafted meals! Order your lunch box in São Paulo!</i> <br /><br/> <p>I worked as: Frontend Developer</p> <p>Year: 2020</p>"
+      },
+      {
+        "name": "sharity",
+        "url": "https://sharity.com.br",
+        "title": "Sharity",
+        "description": "<i class='fas fa-quote-left'></i> <i>Sharity is the easiest and most efficient online crowdfunding platform for you to create campaigns and raise money for the causes and people you care about. Access and know!</i> <br /><br /> <p>I worked as: Fullstack Developer</p> <p>Year: 2019</p>"
+      },
+      {
+        "name": "itrack",
+        "url": "https://itrackbrasil.com.br",
+        "title": "iTrack",
+        "description": "<i class='fas fa-quote-left'></i> <i>Monitoring, verification and management of deliveries and/or collections. Full tracking to the last mile in the palm of your hand! Click and learn more.</i> <br /><br /> <p>I worked as: Fullstack Developer</p> <p>Year: 2018</p>"
+      },
+      {
+        "name": "illsim",
+        "url": "https://illsim.gibran.dev",
+        "title": "Illness Simulator",
+        "description": "<i class='fas fa-quote-left'></i> <i>Welcome to Illsim! This is a college project developed in 2017 that studies the behavior of a virus spreading around a population. This study is to explore the best vaccination strategies as the virus spreads.</i> <br /><br /> <p>I worked as: Frontend Developer</p> <p>Year: 2017</p>"
+      }
+    ]
+  },
+  "technology": {
+    "title": "Technologies that I use",
+    "items": [
+      "devicon-nextjs-original-wordmark",
+      "devicon-react-original-wordmark",
+      "devicon-vuejs-plain-wordmark",
+      "devicon-tailwindcss-original-wordmark",
+      "devicon-nodejs-plain-wordmark",
+      "devicon-tomcat-line-wordmark",
+      "devicon-mysql-plain-wordmark",
+      "devicon-docker-plain-wordmark",
+      "devicon-amazonwebservices-plain-wordmark"
+    ]
   }
 }

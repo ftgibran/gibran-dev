@@ -43,6 +43,13 @@ export function AppHead(props: HeadProps) {
       <meta property={'og:image'} itemProp={'image'} content={imageUrl} />
 
       <link
+        rel={'stylesheet'}
+        href={
+          'https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css'
+        }
+      />
+
+      <link
         rel="apple-touch-icon"
         sizes="57x57"
         href="/img/favicons/apple-icon-57x57.png"

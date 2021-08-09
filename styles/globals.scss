@@ -224,6 +224,10 @@ a {
   &__tilt {
     @apply relative h-80 select-none cursor-pointer;
   }
+
+  &__title {
+    @apply p-2 lg:p-0 bg-pal-primary lg:bg-transparent rounded-md title;
+  }
 }
 
 @layer utilities {

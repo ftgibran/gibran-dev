@@ -41,9 +41,7 @@ export const SectionTimeline = (props: HTMLProps) => {
           </div>
 
           <div
-            className={
-              'p-2 lg:p-0 bg-pal-primary lg:bg-transparent rounded-md title'
-            }
+            className={'timeline__title'}
             style={{
               transform: 'translateZ(80px) scale(0.8)',
             }}
@@ -72,13 +70,13 @@ export const SectionTimeline = (props: HTMLProps) => {
           <h2 className={'mb-24 title'}>{t('timeline.title')}</h2>
 
           <div className={'timeline'}>
-            {range(1, 7).map((it) => (
+            {range(1, 7).map((it, i) => (
               <React.Fragment key={it}>
                 {renderItem(
-                  t(`timeline.item${it}.name`),
-                  t(`timeline.item${it}.url`),
-                  t(`timeline.item${it}.title`),
-                  t(`timeline.item${it}.description`)
+                  t(`timeline.items.${i}.name`),
+                  t(`timeline.items.${i}.url`),
+                  t(`timeline.items.${i}.title`),
+                  t(`timeline.items.${i}.description`)
                 )}
               </React.Fragment>
             ))}

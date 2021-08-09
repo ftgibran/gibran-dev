@@ -5,88 +5,106 @@
   },
   "about_me": {
     "title": "Quem sou eu",
-    "body": "Sou um engenheiro de software web fullstack com mais de 5 anos de experiência. Tenho trabalhado com diversas tecnologias que me garantiram a capacidade de solucionar problemas e desenvolver diversos tipos de aplicação. Minha responsabilidade é apresentar a melhor solução para os clientes. Dessa forma, eles terão uma aplicação de alta qualidade e com baixos custos de operação e manutenção."
+    "body": "Sou um engenheiro de software web fullstack com mais de 5 anos de experiência. Tenho trabalhado com diversas tecnologias que me garantiram a capacidade de solucionar problemas e desenvolver diversos tipos de aplicação. Minha responsabilidade é apresentar a melhor solução para os clientes. Dessa forma, eles terão uma aplicação de alta qualidade e com custos de operação e manutenção mais baixos."
   },
   "feature": {
     "title": "O que eu posso trazer para sua aplicação",
-    "feat1": {
-      "name": "technology",
-      "title": "Tecnologia de ponta",
-      "description": "Sua aplicação estará em dia com as melhores tecnologias e serviços da atualidade."
-    },
-    "feat2": {
-      "name": "code",
-      "title": "Código limpo & estruturado",
-      "description": "Códigos bem feitos são melhores para manutenção e implementações de terceiros."
-    },
-    "feat3": {
-      "name": "automation",
-      "title": "Automação e Personalização",
-      "description": "O céu é o limite. Determine o quão automátio e personalizável é a sua aplicação, com base no seu budget."
-    },
-    "feat4": {
-      "name": "security",
-      "title": "Segurança",
-      "description": "Segurança acima de tudo. Todos os padrões de seguranças serão aplicados em sua aplicação."
-    },
-    "feat5": {
-      "name": "responsiveness",
-      "title": "Responsividade",
-      "description": "80% dos usuários preferem navegar na web em smartphones em vez de computadores."
-    },
-    "feat6": {
-      "name": "ux",
-      "title": "Maior experiência ao usuário (UX)",
-      "description": "A melhor experiência que os usuários possam ter. Usuários engajados significa baixa taxa de rejeição."
-    },
-    "feat7": {
-      "name": "fastness",
-      "title": "Rapidez",
-      "description": "Tempo é dinheiro. Boa performance também é importante para manter usuários."
-    },
-    "feat8": {
-      "name": "seo",
-      "title": "Padrões SEO",
-      "description": "O Search Engine Optimization (SEO) torna seu aplicativo mais fácil de conseguir novos usuários."
-    }
+    "items": [
+      {
+        "name": "technology",
+        "title": "Tecnologia de ponta",
+        "description": "Sua aplicação estará em dia com as melhores tecnologias e serviços da atualidade."
+      },
+      {
+        "name": "code",
+        "title": "Código limpo & estruturado",
+        "description": "Códigos bem feitos são melhores para manutenção e implementações de terceiros."
+      },
+      {
+        "name": "automation",
+        "title": "Automação e Personalização",
+        "description": "O céu é o limite. Determine o quão automátio e personalizável é a sua aplicação, com base no seu budget."
+      },
+      {
+        "name": "security",
+        "title": "Segurança",
+        "description": "Segurança acima de tudo. Todos os padrões de seguranças serão aplicados em sua aplicação."
+      },
+      {
+        "name": "responsiveness",
+        "title": "Responsividade",
+        "description": "80% dos usuários preferem navegar na web em smartphones em vez de computadores."
+      },
+      {
+        "name": "ux",
+        "title": "Maior experiência ao usuário (UX)",
+        "description": "A melhor experiência que os usuários possam ter. Usuários engajados significa baixa taxa de rejeição."
+      },
+      {
+        "name": "fastness",
+        "title": "Rapidez",
+        "description": "Tempo é dinheiro. Boa performance também é importante para manter usuários."
+      },
+      {
+        "name": "seo",
+        "title": "Padrões SEO",
+        "description": "O Search Engine Optimization (SEO) torna sua aplicação mais fácil de ser encontrada por novos usuários."
+      }
+    ]
   },
   "timeline": {
-    "title": "Linha do tempo dos meu trabalhos relevantes",
-    "item1": {
-      "name": "ndapp",
-      "url": "https://ndapp.org",
-      "title": "NDapp",
-      "description": "Notícias, informações, e dados de todas as recentes aplicações decentralizadas da rede blockchain Neo. <br /><br/> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2021</p>"
-    },
-    "item2": {
-      "name": "wow",
-      "url": "https://wowtalents.com.br",
-      "title": "WOW Talent",
-      "description": "Onde os talentos crescem e aparecem. Aperte o Play e conheça a wow Embaixadores. WOW mesmo tão jovens, cada um deles vem trilhando sua própria trajetória de sucesso profissional, com experiências e conquistas que são referência para os Talentos que estão iniciando a mesma jornada. Conheça todos nossos embaixadores. Faça parte! <br /><br/> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2021</p>"
-    },
-    "item3": {
-      "name": "apptite",
-      "url": "https://apptite.com",
-      "title": "Apptite Web",
-      "description": "O Apptite é o primeiro delivery que conecta chefs independentes a clientes que buscam refeições feitas artesanalmente! Peça já sua marmita em São Paulo! <br /><br/> <p>Trabalhei como: Desenvolvedor Frontend</p> <p>Ano: 2020</p>"
-    },
-    "item4": {
-      "name": "sharity",
-      "url": "https://sharity.com.br",
-      "title": "Sharity",
-      "description": "A Sharity é a plataforma de crowdfunding/vaquinha online mais fácil e eficiente para você criar campanhas e arrecadar dinheiro para as causas e pessoas que você gosta. Acesse e conheça! <br /><br /> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2019</p>"
-    },
-    "item5": {
-      "name": "itrack",
-      "url": "https://itrackbrasil.com.br",
-      "title": "iTrack",
-      "description": "Monitoramento, comprovação e gestão de entregas e/ou coletas. Rastreamento total até a última milha na palma da sua mão! Clique e saiba mais. <br /><br /> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2018</p>"
-    },
-    "item6": {
-      "name": "illsim",
-      "url": "https://illsim.gibran.dev",
-      "title": "Illness Simulator",
-      "description": "Bem vindo ao Illsim! Este é um projeto de faculdade elaborado em 2017 que estuda o comportamento da propagação de um vírus em torno de uma população. Este estudo consiste em explorar as melhores estratégias de vacinação conforme o vírus se espalha. <br /><br /> <p>Trabalhei como: Desenvolvedor Frontend</p> <p>Ano: 2017</p>"
-    }
+    "title": "Linha do tempo dos meus trabalhos relevantes",
+    "items": [
+      {
+        "name": "ndapp",
+        "url": "https://ndapp.org",
+        "title": "NDapp",
+        "description": "<i class='fas fa-quote-left'></i> <i>Notícias, informações, e dados de todas as recentes aplicações decentralizadas da rede blockchain Neo.</i> <br /><br/> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2021</p>"
+      },
+      {
+        "name": "wow",
+        "url": "https://wowtalents.com.br",
+        "title": "WOW Talent",
+        "description": "<i class='fas fa-quote-left'></i> <i>Onde os talentos crescem e aparecem. Aperte o Play e conheça a wow Embaixadores. WOW mesmo tão jovens, cada um deles vem trilhando sua própria trajetória de sucesso profissional, com experiências e conquistas que são referência para os Talentos que estão iniciando a mesma jornada. Conheça todos nossos embaixadores. Faça parte!</i> <br /><br/> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2021</p>"
+      },
+      {
+        "name": "apptite",
+        "url": "https://apptite.com",
+        "title": "Apptite Web",
+        "description": "<i class='fas fa-quote-left'></i> <i>O Apptite é o primeiro delivery que conecta chefs independentes a clientes que buscam refeições feitas artesanalmente! Peça já sua marmita em São Paulo!</i> <br /><br/> <p>Trabalhei como: Desenvolvedor Frontend</p> <p>Ano: 2020</p>"
+      },
+      {
+        "name": "sharity",
+        "url": "https://sharity.com.br",
+        "title": "Sharity",
+        "description": "<i class='fas fa-quote-left'></i> <i>A Sharity é a plataforma de crowdfunding/vaquinha online mais fácil e eficiente para você criar campanhas e arrecadar dinheiro para as causas e pessoas que você gosta. Acesse e conheça!</i> <br /><br /> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2019</p>"
+      },
+      {
+        "name": "itrack",
+        "url": "https://itrackbrasil.com.br",
+        "title": "iTrack",
+        "description": "<i class='fas fa-quote-left'></i> <i>Monitoramento, comprovação e gestão de entregas e/ou coletas. Rastreamento total até a última milha na palma da sua mão! Clique e saiba mais.</i> <br /><br /> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2018</p>"
+      },
+      {
+        "name": "illsim",
+        "url": "https://illsim.gibran.dev",
+        "title": "Illness Simulator",
+        "description": "<i class='fas fa-quote-left'></i> <i>Bem vindo ao Illsim! Este é um projeto de faculdade elaborado em 2017 que estuda o comportamento da propagação de um vírus em torno de uma população. Este estudo consiste em explorar as melhores estratégias de vacinação conforme o vírus se espalha.</i> <br /><br /> <p>Trabalhei como: Desenvolvedor Frontend</p> <p>Ano: 2017</p>"
+      }
+    ]
+  },
+  "technology": {
+    "title": "Tecnologias que eu utilizo",
+    "items": [
+      "devicon-nextjs-original-wordmark",
+      "devicon-react-original-wordmark",
+      "devicon-vuejs-plain-wordmark",
+      "devicon-tailwindcss-original-wordmark",
+      "devicon-nodejs-plain-wordmark",
+      "devicon-tomcat-line-wordmark",
+      "devicon-mysql-plain-wordmark",
+      "devicon-docker-plain-wordmark",
+      "devicon-amazonwebservices-plain-wordmark"
+    ]
   }
 }

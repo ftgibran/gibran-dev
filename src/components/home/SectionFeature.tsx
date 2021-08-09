@@ -28,14 +28,14 @@ export const SectionFeature = (props: HTMLProps) => {
             'grid grid-cols sm:grid-cols-2 lg:grid-cols-4 gap-24 sm:gap-12'
           }
         >
-          {range(1, 9).map((it) => (
-            <div key={it}>
+          {range(1, 9).map((it, i) => (
+            <React.Fragment key={it}>
               {renderFeat(
-                t(`feature.feat${it}.name`),
-                t(`feature.feat${it}.title`),
-                t(`feature.feat${it}.description`)
+                t(`feature.items.${i}.name`),
+                t(`feature.items.${i}.title`),
+                t(`feature.items.${i}.description`)
               )}
-            </div>
+            </React.Fragment>
           ))}
         </div>
       </div>
