@@ -1,11 +1,11 @@
 {
   "main": {
     "title": "Coding everywhere",
-    "body": "Hello, I'm Felipe Gibran.<br />This is my space that I share to everyone. Be my guest."
+    "body": "Hello, I'm Felipe Gibran.<br />This is my space where I share my work with everyone. Be my guest."
   },
   "about_me": {
     "title": "Who I am",
-    "body": "I'm fullstack web software engineer with 5+ years of experience. I've been working with several technologies that ensured me the ability to solve problems and develop many types of application. My responsibility is to show the best solution for clients. As a result, they will have a top quality application with lower operating and maintenance costs."
+    "body": "I'm a fullstack web software engineer with 5+ years of experience. I've been working with several technologies that brought me the ability to solve problems and develop many types of applications. My responsibility is to show the best solution for clients. As a result, they will have a top quality application with the lowest operating and maintenance costs."
   },
   "feature": {
     "title": "What I can bring for your application",
@@ -13,42 +13,42 @@
       {
         "name": "technology",
         "title": "Ultimate Technology Tools",
-        "description": "Your application will be up to date with the best technologies and services of present day."
+        "description": "Your application will be up to date with the best technologies and services available today."
       },
       {
         "name": "code",
         "title": "Clean & Structured code",
-        "description": "Good codes are better for maintenance and third-parties implementations."
+        "description": "An organized code base is better for maintenance and third-party implementations."
       },
       {
         "name": "automation",
         "title": "Automation and Customization",
-        "description": "The sky is the limit. Determine how automatic and customizable your application is, based on your budget."
+        "description": "The sky is the limit. Determine how automated and customizable your application is, based on your budget."
       },
       {
         "name": "security",
         "title": "Security",
-        "description": "Safety above all. All security standards will be applied for your application."
+        "description": "Safety above all. All security standards will be applied to your application."
       },
       {
         "name": "responsiveness",
-        "title": "Responsiveness",
-        "description": "80% of users prefer to browse web on smartphones rather than computers."
+        "title": "Multi-platform (responsiveness)",
+        "description": "80% of users prefer to browse the web on smartphones rather than computers."
       },
       {
         "name": "ux",
         "title": "Highest User Experience (UX)",
-        "description": "The best experience that users can ever have. Engaged users means low rejection rate."
+        "description": "The best experience that users can ever have. Engaged users mean a better return rate."
       },
       {
         "name": "fastness",
         "title": "Fastness",
-        "description": "Time is money. Good performance is also important to keep users."
+        "description": "Time is money. Good performance is paramount to keep the users active."
       },
       {
         "name": "seo",
         "title": "SEO patterns",
-        "description": "Search Engine Optimization (SEO) makes your application easier to be found by new users."
+        "description": "Search Engine Optimization (SEO) makes your application easy to be found by new users."
       }
     ]
   },
@@ -59,37 +59,37 @@
         "name": "ndapp",
         "url": "https://ndapp.org",
         "title": "NDapp",
-        "description": "<i class='fas fa-quote-left'></i> <i>Get news, information, and data on all of the latest decentralized applications build using the Neo blockchain.</i> <br /><br/> <p>I worked as: Desenvolvedor Fullstack</p> <p>Year: 2021</p>"
+        "description": "<i class='fas fa-quote-left'></i> <i>Get news, information, and data on all of the latest decentralized applications built using the Neo blockchain.</i> <br /><br/> <p>I worked as: Desenvolvedor Fullstack</p> <p>Year: 2021</p>"
       },
       {
         "name": "wow",
         "url": "https://wowtalents.com.br",
         "title": "WOW Talent",
-        "description": "<i class='fas fa-quote-left'></i> <i>Where talents grow and appear. Press Play and meet wow Ambassadors. WOW, even though they are young, each one of them has been treading their own path of professional success, with experiences and achievements that are a reference for the Talents who are starting the same journey. Meet all our ambassadors. Be part of it!</i> <br /><br/> <p>I worked as: Fullstack Developer</p> <p>Year: 2021</p>"
+        "description": "<i class='fas fa-quote-left'></i> <i>Press Play and meet WOW Ambassadors. Even though they are young, each one of them has been treading their own path of professional success, with experiences and achievements that are a reference for the Talents who are starting the same journey. Meet all our ambassadors. Be part of it!</i> <br /><br/> <p>I worked as: Fullstack Developer</p> <p>Year: 2021</p>"
       },
       {
         "name": "apptite",
         "url": "https://apptite.com",
         "title": "Apptite Web",
-        "description": "<i class='fas fa-quote-left'></i> <i>Apptite is the first delivery that connects independent chefs to customers looking for handcrafted meals! Order your lunch box in São Paulo!</i> <br /><br/> <p>I worked as: Frontend Developer</p> <p>Year: 2020</p>"
+        "description": "<i class='fas fa-quote-left'></i> <i>Apptite is the first delivery that connects independent chefs to customers looking for handmade meals! Order your lunch box in São Paulo!</i> <br /><br/> <p>I worked as: Frontend Developer</p> <p>Year: 2020</p>"
       },
       {
         "name": "sharity",
         "url": "https://sharity.com.br",
         "title": "Sharity",
-        "description": "<i class='fas fa-quote-left'></i> <i>Sharity is the easiest and most efficient online crowdfunding platform for you to create campaigns and raise money for the causes and people you care about. Access and know!</i> <br /><br /> <p>I worked as: Fullstack Developer</p> <p>Year: 2019</p>"
+        "description": "<i class='fas fa-quote-left'></i> <i>Sharity is the easiest and most efficient online crowdfunding platform for you to create campaigns and raise money for the causes and people you care about. Enter and discover it!</i> <br /><br /> <p>I worked as: Fullstack Developer</p> <p>Year: 2019</p>"
       },
       {
         "name": "itrack",
         "url": "https://itrackbrasil.com.br",
         "title": "iTrack",
-        "description": "<i class='fas fa-quote-left'></i> <i>Monitoring, verification and management of deliveries and/or collections. Full tracking to the last mile in the palm of your hand! Click and learn more.</i> <br /><br /> <p>I worked as: Fullstack Developer</p> <p>Year: 2018</p>"
+        "description": "<i class='fas fa-quote-left'></i> <i>Monitoring, verification and management of deliveries. Full tracking to the last mile in the palm of your hand! Click and learn more.</i> <br /><br /> <p>I worked as: Fullstack Developer</p> <p>Year: 2018</p>"
       },
       {
         "name": "illsim",
         "url": "https://illsim.gibran.dev",
         "title": "Illness Simulator",
-        "description": "<i class='fas fa-quote-left'></i> <i>Welcome to Illsim! This is a college project developed in 2017 that studies the behavior of a virus spreading around a population. This study is to explore the best vaccination strategies as the virus spreads.</i> <br /><br /> <p>I worked as: Frontend Developer</p> <p>Year: 2017</p>"
+        "description": "<i class='fas fa-quote-left'></i> <i>Welcome to Illsim! This is a college project developed in 2017 that studies the behavior of a virus spreading around a population. This study explores the best vaccination strategies as the virus spreads.</i> <br /><br /> <p>I worked as: Frontend Developer</p> <p>Year: 2017</p>"
       }
     ]
   },

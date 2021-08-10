@@ -1,20 +1,25 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import {useHelper} from '~src/app/useHelper'
 import {useEvent} from '~src/app/useEvent'
 
 export const ToastyEasterEgg = (props: HTMLProps) => {
+  const event = useEvent()
+  const {sleep} = useHelper()
+
   const [toasty, setToasty] = useState(false)
   const [killed, setKilled] = useState(false)
-  const {sleep} = useHelper()
-  const event = useEvent()
+  const [audio, setAudio] = useState<HTMLAudioElement>()
+
+  useEffect(() => {
+    setAudio(new Audio('/audio/toasty.mp3'))
+  }, [])
 
   const isEnabled = () => toasty && !killed
 
   const runToast = async () => {
     setToasty(true)
 
-    const audio = new Audio('/audio/toasty.mp3')
-    await audio.play()
+    await audio?.play()
 
     await sleep(3000)
 

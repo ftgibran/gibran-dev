@@ -1,11 +1,11 @@
 {
   "main": {
     "title": "Codando em todos os lugares",
-    "body": "Olá, meu nome Felipe Gibran.<br />Este é meu espaço que compartilho à todos. Seja meu convidado."
+    "body": "Olá, meu nome Felipe Gibran.<br />Este é meu espaço onde compartilho meu trabalho à todos. Seja meu convidado."
   },
   "about_me": {
     "title": "Quem sou eu",
-    "body": "Sou um engenheiro de software web fullstack com mais de 5 anos de experiência. Tenho trabalhado com diversas tecnologias que me garantiram a capacidade de solucionar problemas e desenvolver diversos tipos de aplicação. Minha responsabilidade é apresentar a melhor solução para os clientes. Dessa forma, eles terão uma aplicação de alta qualidade e com custos de operação e manutenção mais baixos."
+    "body": "Sou um engenheiro de software web fullstack com mais de 5 anos de experiência. Tenho trabalhado com diversas tecnologias que me trouxeram a capacidade de solucionar problemas e desenvolver diversos tipos de aplicações. Minha responsabilidade é apresentar a melhor solução para os clientes. Dessa forma, eles terão uma aplicação de alta qualidade e com custos de operação e manutenção mais baixos."
   },
   "feature": {
     "title": "O que eu posso trazer para sua aplicação",
@@ -18,7 +18,7 @@
       {
         "name": "code",
         "title": "Código limpo & estruturado",
-        "description": "Códigos bem feitos são melhores para manutenção e implementações de terceiros."
+        "description": "Códigos bem organizados são melhores para manutenção e implementações de terceiros."
       },
       {
         "name": "automation",
@@ -28,22 +28,22 @@
       {
         "name": "security",
         "title": "Segurança",
-        "description": "Segurança acima de tudo. Todos os padrões de seguranças serão aplicados em sua aplicação."
+        "description": "Segurança acima de tudo. Todos os padrões de seguranças serão utilizados em sua aplicação."
       },
       {
         "name": "responsiveness",
-        "title": "Responsividade",
+        "title": "Multiplataforma (responsividade)",
         "description": "80% dos usuários preferem navegar na web em smartphones em vez de computadores."
       },
       {
         "name": "ux",
         "title": "Maior experiência ao usuário (UX)",
-        "description": "A melhor experiência que os usuários possam ter. Usuários engajados significa baixa taxa de rejeição."
+        "description": "A melhor experiência que os usuários possam ter. Usuários engajados significa uma maior taxa de retorno."
       },
       {
         "name": "fastness",
         "title": "Rapidez",
-        "description": "Tempo é dinheiro. Boa performance também é importante para manter usuários."
+        "description": "Tempo é dinheiro. Boa performance é fundamental para manter os usuários ativos."
       },
       {
         "name": "seo",
@@ -65,7 +65,7 @@
         "name": "wow",
         "url": "https://wowtalents.com.br",
         "title": "WOW Talent",
-        "description": "<i class='fas fa-quote-left'></i> <i>Onde os talentos crescem e aparecem. Aperte o Play e conheça a wow Embaixadores. WOW mesmo tão jovens, cada um deles vem trilhando sua própria trajetória de sucesso profissional, com experiências e conquistas que são referência para os Talentos que estão iniciando a mesma jornada. Conheça todos nossos embaixadores. Faça parte!</i> <br /><br/> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2021</p>"
+        "description": "<i class='fas fa-quote-left'></i> <i>Onde os talentos crescem e aparecem. Aperte o Play e conheça a WOW Embaixadores. Mesmo tão jovens, cada um deles vem trilhando sua própria trajetória de sucesso profissional, com experiências e conquistas que são referência para os Talentos que estão iniciando a mesma jornada. Conheça todos nossos embaixadores. Faça parte!</i> <br /><br/> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2021</p>"
       },
       {
         "name": "apptite",
@@ -83,7 +83,7 @@
         "name": "itrack",
         "url": "https://itrackbrasil.com.br",
         "title": "iTrack",
-        "description": "<i class='fas fa-quote-left'></i> <i>Monitoramento, comprovação e gestão de entregas e/ou coletas. Rastreamento total até a última milha na palma da sua mão! Clique e saiba mais.</i> <br /><br /> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2018</p>"
+        "description": "<i class='fas fa-quote-left'></i> <i>Monitoramento, comprovação e gestão de entregas. Rastreamento total até a última milha na palma da sua mão! Clique e saiba mais.</i> <br /><br /> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2018</p>"
       },
       {
         "name": "illsim",
