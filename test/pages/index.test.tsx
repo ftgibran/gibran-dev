@@ -9,10 +9,7 @@ describe('Home page', () => {
 
   const store = mockStore({
     app: {
-      language: 'en-US',
       isDark: false,
-      favorites: [],
-      editedChars: [],
     },
   })
 
