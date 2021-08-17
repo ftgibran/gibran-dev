@@ -13,6 +13,9 @@ export function useEnv() {
     PALETTE_PRIMARY: process.env.NEXT_PUBLIC_PALETTE_PRIMARY ?? '',
     PALETTE_LIGHTER: process.env.NEXT_PUBLIC_PALETTE_LIGHTER ?? '',
     PALETTE_LIGHTEST: process.env.NEXT_PUBLIC_PALETTE_LIGHTEST ?? '',
+    isTestEnv: () => process.env.NODE_ENV === 'test',
+    isDevEnv: () => process.env.NODE_ENV === 'development',
+    isProdEnv: () => process.env.NODE_ENV === 'production',
   })
 
   return useMemo(factory, [])

@@ -152,13 +152,20 @@ export function useScroll(options?: HookOptions) {
     id: string,
     callback: ScrollListenerCallback,
     offset?: number
-  ) => addEventListener('cross', {id, callback, positionReference: 'top'})
+  ) =>
+    addEventListener('cross', {id, callback, offset, positionReference: 'top'})
 
   const onCrossBottomElement = (
     id: string,
     callback: ScrollListenerCallback,
     offset?: number
-  ) => addEventListener('cross', {id, callback, positionReference: 'bottom'})
+  ) =>
+    addEventListener('cross', {
+      id,
+      callback,
+      offset,
+      positionReference: 'bottom',
+    })
 
   const onceCrossTopElement = (
     id: string,
@@ -181,6 +188,7 @@ export function useScroll(options?: HookOptions) {
     addEventListener('cross', {
       id,
       callback,
+      offset,
       positionReference: 'bottom',
       once: true,
     })
