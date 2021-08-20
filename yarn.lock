@@ -390,6 +390,11 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@dev-plus-plus/react-await@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@dev-plus-plus/react-await/-/react-await-1.0.2.tgz#4ac32fe5183ae83379d513efbf4469c6b1a69bba"
+  integrity sha512-wS5QYllapUN7832GE23gy3ejezOn8MRo8xx/6hucMpOUyqVUAx9WL0NIJsnYj8lro5+OGwh3m8ZVb212L42HGw==
+
 "@emotion/cache@^10.0.27":
   version "10.0.29"
   resolved "https://registry.yarnpkg.com/@emotion/cache/-/cache-10.0.29.tgz#87e7e64f412c060102d589fe7c6dc042e6f9d1e0"

@@ -1,16 +1,18 @@
 import React, {useState} from 'react'
 import {useTranslation} from 'next-i18next'
 import {useToasts} from 'react-toast-notifications'
+import {AwaitConsumer, useAwait} from '@dev-plus-plus/react-await'
 import moment from 'moment'
 import axios from 'axios'
 import {useEnv} from '~src/app/useEnv'
-import {Await, AwaitActivity} from '~src/app/await'
 
 export interface Props {
   onSubmit?: (name: string, email: string, message: string) => void
 }
 
 export const FormContact = (props: Props & HTMLProps) => {
+  const formContactAwait = useAwait('formContact')
+
   const {t} = useTranslation('form_contact')
   const {addToast} = useToasts()
   const {DISCORD_HOOK_URL} = useEnv()
@@ -55,11 +57,11 @@ export const FormContact = (props: Props & HTMLProps) => {
 
   return (
     <div {...props}>
-      <AwaitActivity name={'formContact'}>
+      <AwaitConsumer name={'formContact'}>
         <form
           onSubmit={(e) => {
             e.preventDefault()
-            Await.run('formContact', submit, 1000)
+            formContactAwait.run(submit, 1000)
           }}
           className={'relative grid gap-4'}
         >
@@ -100,7 +102,7 @@ export const FormContact = (props: Props & HTMLProps) => {
 
           <button className={'btn ml-auto w-32'}>{t('submit')}</button>
         </form>
-      </AwaitActivity>
+      </AwaitConsumer>
     </div>
   )
 }

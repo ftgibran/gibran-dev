@@ -1,9 +1,8 @@
 import React, {useEffect} from 'react'
-import BarLoader from 'react-spinners/BarLoader'
+import {AwaitConsumer, useAwait} from '@dev-plus-plus/react-await'
 import {RequestConfig, RequestListener} from '@simpli/serialized-request'
 import {useAxios} from '~src/app/useAxios'
 import {useEnv} from '~src/app/useEnv'
-import {Await, AwaitActivity} from '~src/app/await'
 import {useDispatch} from 'react-redux'
 import {RootStore} from '~src/store/RootStore'
 import {CircleLoader} from 'react-spinners/index'
@@ -14,21 +13,20 @@ export type Props = {
 
 export function AppProvider(props: Props) {
   const env = useEnv()
+  const screenAwait = useAwait('screen')
   const axiosInstance = useAxios()
 
   const dispatch = useDispatch()
 
   useEffect(() => {
-    Await.run('screen', init)
+    screenAwait.run(init)
   }, [])
 
   async function init() {
     RequestConfig.axios = axiosInstance
-    RequestListener.onRequestStart((name) => Await.init(name))
-    RequestListener.onRequestEnd((name) => Await.done(name))
-    RequestListener.onRequestError((name) => Await.error(name))
-
-    Await.defaultLoadingView = <BarLoader color={env.PALETTE_PRIMARY} />
+    RequestListener.onRequestStart((name) => useAwait(name).init())
+    RequestListener.onRequestEnd((name) => useAwait(name).done())
+    RequestListener.onRequestError((name) => useAwait(name).error())
 
     const themeConditions = [
       localStorage.theme === 'dark',
@@ -44,11 +42,11 @@ export function AppProvider(props: Props) {
   }
 
   return (
-    <AwaitActivity
+    <AwaitConsumer
       name={'screen'}
       loadingView={<CircleLoader color={env.PALETTE_PRIMARY} size={150} />}
     >
       {props.children}
-    </AwaitActivity>
+    </AwaitConsumer>
   )
 }
