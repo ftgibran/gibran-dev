@@ -1,0 +1,4 @@
+pnpm generate
+
+pnpm typecheck
+pnpm pre-commit
