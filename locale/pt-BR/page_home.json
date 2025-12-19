@@ -1,0 +1,88 @@
+{
+  "main": {
+    "title": "Codando em todos os lugares",
+    "body": "Olá, meu nome Felipe Gibran.<br />Este é meu espaço onde compartilho meu trabalho à todos. Seja meu convidado."
+  },
+  "about_me": {
+    "title": "Quem sou eu",
+    "body": "Sou um engenheiro de software web fullstack com mais de 5 anos de experiência. Tenho trabalhado com diversas tecnologias que me trouxeram a capacidade de solucionar problemas e desenvolver diversos tipos de aplicações. Minha responsabilidade é apresentar a melhor solução para os clientes. Dessa forma, eles terão uma aplicação de alta qualidade e com custos de operação e manutenção mais baixos."
+  },
+  "feature": {
+    "title": "O que eu posso trazer para sua aplicação",
+    "items": {
+      "technology": {
+        "title": "Tecnologia de ponta",
+        "desc": "Sua aplicação estará em dia com as melhores tecnologias e serviços da atualidade."
+      },
+      "code": {
+        "title": "Código limpo & estruturado",
+        "desc": "Códigos bem organizados são melhores para manutenção e implementações de terceiros."
+      },
+      "automation": {
+        "title": "Automação e Personalização",
+        "desc": "O céu é o limite. Determine o quão automátio e personalizável é a sua aplicação, com base no seu budget."
+      },
+      "security": {
+        "title": "Segurança",
+        "desc": "Segurança acima de tudo. Todos os padrões de seguranças serão utilizados em sua aplicação."
+      },
+      "responsiveness": {
+        "title": "Multiplataforma (responsividade)",
+        "desc": "80% dos usuários preferem navegar na web em smartphones em vez de computadores."
+      },
+      "ux": {
+        "title": "Maior experiência ao usuário (UX)",
+        "desc": "A melhor experiência que os usuários possam ter. Usuários engajados significa uma maior taxa de retorno."
+      },
+      "fastness": {
+        "title": "Rapidez",
+        "desc": "Tempo é dinheiro. Boa performance é fundamental para manter os usuários ativos."
+      },
+      "seo": {
+        "title": "Padrões SEO",
+        "desc": "O Search Engine Optimization (SEO) torna sua aplicação mais fácil de ser encontrada por novos usuários."
+      }
+    }
+  },
+  "timeline": {
+    "title": "Linha do tempo dos meus trabalhos relevantes",
+    "items": {
+      "ndapp": {
+        "url": "https://ndapp.org",
+        "title": "NDapp",
+        "desc": "<i>Notícias, informações, e dados de todas as recentes aplicações decentralizadas da rede blockchain Neo.</i> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2021</p>"
+      },
+      "wow": {
+        "url": "https://wowtalents.com.br",
+        "title": "WOW Talent",
+        "desc": "<i>Onde os talentos crescem e aparecem. Aperte o Play e conheça a WOW Embaixadores. Mesmo tão jovens, cada um deles vem trilhando sua própria trajetória de sucesso profissional, com experiências e conquistas que são referência para os Talentos que estão iniciando a mesma jornada. Conheça todos nossos embaixadores. Faça parte!</i> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2021</p>"
+      },
+      "apptite": {
+        "url": "https://apptite.com",
+        "title": "Apptite Web",
+        "desc": "<i>O Apptite é o primeiro delivery que conecta chefs independentes a clientes que buscam refeições feitas artesanalmente! Peça já sua marmita em São Paulo!</i> <p>Trabalhei como: Desenvolvedor Frontend</p> <p>Ano: 2020</p>"
+      },
+      "sharity": {
+        "url": "https://sharity.com.br",
+        "title": "Sharity",
+        "desc": "<i>A Sharity é a plataforma de crowdfunding/vaquinha online mais fácil e eficiente para você criar campanhas e arrecadar dinheiro para as causas e pessoas que você gosta. Acesse e conheça!</i> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2019</p>"
+      },
+      "itrack": {
+        "url": "https://itrackbrasil.com.br",
+        "title": "iTrack",
+        "desc": "<i>Monitoramento, comprovação e gestão de entregas. Rastreamento total até a última milha na palma da sua mão! Clique e saiba mais.</i> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2018</p>"
+      },
+      "illsim": {
+        "url": "https://illsim.gibran.dev",
+        "title": "Illness Simulator",
+        "desc": "<i>Bem vindo ao Illsim! Este é um projeto de faculdade elaborado em 2017 que estuda o comportamento da propagação de um vírus em torno de uma população. Este estudo consiste em explorar as melhores estratégias de vacinação conforme o vírus se espalha.</i> <p>Trabalhei como: Desenvolvedor Frontend</p> <p>Ano: 2017</p>"
+      }
+    }
+  },
+  "technology": {
+    "title": "Tecnologias que eu utilizo"
+  },
+  "code_language": {
+    "title": "Linguagens mais utilizadas"
+  }
+}

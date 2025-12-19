@@ -1,0 +1,13 @@
+'use client'
+import { useEffect, useRef } from 'react'
+
+export function usePrevious<T>(value: T): T | null {
+  const ref = useRef<T>(null)
+
+  useEffect(() => {
+    ref.current = value
+  }, [value])
+
+  // eslint-disable-next-line react-hooks/refs
+  return ref?.current
+}

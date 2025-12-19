@@ -1,4 +1,3 @@
-pnpm generate
-
+pnpm typegen
 pnpm typecheck
 pnpm pre-commit
