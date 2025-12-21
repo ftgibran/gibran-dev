@@ -1,7 +1,5 @@
 import {
-  AspectRatio,
   Box,
-  Center,
   Circle,
   Heading,
   HStack,
@@ -10,12 +8,10 @@ import {
   StackProps,
 } from '@chakra-ui/react'
 import { markdownToProps } from '@utils/common/markdownToHtml'
-import { useViewportYProgress } from '@utils/hooks/dom/useViewportYProgress'
-import { forwardRef, useState } from 'react'
-import ReactParallaxTilt from 'react-parallax-tilt'
+import { forwardRef } from 'react'
 
-import { ImageBox } from '@/components/misc/ImageBox'
 import { Prose } from '@/components/ui/prose'
+import { BoxParallaxTilt } from '@/views/home/components/BoxParallaxTilt'
 
 export interface TimelineWorkItemProps extends StackProps {
   inverse?: boolean
@@ -44,9 +40,6 @@ export const TimelineWorkItem = forwardRef<
     ...rest
   } = props
 
-  const [isHover, setIsHover] = useState(false)
-  const { ref: tiltRef, yProgress } = useViewportYProgress()
-
   return (
     <Stack
       ref={ref}
@@ -63,57 +56,16 @@ export const TimelineWorkItem = forwardRef<
         flexDir={inverse ? 'row-reverse' : 'row'}
         textAlign={inverse ? 'right' : 'left'}
       >
-        <Stack flex={1}>
-          <AspectRatio
-            ratio={width / height}
-            transform={{ base: 'none', lg: 'scale(1.3)' }}
-          >
-            <Box
-              ref={tiltRef}
-              overflow={'visible !important'}
-              cursor={'pointer'}
-              userSelect={'none'}
-            >
-              <ReactParallaxTilt
-                perspective={1000}
-                tiltReverse={true}
-                tiltAngleYManual={!isHover ? (inverse ? 30 : -30) : undefined}
-                tiltAngleXManual={
-                  !isHover ? (yProgress - 50) * -0.3 : undefined
-                }
-                onEnter={() => setIsHover(true)}
-                onLeave={() => setIsHover(false)}
-                style={{
-                  position: 'absolute',
-                  inset: 0,
-                  transformStyle: 'preserve-3d',
-                  backgroundImage: `url(${src})`,
-                  backgroundRepeat: 'no-repeat',
-                  backgroundSize: 'cover',
-                  backgroundPositionX: '50%',
-                  backgroundPositionY: '50%',
-                  borderRadius: '1rem',
-                }}
-              >
-                <Center
-                  pos={'absolute'}
-                  inset={'1rem'}
-                  transform={'translateZ(80px)'}
-                >
-                  <ImageBox
-                    src={srcParallax}
-                    alt={alt}
-                    fill={true}
-                    sizes={
-                      '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-                    }
-                    objectFit={'contain'}
-                  />
-                </Center>
-              </ReactParallaxTilt>
-            </Box>
-          </AspectRatio>
-        </Stack>
+        <BoxParallaxTilt
+          flex={1}
+          ratio={width / height}
+          transform={{ base: 'none', lg: 'scale(1.3)' }}
+          src={src}
+          alt={alt}
+          srcParallax={srcParallax}
+          inverse={inverse}
+          hoverable={true}
+        />
 
         <Separator
           float={'left'}

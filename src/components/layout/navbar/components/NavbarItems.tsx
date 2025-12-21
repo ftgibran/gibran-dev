@@ -19,6 +19,10 @@ export const NavbarItems = forwardRef<HTMLDivElement, WrapProps>(
         </WrapItem>
 
         <WrapItem>
+          <NavbarAnchor href={'#career'}>{t('career')}</NavbarAnchor>
+        </WrapItem>
+
+        <WrapItem>
           <NavbarAnchor href={'#technology'}>{t('technologies')}</NavbarAnchor>
         </WrapItem>
 

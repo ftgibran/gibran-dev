@@ -3,6 +3,7 @@
 import { FC } from 'react'
 
 import { SectionAbout } from '@/views/home/sections/SectionAbout'
+import { SectionCareer } from '@/views/home/sections/SectionCareer'
 import { SectionCodeLanguage } from '@/views/home/sections/SectionCodeLanguage'
 import { SectionContact } from '@/views/home/sections/SectionContact'
 import { SectionFeature } from '@/views/home/sections/SectionFeature'
@@ -18,6 +19,8 @@ export const HomeView: FC = () => {
       <SectionAbout id={'about'} />
 
       <SectionFeature id={'feature'} />
+
+      <SectionCareer id={'career'} />
 
       <SectionTechnology id={'technology'} />
 

@@ -3,6 +3,17 @@
     "title": "Hello, I’m Felipe Gibran",
     "body": "Senior Fullstack Engineer with 10+ years of experience building scalable, production-ready web applications."
   },
+  "career": {
+    "title": "Career Highlights",
+    "illuvium": {
+      "title": "Illuvium",
+      "desc": "**Illuvium** is a large-scale **blockchain-based gaming ecosystem** that combines **AAA-quality game design** with **Web3 technology**, enabling true digital ownership through **NFT-based in-game assets**.\n\nI have been working at **Illuvium** since **2022**, contributing as a **Frontend Engineer** to multiple core products within a large-scale **Web3 gaming ecosystem**.\n\nMy work spans **complex, production-grade applications** including marketplaces, gameplay-related web experiences, **design systems**, **authentication libraries**, and **content platforms**, all tightly integrated with **blockchain infrastructure** and **NFT-based assets**.\n\nI collaborate closely with **product, design, and engineering teams** to build **scalable, high-per**"
+    },
+    "simpli": {
+      "title": "Simpli",
+      "desc": "I worked at **Simpli** from **2016 to 2021**, a **software house** specialized in building **digital products from the ground up** for a diverse range of clients.\n\nDuring this period, I contributed to multiple end-to-end projects—from concept and MVP to production—working on products such as **Apptite**, **iTrack**, **Sharity**, and **WOW Talent**, collaborating closely with clients to translate business needs into scalable technical solutions.\n\nSimpli also maintained a strong relationship with the **Neo blockchain ecosystem**, providing exposure to **Web3 concepts**, decentralized applications, and blockchain-driven product development early in my career."
+    }
+  },
   "about_me": {
     "title": "Who I am",
     "body": "I am a fullstack web software engineer focused on Frontend with over 10 years of experience delivering digital products that balance business goals, user needs, and technical excellence. I work closely with stakeholders to transform ideas into reliable, scalable applications, making informed technical decisions that support growth, performance, and long-term sustainability.\n\nMy approach focuses on building products that are easy to evolve, cost-efficient to operate, and intuitive for users, while maintaining high standards of quality, security, and performance. The result is software that not only works well, but also creates real value for the business behind it."

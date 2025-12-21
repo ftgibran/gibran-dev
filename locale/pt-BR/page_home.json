@@ -3,6 +3,17 @@
     "title": "Olá, eu sou Felipe Gibran",
     "body": "Engenheiro de Software Fullstack Sênior com mais de 10 anos de experiência na construção de aplicações web escaláveis e prontas para produção."
   },
+  "career": {
+    "title": "Destaques da Carreira",
+    "illuvium": {
+      "title": "Illuvium",
+      "desc": "**Illuvium** é um ecossistema de jogos **baseado em blockchain** em larga escala que combina **design de jogos com qualidade AAA** e **tecnologia Web3**, possibilitando verdadeira propriedade digital por meio de **ativos in-game em formato de NFT**.\n\nTrabalho na **Illuvium** desde **2022**, atuando como **Frontend Engineer** em múltiplos produtos centrais dentro de um amplo **ecossistema de games Web3**.\n\nMeu trabalho abrange **aplicações complexas e prontas para produção**, incluindo marketplaces, experiências web relacionadas ao gameplay, **design systems**, **bibliotecas de autenticação** e **plataformas de conteúdo**, todas fortemente integradas à **infraestrutura blockchain** e a **ativos baseados em NFT**.\n\nColaboro de perto com **times de produto, design e engenharia** para construir **interfaces escaláveis e de alta performance**, com foco em arquitetura limpa, manutenibilidade e experiência do usuário."
+    },
+    "simpli": {
+      "title": "Simpli",
+      "desc": "Trabalhei na **Simpli** de **2016 a 2021**, uma **software house** especializada na criação de **produtos digitais do zero** para uma ampla variedade de clientes.\n\nNesse período, atuei em diversos projetos end-to-end — da concepção e MVP até produção — trabalhando em produtos como **Apptite**, **iTrack**, **Sharity** e **WOW Talent**, colaborando diretamente com clientes para transformar necessidades de negócio em soluções técnicas escaláveis.\n\nA Simpli também mantinha uma forte relação com o **ecossistema da blockchain Neo**, proporcionando contato precoce com **conceitos Web3**, aplicações descentralizadas e desenvolvimento de produtos orientados por blockchain."
+    }
+  },
   "about_me": {
     "title": "Quem eu sou",
     "body": "Sou um engenheiro de software web fullstack focado em Frontend com mais de 10 anos de experiência na entrega de produtos digitais que equilibram objetivos de negócio, necessidades dos usuários e excelência técnica. Trabalho em estreita colaboração com stakeholders para transformar ideias em aplicações confiáveis e escaláveis, tomando decisões técnicas bem fundamentadas que sustentam crescimento, performance e sustentabilidade a longo prazo.\n\nMinha abordagem é focada na construção de produtos fáceis de evoluir, eficientes em custos operacionais e intuitivos para os usuários, mantendo altos padrões de qualidade, segurança e desempenho. O resultado é um software que não apenas funciona bem, mas que gera valor real para o negócio por trás dele."
