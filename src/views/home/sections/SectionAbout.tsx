@@ -1,4 +1,5 @@
 import { Container, Heading, Stack } from '@chakra-ui/react'
+import { markdownToProps } from '@utils/common/markdownToHtml'
 import { useTranslation } from '@utils/i18n/useTranslation'
 import { forwardRef } from 'react'
 
@@ -16,9 +17,9 @@ export const SectionAbout = forwardRef<HTMLDivElement, SectionProps>(
             <Heading textAlign={'center'}>{t('title')}</Heading>
 
             <Prose
-              maxW={'xl'}
+              maxW={'container.md'}
               textAlign={'center'}
-              dangerouslySetInnerHTML={{ __html: t('body') }}
+              {...markdownToProps(t('body'))}
             />
           </Stack>
         </Container>

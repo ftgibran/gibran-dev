@@ -2,7 +2,7 @@ import { createContext } from '@chakra-ui/react'
 import { NAVBAR_HEIGHT } from '@config/constants'
 import { useWindowSize } from '@utils/hooks/dom/useWindowSize'
 import { useIsMounted } from '@utils/hooks/react/useIsMounted'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export const [LayoutProvider, _useLayoutContext] =
   createContext<ReturnUseLayout>({
@@ -21,6 +21,11 @@ export function useLayout(options: LayoutParams = {}) {
   const { windowWidth: contentWidth, windowHeight } = useWindowSize()
 
   const isMounted = useIsMounted()
+
+  useEffect(() => {
+    // @ts-expect-error ignore
+    import('../../../../node_modules/devicon/devicon-base.css')
+  }, [])
 
   return {
     isMounted,

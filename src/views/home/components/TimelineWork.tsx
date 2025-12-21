@@ -14,21 +14,11 @@ export const TimelineWork = forwardRef<HTMLDivElement, BoxProps>(
         <BackgroundTimeline />
 
         <Container>
-          <Stack
-            py={24}
-            gap={24}
-            css={{
-              '& > *:nth-of-type(even)': {
-                alignSelf: 'flex-end',
-                '& [data-content]': {
-                  flexDir: 'row-reverse',
-                  textAlign: 'right',
-                },
-              },
-            }}
-          >
+          <Stack py={24} gap={24}>
             <For each={timelineList}>
-              {(it) => <TimelineWorkItem key={it.src} {...it} />}
+              {(it, i) => (
+                <TimelineWorkItem key={it.src} inverse={!!(i % 2)} {...it} />
+              )}
             </For>
           </Stack>
         </Container>

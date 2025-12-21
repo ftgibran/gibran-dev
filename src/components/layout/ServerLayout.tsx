@@ -1,5 +1,3 @@
-import 'devicon/devicon-base.css'
-
 import { DEFAULT_LOCALE } from '@config/constants'
 import { FC, PropsWithChildren } from 'react'
 

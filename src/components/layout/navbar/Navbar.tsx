@@ -63,7 +63,11 @@ export const Navbar = forwardRef<HTMLElement, BoxProps>((props, ref) => {
               <NavbarLocale />
 
               <Drawer.Trigger asChild>
-                <IconButton hideFrom={'lg'} variant={'ghost'}>
+                <IconButton
+                  aria-label={'Menu'}
+                  hideFrom={'lg'}
+                  variant={'ghost'}
+                >
                   <LuMenu />
                 </IconButton>
               </Drawer.Trigger>

@@ -1,62 +1,43 @@
-import { Box, BoxProps, Center, Separator } from '@chakra-ui/react'
-import { useIsInViewport } from '@utils/hooks/dom/useIsInViewport'
-import { forwardRef, useRef } from 'react'
+import { BoxProps, Center, Separator } from '@chakra-ui/react'
+import { range } from 'lodash'
+import { FC } from 'react'
 
-import { ReactPlayerBox } from '@/components/misc/ReactPlayerBox'
+import { BackgroundCloud } from '@/views/home/backgrounds/BackgroundCloud'
 
-export const BackgroundTimeline = forwardRef<HTMLDivElement, BoxProps>(
-  (props, ref) => {
-    const playerRef = useRef(null)
-    const isInViewport = useIsInViewport(playerRef)
-
-    return (
-      <Center ref={ref} pos={'absolute'} inset={0} zIndex={'hide'} {...props}>
-        <Box
-          ref={playerRef}
-          pos={'absolute'}
-          inset={0}
-          opacity={0.15}
-          bg={'bg'}
-          backgroundImage={`
-            repeating-radial-gradient(
-              circle at center,
-              transparent 0,
-              {colors.bg} 4rem
-            ),
-            repeating-linear-gradient(
-              {colors.primary.solid},
-              {colors.secondary.muted}
-            )
-          `}
-          WebkitMaskImage={
-            'linear-gradient(to bottom, transparent, black, black, transparent)'
-          }
-        />
-
-        <ReactPlayerBox
-          pos={'absolute'}
-          top={0}
-          inset={0}
-          opacity={0.5}
-          url={'/videos/timeline.webm'}
-          playing={isInViewport}
-          WebkitMaskImage={
-            'linear-gradient(to bottom, transparent, black, black, transparent)'
-          }
-          filter={'hue-rotate(70deg)'}
-        />
-
-        <Separator
-          pos={'absolute'}
-          insetY={0}
-          size={'lg'}
-          orientation={'vertical'}
-          borderColor={'primary.50'}
-          filter={'drop-shadow({shadows.glow})'}
-        />
+export const BackgroundTimeline: FC<BoxProps> = (props) => {
+  return (
+    <Center pos={'absolute'} inset={0} {...props}>
+      <Center
+        pos={'absolute'}
+        inset={0}
+        zIndex={'hide'}
+        flexFlow={'column'}
+        overflow={'clip'}
+        bg={'secondary.solid'}
+        WebkitMaskImage={
+          'linear-gradient(to bottom, transparent, black, black, transparent)'
+        }
+      >
+        {range(0, 5).map((n) => (
+          <BackgroundCloud
+            key={n}
+            w={{ base: '400%', sm: '300%', md: '200%', lg: '100%' }}
+            my={'-20vh'}
+            opacity={0.5}
+          />
+        ))}
       </Center>
-    )
-  },
-)
+
+      <Separator
+        pos={'absolute'}
+        insetY={0}
+        size={'lg'}
+        orientation={'vertical'}
+        borderColor={'primary.50'}
+        filter={'drop-shadow({shadows.glow})'}
+      />
+    </Center>
+  )
+}
 
 BackgroundTimeline.displayName = 'BackgroundTimeline'

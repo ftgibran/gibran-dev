@@ -1,4 +1,5 @@
 import { Button, ButtonProps, Span } from '@chakra-ui/react'
+import { DEFAULT_LOCALE } from '@config/constants'
 import { useTranslation } from '@utils/i18n/useTranslation'
 import NextLink from 'next/link'
 import { forwardRef } from 'react'
@@ -20,7 +21,7 @@ export const Logo = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
       asChild
       {...rest}
     >
-      <NextLink href={`/${locale}`}>
+      <NextLink href={`/${locale === DEFAULT_LOCALE ? '' : locale}`}>
         <ImageBox
           src={'/images/logo.webp'}
           alt={'Logo'}

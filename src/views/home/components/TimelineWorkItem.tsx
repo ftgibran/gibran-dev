@@ -9,13 +9,16 @@ import {
   Stack,
   StackProps,
 } from '@chakra-ui/react'
-import { forwardRef } from 'react'
+import { markdownToProps } from '@utils/common/markdownToHtml'
+import { useViewportYProgress } from '@utils/hooks/dom/useViewportYProgress'
+import { forwardRef, useState } from 'react'
 import ReactParallaxTilt from 'react-parallax-tilt'
 
 import { ImageBox } from '@/components/misc/ImageBox'
 import { Prose } from '@/components/ui/prose'
 
 export interface TimelineWorkItemProps extends StackProps {
+  inverse?: boolean
   src: string
   srcParallax: string
   alt: string
@@ -29,13 +32,27 @@ export const TimelineWorkItem = forwardRef<
   HTMLDivElement,
   TimelineWorkItemProps
 >((props, ref) => {
-  const { src, srcParallax, alt, title, desc, width, height, ...rest } = props
+  const {
+    inverse,
+    src,
+    srcParallax,
+    alt,
+    title,
+    desc,
+    width,
+    height,
+    ...rest
+  } = props
+
+  const [isHover, setIsHover] = useState(false)
+  const { ref: tiltRef, yProgress } = useViewportYProgress()
 
   return (
     <Stack
       ref={ref}
       gap={0}
       w={{ base: '90%', lg: 'calc(50% + 2rem)' }}
+      alignSelf={inverse ? 'flex-end' : 'flex-start'}
       {...rest}
     >
       <HStack
@@ -43,19 +60,29 @@ export const TimelineWorkItem = forwardRef<
         px={{ base: 0, lg: 6 }}
         mb={{ base: '16%', lg: '16%' }}
         data-content
+        flexDir={inverse ? 'row-reverse' : 'row'}
+        textAlign={inverse ? 'right' : 'left'}
       >
         <Stack flex={1}>
           <AspectRatio
             ratio={width / height}
-            transform={{ base: 'none', lg: 'scale(1.15)' }}
+            transform={{ base: 'none', lg: 'scale(1.3)' }}
           >
             <Box
+              ref={tiltRef}
               overflow={'visible !important'}
               cursor={'pointer'}
               userSelect={'none'}
             >
               <ReactParallaxTilt
                 perspective={1000}
+                tiltReverse={true}
+                tiltAngleYManual={!isHover ? (inverse ? 30 : -30) : undefined}
+                tiltAngleXManual={
+                  !isHover ? (yProgress - 50) * -0.3 : undefined
+                }
+                onEnter={() => setIsHover(true)}
+                onLeave={() => setIsHover(false)}
                 style={{
                   position: 'absolute',
                   inset: 0,
@@ -82,16 +109,6 @@ export const TimelineWorkItem = forwardRef<
                     }
                     objectFit={'contain'}
                   />
-
-                  <Heading
-                    as={'h3'}
-                    size={'h3'}
-                    pos={'absolute'}
-                    bottom={-12}
-                    pointerEvents={'none'}
-                  >
-                    {title}
-                  </Heading>
                 </Center>
               </ReactParallaxTilt>
             </Box>
@@ -119,14 +136,23 @@ export const TimelineWorkItem = forwardRef<
         />
       </HStack>
 
-      <HStack gap={6} data-content>
-        <Prose
-          flex={1}
+      <HStack
+        gap={6}
+        flexDir={inverse ? 'row-reverse' : 'row'}
+        textAlign={inverse ? 'right' : 'left'}
+      >
+        <Stack
+          gap={4}
           p={4}
-          layerStyle={{ base: 'obsidian', lg: 'none' }}
           borderRadius={'l4'}
-          dangerouslySetInnerHTML={{ __html: desc }}
-        />
+          layerStyle={{ base: 'obsidian', lg: 'none' }}
+        >
+          <Heading as={'h3'} size={'h3'} textAlign={'center'}>
+            {title}
+          </Heading>
+
+          <Prose flex={1} {...markdownToProps(desc)} />
+        </Stack>
 
         <Box
           float={'left'}

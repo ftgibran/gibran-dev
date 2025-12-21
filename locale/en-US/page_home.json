@@ -1,81 +1,107 @@
 {
   "main": {
-    "title": "Coding everywhere",
-    "body": "Hello, I'm Felipe Gibran.<br />This is my space where I share my work with everyone. Be my guest."
+    "title": "Hello, I’m Felipe Gibran",
+    "body": "Senior Fullstack Engineer with 10+ years of experience building scalable, production-ready web applications."
   },
   "about_me": {
     "title": "Who I am",
-    "body": "I'm a fullstack web software engineer with 5+ years of experience. I've been working with several technologies that brought me the ability to solve problems and develop many types of applications. My responsibility is to show the best solution for clients. As a result, they will have a top quality application with the lowest operating and maintenance costs."
+    "body": "I am a fullstack web software engineer focused on Frontend with over 10 years of experience delivering digital products that balance business goals, user needs, and technical excellence. I work closely with stakeholders to transform ideas into reliable, scalable applications, making informed technical decisions that support growth, performance, and long-term sustainability.\n\nMy approach focuses on building products that are easy to evolve, cost-efficient to operate, and intuitive for users, while maintaining high standards of quality, security, and performance. The result is software that not only works well, but also creates real value for the business behind it."
   },
   "feature": {
-    "title": "What I can bring for your application",
+    "title": "What I can bring to your application",
     "items": {
       "technology": {
-        "title": "Ultimate Technology Tools",
-        "desc": "Your application will be up to date with the best technologies and services available today."
+        "title": "Cutting-edge Technology Stack",
+        "desc": "Your application will stay up to date by leveraging modern, battle-tested technologies and services that are widely adopted in the industry."
       },
       "code": {
-        "title": "Clean & Structured code",
-        "desc": "An organized code base is better for maintenance and third-party implementations."
+        "title": "Clean & Well-Structured Code",
+        "desc": "A well-organized codebase improves maintainability, scalability, and integration with third-party services, reducing long-term technical debt."
       },
       "automation": {
-        "title": "Automation and Customization",
-        "desc": "The sky is the limit. Determine how automated and customizable your application is, based on your budget."
+        "title": "Automation & Customization",
+        "desc": "From simple workflows to complex automation, your application can be tailored to your needs and budget, with flexible and scalable solutions."
       },
       "security": {
-        "title": "Security",
-        "desc": "Safety above all. All security standards will be applied to your application."
+        "title": "Security-First Approach",
+        "desc": "Security is treated as a core requirement. Best practices and industry standards are applied to protect data, users, and infrastructure."
       },
       "responsiveness": {
-        "title": "Multi-platform (responsiveness)",
-        "desc": "80% of users prefer to browse the web on smartphones rather than computers."
+        "title": "Multi-platform & Responsive Design",
+        "desc": "Applications are built to perform seamlessly across devices, ensuring an optimal experience on mobile, tablet and desktop."
       },
       "ux": {
-        "title": "Highest User Experience (UX)",
-        "desc": "The best experience that users can ever have. Engaged users mean a better return rate."
+        "title": "High-Quality User Experience (UX)",
+        "desc": "Thoughtful design and interaction patterns create intuitive, engaging experiences that increase user satisfaction and retention."
       },
       "fastness": {
-        "title": "Fastness",
-        "desc": "Time is money. Good performance is paramount to keep the users active."
+        "title": "Performance & Speed",
+        "desc": "Fast load times and responsive interactions are a priority, ensuring users stay engaged and your application feels smooth and reliable."
       },
       "seo": {
-        "title": "SEO patterns",
-        "desc": "Search Engine Optimization (SEO) makes your application easy to be found by new users."
+        "title": "SEO-Driven Architecture",
+        "desc": "Search-engine-friendly patterns help your application be easily discovered, improving visibility and reach from day one."
       }
     }
   },
   "timeline": {
     "title": "Timeline of my relevant works",
     "items": {
+      "design-system": {
+        "title": "Design System Library - Version 2",
+        "desc": "**Design System Library — Version 2** is a more advanced and refined evolution of the original Illuvium web design system.\nThis version expanded and matured the foundations established in Version 1, introducing a richer component set, improved theming, and stronger consistency across products.\nThe system was fully integrated with **Chakra UI v3**, leveraging its modern styling architecture to enhance scalability, maintainability, and developer experience while preserving a distinct visual identity for Illuvium’s web ecosystem.\n\n**Role:** Frontend Developer\n**Year:** 2025\n"
+      },
+      "illuvium-portal": {
+        "title": "Illuvium Portal News",
+        "desc": "**Illuvium Portal News** is the official web news platform for the Illuvium ecosystem, designed to centralize announcements, updates, and editorial content.\nThe project focuses on performance, SEO, and content scalability, delivering a polished reading experience while supporting a high-volume publishing workflow and seamless integration with Illuvium’s broader web presence.\nIt was built using **Payload CMS**, a headless, code-first content management framework where content models, access control, and business logic are defined directly in code, enabling high flexibility, strong typing, and deep customization while exposing content through APIs for modern web applications.\n\n**Role:** Frontend Developer\n**Year:** 2025\n"
+      },
+      "overworld": {
+        "title": "Illuvium Overworld Web",
+        "desc": "**Illuvium Overworld Web** is a web experience designed to simulate the hunting of monsters (Illuvials) within the Illuvium universe.\nThe application reproduces the core gameplay loop where a drone captures discovered Illuvials and delivers them as NFTs, combining interactive mechanics, real-time feedback, and tight integration with the blockchain-backed asset system.\n\n**Role:** Frontend Developer\n**Year:** 2024\n"
+      },
+      "illuvidex": {
+        "title": "IlluviDex Marketplace",
+        "desc": "**IlluviDex Marketplace** is a web-based marketplace that enables a free and open market for Illuvium game NFTs.\nThe platform connects in-game assets to the web, allowing players to browse, trade, and interact with NFTs in a decentralized marketplace environment, with a strong focus on usability, performance, and seamless wallet integration.\n\n**Role:** Frontend Developer\n**Year:** 2024\n"
+      },
+      "account-web": {
+        "title": "Illuvium Login System Library - Version 1",
+        "desc": "**Illuvium Login System Library** is a core authentication library responsible for managing Illuvium’s login flows across its web ecosystem.\nThe library supports multiple authentication methods, including traditional email and password as well as blockchain-based login via cryptocurrency wallets such as MetaMask, providing a secure, flexible, and unified authentication experience.\n\n**Role:** Frontend Developer\n**Year:** 2023\n"
+      },
+      "load-d1sk": {
+        "title": "Illuvium Beyond D1SK Web",
+        "desc": "**Illuvium Beyond D1SK Web** is a mini-application within the Illuvium ecosystem designed for opening purchased Disks that contain collectible card NFTs.\nThe app provides an interactive and engaging experience where players reveal NFT assets that can be used both in-game and across Illuvium web platforms, emphasizing smooth animations, responsiveness, and seamless integration with the broader ecosystem.\n\n**Role:** Frontend Developer\n**Year:** 2023\n"
+      },
+      "design-legacy": {
+        "title": "Illuvium Design System Library - Version 1",
+        "desc": "**Illuvium Design System Library** is the foundational design system created for Illuvium’s web products.\nThe project began with a comprehensive mapping of existing design assets and content produced by the Illuvium design team, followed by the organization, standardization, and formalization of these elements into a cohesive system.\nBuilt from the ground up, the design system established a clear visual language and component structure, ensuring consistency, scalability, and a distinct identity for the web ecosystem.\n\n**Role:** Frontend Developer\n**Year:** 2022\n"
+      },
+      "staking-app": {
+        "title": "Illuvium Staking App - Version 2",
+        "desc": "**Illuvium Staking App** is a redesigned and expanded staking platform built to support Illuvium’s evolving tokenomics and user base.\nThe application focuses on clarity, performance, and scalability, providing users with a streamlined experience to stake assets, track rewards, and interact confidently with on-chain data through a polished and responsive interface.\n\n**Role:** Frontend Developer\n**Year:** 2022\n"
+      },
       "ndapp": {
-        "url": "https://ndapp.org",
         "title": "NDapp",
-        "desc": "<i>Get news, information, and data on all of the latest decentralized applications built using the Neo blockchain.</i> <p>I worked as: Desenvolvedor Fullstack</p> <p>Year: 2021</p>"
+        "desc": "**NDapp** is an information platform focused on aggregating news, insights, and data about decentralized applications built on the Neo blockchain.\nThe project provides a centralized hub for discovering and understanding the latest developments in the Neo ecosystem, emphasizing clarity, accessibility, and up-to-date technical information.\n\n**Role:** Fullstack Developer\n**Year:** 2021\n"
       },
       "wow": {
-        "url": "https://wowtalents.com.br",
         "title": "WOW Talent",
-        "desc": "<i>Press Play and meet WOW Ambassadors. Even though they are young, each one of them has been treading their own path of professional success, with experiences and achievements that are a reference for the Talents who are starting the same journey. Meet all our ambassadors. Be part of it!</i> <p>I worked as: Fullstack Developer</p> <p>Year: 2021</p>"
+        "desc": "**WOW Talent** is a digital platform that showcases WOW Ambassadors—young professionals who have already built impactful careers and serve as references for emerging talent.\nThe experience highlights personal journeys, achievements, and professional insights, encouraging new talents to learn, connect, and become part of a growing community.\n\n**Role:** Fullstack Developer\n**Year:** 2021\n"
       },
       "apptite": {
-        "url": "https://apptite.com",
         "title": "Apptite Web",
-        "desc": "<i>Apptite is the first delivery that connects independent chefs to customers looking for handmade meals! Order your lunch box in São Paulo!</i> <p>I worked as: Frontend Developer</p> <p>Year: 2020</p>"
+        "desc": "**Apptite Web** is a food delivery platform that connects independent chefs with customers seeking handcrafted, homemade meals.\nThe web application enables users to discover chefs, explore menus, and order lunch boxes in São Paulo, focusing on a seamless ordering experience and clear presentation of culinary offerings.\n\n**Role:** Frontend Developer\n**Year:** 2020\n"
       },
       "sharity": {
-        "url": "https://sharity.com.br",
         "title": "Sharity",
-        "desc": "<i>Sharity is the easiest and most efficient online crowdfunding platform for you to create campaigns and raise money for the causes and people you care about. Enter and discover it!</i>  <p>I worked as: Fullstack Developer</p> <p>Year: 2019</p>"
+        "desc": "**Sharity** is an online crowdfunding platform designed to make creating campaigns and raising funds for meaningful causes simple, fast, and accessible.\nThe platform focuses on usability, transparency, and efficient donation flows, enabling individuals and organizations to connect with supporters and mobilize resources for the causes and people they care about.\n\n**Role:** Fullstack Developer\n**Year:** 2019\n"
       },
       "itrack": {
-        "url": "https://itrackbrasil.com.br",
         "title": "iTrack",
-        "desc": "<i>Monitoring, verification and management of deliveries. Full tracking to the last mile in the palm of your hand! Click and learn more.</i>  <p>I worked as: Fullstack Developer</p> <p>Year: 2018</p>"
+        "desc": "**iTrack** is a delivery monitoring, verification, and management platform designed to provide full end-to-end visibility, from dispatch to last-mile delivery, all in the palm of your hand.\nThe system focuses on real-time tracking, operational transparency, and efficient logistics management, enabling better decision-making and improved delivery performance.\n\n**Role:** Fullstack Developer\n**Year:** 2018\n"
       },
       "illsim": {
-        "url": "https://illsim.gibran.dev",
         "title": "Illness Simulator",
-        "desc": "<i>Welcome to Illsim! This is a college project developed in 2017 that studies the behavior of a virus spreading around a population. This study explores the best vaccination strategies as the virus spreads.</i>  <p>I worked as: Frontend Developer</p> <p>Year: 2017</p>"
+        "desc": "**Illness Simulator (Illsim)** is an academic project developed in 2017 focused on modeling and analyzing the spread of a virus within a population.\nThe project simulates infection dynamics over time and evaluates different vaccination strategies to understand their effectiveness in containing outbreaks and reducing overall impact.\nThe study emphasizes data-driven experimentation, allowing scenarios to be adjusted to observe how variables such as infection rate, population size, and vaccination coverage influence the spread of the disease.\n\n**Role:** Frontend Developer\n**Year:** 2017\n"
       }
     }
   },

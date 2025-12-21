@@ -1,81 +1,107 @@
 {
   "main": {
-    "title": "Codando em todos os lugares",
-    "body": "Olá, meu nome Felipe Gibran.<br />Este é meu espaço onde compartilho meu trabalho à todos. Seja meu convidado."
+    "title": "Olá, eu sou Felipe Gibran",
+    "body": "Engenheiro de Software Fullstack Sênior com mais de 10 anos de experiência na construção de aplicações web escaláveis e prontas para produção."
   },
   "about_me": {
-    "title": "Quem sou eu",
-    "body": "Sou um engenheiro de software web fullstack com mais de 5 anos de experiência. Tenho trabalhado com diversas tecnologias que me trouxeram a capacidade de solucionar problemas e desenvolver diversos tipos de aplicações. Minha responsabilidade é apresentar a melhor solução para os clientes. Dessa forma, eles terão uma aplicação de alta qualidade e com custos de operação e manutenção mais baixos."
+    "title": "Quem eu sou",
+    "body": "Sou um engenheiro de software web fullstack focado em Frontend com mais de 10 anos de experiência na entrega de produtos digitais que equilibram objetivos de negócio, necessidades dos usuários e excelência técnica. Trabalho em estreita colaboração com stakeholders para transformar ideias em aplicações confiáveis e escaláveis, tomando decisões técnicas bem fundamentadas que sustentam crescimento, performance e sustentabilidade a longo prazo.\n\nMinha abordagem é focada na construção de produtos fáceis de evoluir, eficientes em custos operacionais e intuitivos para os usuários, mantendo altos padrões de qualidade, segurança e desempenho. O resultado é um software que não apenas funciona bem, mas que gera valor real para o negócio por trás dele."
   },
   "feature": {
-    "title": "O que eu posso trazer para sua aplicação",
+    "title": "O que posso trazer para sua aplicação",
     "items": {
       "technology": {
-        "title": "Tecnologia de ponta",
-        "desc": "Sua aplicação estará em dia com as melhores tecnologias e serviços da atualidade."
+        "title": "Stack de Tecnologia de Ponta",
+        "desc": "Sua aplicação se mantém atualizada ao utilizar tecnologias modernas, consolidadas e amplamente adotadas pela indústria."
       },
       "code": {
-        "title": "Código limpo & estruturado",
-        "desc": "Códigos bem organizados são melhores para manutenção e implementações de terceiros."
+        "title": "Código Limpo e Bem Estruturado",
+        "desc": "Uma base de código bem organizada melhora a manutenibilidade, a escalabilidade e a integração com serviços de terceiros, reduzindo o débito técnico a longo prazo."
       },
       "automation": {
-        "title": "Automação e Personalização",
-        "desc": "O céu é o limite. Determine o quão automátio e personalizável é a sua aplicação, com base no seu budget."
+        "title": "Automação e Customização",
+        "desc": "De fluxos simples a automações complexas, sua aplicação pode ser adaptada às suas necessidades e orçamento, com soluções flexíveis e escaláveis."
       },
       "security": {
-        "title": "Segurança",
-        "desc": "Segurança acima de tudo. Todos os padrões de seguranças serão utilizados em sua aplicação."
+        "title": "Abordagem Orientada à Segurança",
+        "desc": "A segurança é tratada como um requisito fundamental. Boas práticas e padrões da indústria são aplicados para proteger dados, usuários e infraestrutura."
       },
       "responsiveness": {
-        "title": "Multiplataforma (responsividade)",
-        "desc": "80% dos usuários preferem navegar na web em smartphones em vez de computadores."
+        "title": "Multi-plataforma e Design Responsivo",
+        "desc": "As aplicações são construídas para funcionar perfeitamente em diferentes dispositivos, garantindo uma experiência ideal em mobile, tablet e desktop."
       },
       "ux": {
-        "title": "Maior experiência ao usuário (UX)",
-        "desc": "A melhor experiência que os usuários possam ter. Usuários engajados significa uma maior taxa de retorno."
+        "title": "Experiência do Usuário de Alta Qualidade (UX)",
+        "desc": "Design cuidadoso e padrões de interação bem definidos criam experiências intuitivas e envolventes, aumentando a satisfação e retenção dos usuários."
       },
       "fastness": {
-        "title": "Rapidez",
-        "desc": "Tempo é dinheiro. Boa performance é fundamental para manter os usuários ativos."
+        "title": "Performance e Velocidade",
+        "desc": "Tempos de carregamento rápidos e interações responsivas são prioridade, garantindo que os usuários permaneçam engajados e a aplicação seja fluida e confiável."
       },
       "seo": {
-        "title": "Padrões SEO",
-        "desc": "O Search Engine Optimization (SEO) torna sua aplicação mais fácil de ser encontrada por novos usuários."
+        "title": "Arquitetura Orientada a SEO",
+        "desc": "Padrões amigáveis para mecanismos de busca ajudam sua aplicação a ser facilmente encontrada, aumentando a visibilidade e o alcance desde o primeiro dia."
       }
     }
   },
   "timeline": {
     "title": "Linha do tempo dos meus trabalhos relevantes",
     "items": {
+      "design-system": {
+        "title": "Design System Library - Version 2",
+        "desc": "**Design System Library — Version 2** é uma evolução mais avançada e refinada do design system web original do Illuvium.\nEsta versão expandiu e amadureceu as bases estabelecidas na Versão 1, introduzindo um conjunto de componentes mais rico, melhorias no theming e maior consistência entre os produtos.\nO sistema foi totalmente integrado ao **Chakra UI v3**, aproveitando sua arquitetura moderna de estilos para aumentar a escalabilidade, a manutenibilidade e a experiência de desenvolvimento, preservando ao mesmo tempo uma identidade visual distinta para o ecossistema web do Illuvium.\n\n**Role:** Frontend Developer\n**Ano:** 2025\n"
+      },
+      "illuvium-portal": {
+        "title": "Illuvium Portal News",
+        "desc": "**Illuvium Portal News** é a plataforma oficial de notícias do ecossistema Illuvium, criada para centralizar anúncios, atualizações e conteúdo editorial.\nO projeto foca em performance, SEO e escalabilidade de conteúdo, entregando uma experiência de leitura refinada enquanto suporta um fluxo de publicação de alto volume e integração fluida com a presença web mais ampla do Illuvium.\nFoi construído utilizando **Payload CMS**, um framework de gerenciamento de conteúdo headless e code-first, no qual modelos de conteúdo, controle de acesso e regras de negócio são definidos diretamente em código, permitindo alta flexibilidade, tipagem forte e profunda customização, ao mesmo tempo em que expõe conteúdo via APIs para aplicações web modernas.\n\n**Role:** Frontend Developer\n**Ano:** 2025\n"
+      },
+      "overworld": {
+        "title": "Illuvium Overworld Web",
+        "desc": "**Illuvium Overworld Web** é uma experiência web projetada para simular a caça de monstros (Illuvials) dentro do universo Illuvium.\nA aplicação reproduz o loop principal de gameplay, no qual um drone captura Illuvials encontrados e os entrega como NFTs, combinando mecânicas interativas, feedback em tempo real e integração estreita com o sistema de ativos baseado em blockchain.\n\n**Role:** Frontend Developer\n**Ano:** 2024\n"
+      },
+      "illuvidex": {
+        "title": "IlluviDex Marketplace",
+        "desc": "**IlluviDex Marketplace** é um marketplace web que possibilita um mercado livre e aberto para os NFTs do jogo Illuvium.\nA plataforma conecta ativos do jogo à web, permitindo que jogadores naveguem, negociem e interajam com NFTs em um ambiente de marketplace descentralizado, com forte foco em usabilidade, performance e integração fluida com carteiras digitais.\n\n**Role:** Frontend Developer\n**Ano:** 2024\n"
+      },
+      "account-web": {
+        "title": "Illuvium Login System Library - Version 1",
+        "desc": "**Illuvium Login System Library** é uma biblioteca central de autenticação responsável por gerenciar os fluxos de login em todo o ecossistema web do Illuvium.\nA biblioteca suporta múltiplos métodos de autenticação, incluindo login tradicional com email e senha, além de login via blockchain utilizando carteiras de criptomoedas como a MetaMask, oferecendo uma experiência de autenticação segura, flexível e unificada.\n\n**Role:** Frontend Developer\n**Ano:** 2023\n"
+      },
+      "load-d1sk": {
+        "title": "Illuvium Beyond D1SK Web",
+        "desc": "**Illuvium Beyond D1SK Web** é uma mini-aplicação dentro do ecossistema Illuvium criada para a abertura de Disks comprados que contêm cards colecionáveis em formato de NFT.\nO app oferece uma experiência interativa e envolvente, na qual os jogadores revelam ativos NFT que podem ser utilizados tanto no jogo quanto nas plataformas web do Illuvium, com ênfase em animações suaves, responsividade e integração perfeita com o ecossistema como um todo.\n\n**Role:** Frontend Developer\n**Ano:** 2023\n"
+      },
+      "design-legacy": {
+        "title": "Illuvium Design System Library - Version 1",
+        "desc": "**Illuvium Design System Library** é o design system fundamental criado para os produtos web do Illuvium.\nO projeto começou com um mapeamento abrangente dos assets de design e conteúdos existentes produzidos pelo time de design do Illuvium, seguido pela organização, padronização e formalização desses elementos em um sistema coeso.\nConstruído do zero, o design system estabeleceu uma linguagem visual clara e uma estrutura de componentes consistente, garantindo escalabilidade, uniformidade e uma identidade própria para o ecossistema web.\n\n**Role:** Frontend Developer\n**Ano:** 2022\n"
+      },
+      "staking-app": {
+        "title": "Illuvium Staking App - Version 2",
+        "desc": "**Illuvium Staking App** é uma plataforma de staking redesenhada e expandida, desenvolvida para suportar a evolução da tokenomics e da base de usuários do Illuvium.\nA aplicação foca em clareza, performance e escalabilidade, oferecendo aos usuários uma experiência simplificada para fazer staking de ativos, acompanhar recompensas e interagir com dados on-chain por meio de uma interface polida e responsiva.\n\n**Role:** Frontend Developer\n**Ano:** 2022\n"
+      },
       "ndapp": {
-        "url": "https://ndapp.org",
         "title": "NDapp",
-        "desc": "<i>Notícias, informações, e dados de todas as recentes aplicações decentralizadas da rede blockchain Neo.</i> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2021</p>"
+        "desc": "**NDapp** é uma plataforma de informações focada em agregar notícias, insights e dados sobre aplicações descentralizadas construídas na blockchain Neo.\nO projeto oferece um hub centralizado para descoberta e entendimento dos desenvolvimentos mais recentes do ecossistema Neo, com ênfase em clareza, acessibilidade e informações técnicas sempre atualizadas.\n\n**Role:** Fullstack Developer\n**Ano:** 2021\n"
       },
       "wow": {
-        "url": "https://wowtalents.com.br",
         "title": "WOW Talent",
-        "desc": "<i>Onde os talentos crescem e aparecem. Aperte o Play e conheça a WOW Embaixadores. Mesmo tão jovens, cada um deles vem trilhando sua própria trajetória de sucesso profissional, com experiências e conquistas que são referência para os Talentos que estão iniciando a mesma jornada. Conheça todos nossos embaixadores. Faça parte!</i> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2021</p>"
+        "desc": "**WOW Talent** é uma plataforma digital que destaca os WOW Ambassadors — jovens profissionais que já construíram carreiras impactantes e servem como referência para novos talentos.\nA experiência evidencia jornadas pessoais, conquistas e insights profissionais, incentivando talentos em início de carreira a aprender, se conectar e fazer parte de uma comunidade em crescimento.\n\n**Role:** Fullstack Developer\n**Ano:** 2021\n"
       },
       "apptite": {
-        "url": "https://apptite.com",
         "title": "Apptite Web",
-        "desc": "<i>O Apptite é o primeiro delivery que conecta chefs independentes a clientes que buscam refeições feitas artesanalmente! Peça já sua marmita em São Paulo!</i> <p>Trabalhei como: Desenvolvedor Frontend</p> <p>Ano: 2020</p>"
+        "desc": "**Apptite Web** é uma plataforma de delivery que conecta chefs independentes a clientes em busca de refeições artesanais e caseiras.\nA aplicação web permite que usuários descubram chefs, explorem cardápios e façam pedidos de lunch boxes em São Paulo, com foco em uma experiência de compra fluida e apresentação clara das opções gastronômicas.\n\n**Role:** Frontend Developer\n**Ano:** 2020\n"
       },
       "sharity": {
-        "url": "https://sharity.com.br",
         "title": "Sharity",
-        "desc": "<i>A Sharity é a plataforma de crowdfunding/vaquinha online mais fácil e eficiente para você criar campanhas e arrecadar dinheiro para as causas e pessoas que você gosta. Acesse e conheça!</i> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2019</p>"
+        "desc": "**Sharity** é uma plataforma online de crowdfunding criada para tornar simples, rápida e acessível a criação de campanhas e a arrecadação de fundos para causas relevantes.\nA plataforma prioriza usabilidade, transparência e fluxos eficientes de doação, permitindo que indivíduos e organizações se conectem com apoiadores e mobilizem recursos para as causas e pessoas que consideram importantes.\n\n**Role:** Fullstack Developer\n**Ano:** 2019\n"
       },
       "itrack": {
-        "url": "https://itrackbrasil.com.br",
         "title": "iTrack",
-        "desc": "<i>Monitoramento, comprovação e gestão de entregas. Rastreamento total até a última milha na palma da sua mão! Clique e saiba mais.</i> <p>Trabalhei como: Desenvolvedor Fullstack</p> <p>Ano: 2018</p>"
+        "desc": "**iTrack** é uma plataforma de monitoramento, verificação e gestão de entregas, projetada para oferecer visibilidade completa de ponta a ponta, do despacho à última milha, diretamente na palma da mão.\nO sistema foca em rastreamento em tempo real, transparência operacional e gestão logística eficiente, permitindo melhores decisões e maior desempenho nas entregas.\n\n**Role:** Fullstack Developer\n**Ano:** 2018\n"
       },
       "illsim": {
-        "url": "https://illsim.gibran.dev",
         "title": "Illness Simulator",
-        "desc": "<i>Bem vindo ao Illsim! Este é um projeto de faculdade elaborado em 2017 que estuda o comportamento da propagação de um vírus em torno de uma população. Este estudo consiste em explorar as melhores estratégias de vacinação conforme o vírus se espalha.</i> <p>Trabalhei como: Desenvolvedor Frontend</p> <p>Ano: 2017</p>"
+        "desc": "**Illness Simulator (Illsim)** é um projeto acadêmico desenvolvido em 2017 com foco na modelagem e análise da propagação de um vírus em uma população.\nO projeto simula dinâmicas de infecção ao longo do tempo e avalia diferentes estratégias de vacinação para compreender sua eficácia na contenção de surtos e na redução do impacto geral.\nO estudo enfatiza experimentação orientada por dados, permitindo o ajuste de cenários para observar como variáveis como taxa de infecção, tamanho da população e cobertura vacinal influenciam a propagação da doença.\n\n**Role:** Frontend Developer\n**Ano:** 2017\n"
       }
     }
   },
