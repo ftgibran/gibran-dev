@@ -1,11 +1,8 @@
-import DOMPurify from 'dompurify'
 import { marked } from 'marked'
 import { DOMAttributes } from 'react'
 
 export function markdownToHtml(source: string) {
-  const htmlString = marked.parse(source) as string
-
-  return DOMPurify.sanitize(htmlString)
+  return marked.parse(source) as string
 }
 
 export function markdownToProps(source: string) {
