@@ -39,9 +39,10 @@ export const HeroIntro = forwardRef<HTMLDivElement, StackProps>(
               rounded={'full'}
               src={'/images/home/avatar.webp'}
               alt={'Felipe Gibran'}
-              width={'850'}
-              height={'850'}
+              width={'512'}
+              height={'512'}
               loading={'eager'}
+              preload={true}
             />
           </Box>
         </ReactParallaxTilt>

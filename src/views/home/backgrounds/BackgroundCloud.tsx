@@ -13,6 +13,7 @@ export const BackgroundCloud: FC<BoxProps> = (props) => {
       <ReactPlayerBox
         url={'/videos/timeline.webm'}
         playing={isInViewport}
+        playsinline={true}
         filter={'hue-rotate(70deg)'}
         WebkitMaskImage={
           'linear-gradient(to bottom, transparent, black, black, transparent)'

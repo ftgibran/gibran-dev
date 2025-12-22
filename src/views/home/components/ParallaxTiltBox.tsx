@@ -11,7 +11,7 @@ import ReactParallaxTilt from 'react-parallax-tilt'
 
 import { ImageBox } from '@/components/misc/ImageBox'
 
-export interface BoxParallaxTiltProps extends AspectRatioProps {
+export interface ParallaxTiltBoxProps extends AspectRatioProps {
   hoverable?: boolean
   inverse?: boolean
   src: string
@@ -21,7 +21,7 @@ export interface BoxParallaxTiltProps extends AspectRatioProps {
   backgroundProps?: BoxProps
 }
 
-export const BoxParallaxTilt: FC<BoxParallaxTiltProps> = (props) => {
+export const ParallaxTiltBox: FC<ParallaxTiltBoxProps> = (props) => {
   const {
     hoverable,
     inverse,
@@ -94,4 +94,4 @@ export const BoxParallaxTilt: FC<BoxParallaxTiltProps> = (props) => {
   )
 }
 
-BoxParallaxTilt.displayName = 'BoxParallaxTilt'
+ParallaxTiltBox.displayName = 'ParallaxTiltBox'

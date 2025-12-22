@@ -5,7 +5,7 @@ import { forwardRef } from 'react'
 
 import { Section, SectionProps } from '@/components/layout/foundation/Section'
 import { Prose } from '@/components/ui/prose'
-import { BoxParallaxTilt } from '@/views/home/components/BoxParallaxTilt'
+import { ParallaxTiltBox } from '@/views/home/components/ParallaxTiltBox'
 
 export const SectionCareer = forwardRef<HTMLDivElement, SectionProps>(
   (props, ref) => {
@@ -22,7 +22,7 @@ export const SectionCareer = forwardRef<HTMLDivElement, SectionProps>(
               align={'center'}
               gap={12}
             >
-              <BoxParallaxTilt
+              <ParallaxTiltBox
                 w={'full'}
                 flex={1}
                 ratio={1}
@@ -54,7 +54,7 @@ export const SectionCareer = forwardRef<HTMLDivElement, SectionProps>(
             >
               <Prose flex={1} {...markdownToProps(t('simpli.desc'))} />
 
-              <BoxParallaxTilt
+              <ParallaxTiltBox
                 w={'full'}
                 flex={1}
                 ratio={1}

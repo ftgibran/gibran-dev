@@ -23,6 +23,7 @@ export const BackgroundHero = forwardRef<HTMLDivElement, BoxProps>(
           inset={0}
           url={'/videos/hero.webm'}
           playing={isInViewport}
+          playsinline={true}
           WebkitMaskImage={'linear-gradient(to bottom, black 50%, transparent)'}
         />
 

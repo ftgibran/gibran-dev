@@ -11,7 +11,7 @@ import { markdownToProps } from '@utils/common/markdownToHtml'
 import { forwardRef } from 'react'
 
 import { Prose } from '@/components/ui/prose'
-import { BoxParallaxTilt } from '@/views/home/components/BoxParallaxTilt'
+import { ParallaxTiltBox } from '@/views/home/components/ParallaxTiltBox'
 
 export interface TimelineWorkItemProps extends StackProps {
   inverse?: boolean
@@ -56,7 +56,7 @@ export const TimelineWorkItem = forwardRef<
         flexDir={inverse ? 'row-reverse' : 'row'}
         textAlign={inverse ? 'right' : 'left'}
       >
-        <BoxParallaxTilt
+        <ParallaxTiltBox
           flex={1}
           ratio={width / height}
           transform={{ base: 'none', lg: 'scale(1.3)' }}

@@ -1,6 +1,5 @@
 'use client'
-import { DEFAULT_LOCALE, IS_DEVELOPMENT } from '@config/constants'
-import { Lazy } from '@utils/components/Lazy'
+import { DEFAULT_LOCALE } from '@config/constants'
 import { getLocale } from '@utils/i18n/getLocale'
 import { FC, PropsWithChildren } from 'react'
 import { type IntlConfig, IntlProvider as _IntlProvider } from 'react-intl'
@@ -11,24 +10,22 @@ export const IntlProvider: FC<IntlProviderProps> = (props) => {
   const { locale, messages, ...rest } = props
 
   return (
-    <Lazy isDisabled={!IS_DEVELOPMENT}>
-      <_IntlProvider
-        key={locale}
-        locale={getLocale(locale)}
-        defaultLocale={DEFAULT_LOCALE}
-        messages={messages}
-        onError={(err) => {
-          if (err.code === 'MISSING_TRANSLATION') {
-            console.warn('Missing translation:', err.message)
+    <_IntlProvider
+      key={locale}
+      locale={getLocale(locale)}
+      defaultLocale={DEFAULT_LOCALE}
+      messages={messages}
+      onError={(err) => {
+        if (err.code === 'MISSING_TRANSLATION') {
+          console.warn('Missing translation:', err.message)
 
-            return
-          }
+          return
+        }
 
-          console.error(err)
-        }}
-        {...rest}
-      />
-    </Lazy>
+        console.error(err)
+      }}
+      {...rest}
+    />
   )
 }
 

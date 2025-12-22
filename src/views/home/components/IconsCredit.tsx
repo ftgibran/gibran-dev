@@ -1,11 +1,11 @@
-import { BoxProps, Heading, Link } from '@chakra-ui/react'
+import { BoxProps, Link, Span } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import { forwardRef } from 'react'
 
 export const IconsCredit = forwardRef<HTMLDivElement, BoxProps>(
   (props, ref) => {
     return (
-      <Heading ref={ref} as={'h5'} size={'h5'} {...props}>
+      <Span ref={ref} textStyle={'label'} {...props}>
         <>Icons made by </>
 
         <Link asChild>
@@ -21,7 +21,7 @@ export const IconsCredit = forwardRef<HTMLDivElement, BoxProps>(
             flaticon.com
           </NextLink>
         </Link>
-      </Heading>
+      </Span>
     )
   },
 )
