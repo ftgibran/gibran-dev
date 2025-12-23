@@ -8,6 +8,7 @@ import {
   HStack,
   IconButton,
   Portal,
+  ScrollArea,
 } from '@chakra-ui/react'
 import { NAVBAR_HEIGHT } from '@config/constants'
 import { useOnWindowScroll } from '@utils/hooks/dom/useOnScroll'
@@ -51,10 +52,27 @@ export const Navbar = forwardRef<HTMLElement, BoxProps>((props, ref) => {
             wrap={'nowrap'}
             gap={4}
           >
-            <HStack gap={8}>
+            <HStack gap={2} flex={1} minW={0}>
               <Logo />
 
-              <NavbarItems hideBelow={'lg'} />
+              <ScrollArea.Root flex={1} size={'xs'} hideBelow={'lg'}>
+                <ScrollArea.Viewport
+                  px={8}
+                  css={{
+                    '--scroll-shadow-size': '2rem',
+                    maskImage:
+                      'linear-gradient(to right, #000, #000, transparent 0, #000 var(--scroll-shadow-size), #000 calc(100% - var(--scroll-shadow-size)), transparent)',
+                  }}
+                >
+                  <ScrollArea.Content py={4}>
+                    <NavbarItems />
+                  </ScrollArea.Content>
+                </ScrollArea.Viewport>
+
+                <ScrollArea.Scrollbar orientation={'horizontal'} />
+
+                <ScrollArea.Corner />
+              </ScrollArea.Root>
             </HStack>
 
             <HStack gap={4}>

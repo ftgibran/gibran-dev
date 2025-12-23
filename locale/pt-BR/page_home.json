@@ -19,44 +19,49 @@
     "body": "Sou um engenheiro de software web fullstack focado em Frontend com mais de 10 anos de experiência na entrega de produtos digitais que equilibram objetivos de negócio, necessidades dos usuários e excelência técnica. Trabalho em estreita colaboração com stakeholders para transformar ideias em aplicações confiáveis e escaláveis, tomando decisões técnicas bem fundamentadas que sustentam crescimento, performance e sustentabilidade a longo prazo.\n\nMinha abordagem é focada na construção de produtos fáceis de evoluir, eficientes em custos operacionais e intuitivos para os usuários, mantendo altos padrões de qualidade, segurança e desempenho. O resultado é um software que não apenas funciona bem, mas que gera valor real para o negócio por trás dele."
   },
   "feature": {
-    "title": "O que posso trazer para sua aplicação",
+    "title": "O que entrego para sua aplicação",
     "items": {
       "technology": {
-        "title": "Stack de Tecnologia de Ponta",
-        "desc": "Sua aplicação se mantém atualizada ao utilizar tecnologias modernas, consolidadas e amplamente adotadas pela indústria."
+        "title": "Stack Tecnológica Moderna",
+        "desc": "Construída com tecnologias modernas, consolidadas e amplamente adotadas pela indústria."
       },
       "code": {
-        "title": "Código Limpo e Bem Estruturado",
-        "desc": "Uma base de código bem organizada melhora a manutenibilidade, a escalabilidade e a integração com serviços de terceiros, reduzindo o débito técnico a longo prazo."
+        "title": "Código Limpo e Estruturado",
+        "desc": "Código escalável e fácil de evoluir, reduzindo o débito técnico ao longo do tempo."
       },
       "automation": {
-        "title": "Automação e Customização",
-        "desc": "De fluxos simples a automações complexas, sua aplicação pode ser adaptada às suas necessidades e orçamento, com soluções flexíveis e escaláveis."
+        "title": "Automação e Flexibilidade",
+        "desc": "Soluções customizadas que escalam conforme suas necessidades e orçamento."
       },
       "security": {
-        "title": "Abordagem Orientada à Segurança",
-        "desc": "A segurança é tratada como um requisito fundamental. Boas práticas e padrões da indústria são aplicados para proteger dados, usuários e infraestrutura."
+        "title": "Segurança por Design",
+        "desc": "Boas práticas aplicadas para proteger dados, usuários e infraestrutura."
       },
       "responsiveness": {
-        "title": "Multi-plataforma e Design Responsivo",
-        "desc": "As aplicações são construídas para funcionar perfeitamente em diferentes dispositivos, garantindo uma experiência ideal em mobile, tablet e desktop."
+        "title": "Responsivo",
+        "desc": "Experiência consistente em mobile, tablet e desktop."
       },
       "ux": {
-        "title": "Experiência do Usuário de Alta Qualidade (UX)",
-        "desc": "Design cuidadoso e padrões de interação bem definidos criam experiências intuitivas e envolventes, aumentando a satisfação e retenção dos usuários."
+        "title": "Forte Foco em UX",
+        "desc": "Interfaces intuitivas que impulsionam engajamento e retenção."
       },
       "fastness": {
-        "title": "Performance e Velocidade",
-        "desc": "Tempos de carregamento rápidos e interações responsivas são prioridade, garantindo que os usuários permaneçam engajados e a aplicação seja fluida e confiável."
+        "title": "Orientado à Performance",
+        "desc": "Carregamento rápido e interações fluidas como padrão."
       },
       "seo": {
-        "title": "Arquitetura Orientada a SEO",
-        "desc": "Padrões amigáveis para mecanismos de busca ajudam sua aplicação a ser facilmente encontrada, aumentando a visibilidade e o alcance desde o primeiro dia."
+        "title": "Arquitetura Pronta para SEO",
+        "desc": "Construída para ser facilmente encontrada e indexada desde o primeiro dia."
       }
     }
   },
+  "ai": {
+    "title": "IA como Ferramenta, Não como Atalho",
+    "body": "**IA é uma ferramenta prática** para aumentar a produtividade, melhorar a experiência do usuário e apoiar melhores decisões de produto — **não um substituto para uma engenharia sólida**.\n\nUtilizo IA para **acelerar fluxos de desenvolvimento**, **auxiliar na resolução de problemas** e **explorar funcionalidades de produto** como **busca inteligente**, **personalização** e **automação**. Meu foco é integrar IA de forma **escalável**, **consciente de custos** e **amigável ao usuário**, sempre considerando trade-offs como **performance**, **confiabilidade** e **responsabilidade no uso de dados**."
+  },
   "timeline": {
     "title": "Linha do tempo dos meus trabalhos relevantes",
+    "demo_cta": "Visualizar",
     "items": {
       "design-system": {
         "title": "Design System Library - Version 2",

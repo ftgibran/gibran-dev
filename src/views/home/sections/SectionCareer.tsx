@@ -20,12 +20,12 @@ export const SectionCareer = forwardRef<HTMLDivElement, SectionProps>(
             <Stack
               direction={{ base: 'column', lg: 'row' }}
               align={'center'}
-              gap={12}
+              gap={4}
             >
               <ParallaxTiltBox
                 w={'full'}
                 flex={1}
-                ratio={1}
+                ratio={4 / 3}
                 src={'/images/companies/illuvium_hero.webp'}
                 srcParallax={'/images/companies/illuvium_logo.svg'}
                 alt={'Illuvium'}
@@ -50,14 +50,18 @@ export const SectionCareer = forwardRef<HTMLDivElement, SectionProps>(
             <Stack
               direction={{ base: 'column', lg: 'row' }}
               align={'center'}
-              gap={12}
+              gap={4}
             >
-              <Prose flex={1} {...markdownToProps(t('simpli.desc'))} />
+              <Prose
+                order={{ base: 2, lg: 0 }}
+                flex={1}
+                {...markdownToProps(t('simpli.desc'))}
+              />
 
               <ParallaxTiltBox
                 w={'full'}
                 flex={1}
-                ratio={1}
+                ratio={4 / 3}
                 inverse={true}
                 src={'/images/companies/simpli_hero.webp'}
                 srcParallax={'/images/companies/simpli_logo.svg'}

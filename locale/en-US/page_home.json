@@ -19,44 +19,49 @@
     "body": "I am a fullstack web software engineer focused on Frontend with over 10 years of experience delivering digital products that balance business goals, user needs, and technical excellence. I work closely with stakeholders to transform ideas into reliable, scalable applications, making informed technical decisions that support growth, performance, and long-term sustainability.\n\nMy approach focuses on building products that are easy to evolve, cost-efficient to operate, and intuitive for users, while maintaining high standards of quality, security, and performance. The result is software that not only works well, but also creates real value for the business behind it."
   },
   "feature": {
-    "title": "What I can bring to your application",
+    "title": "What I bring to your application",
     "items": {
       "technology": {
-        "title": "Cutting-edge Technology Stack",
-        "desc": "Your application will stay up to date by leveraging modern, battle-tested technologies and services that are widely adopted in the industry."
+        "title": "Modern Tech Stack",
+        "desc": "Built with proven, modern technologies widely adopted in the industry."
       },
       "code": {
-        "title": "Clean & Well-Structured Code",
-        "desc": "A well-organized codebase improves maintainability, scalability, and integration with third-party services, reducing long-term technical debt."
+        "title": "Clean, Structured Code",
+        "desc": "Maintainable, scalable code that minimizes technical debt."
       },
       "automation": {
-        "title": "Automation & Customization",
-        "desc": "From simple workflows to complex automation, your application can be tailored to your needs and budget, with flexible and scalable solutions."
+        "title": "Automation & Flexibility",
+        "desc": "Custom solutions that scale with your needs and budget."
       },
       "security": {
-        "title": "Security-First Approach",
-        "desc": "Security is treated as a core requirement. Best practices and industry standards are applied to protect data, users, and infrastructure."
+        "title": "Security by Design",
+        "desc": "Best practices applied to protect data, users, and infrastructure."
       },
       "responsiveness": {
-        "title": "Multi-platform & Responsive Design",
-        "desc": "Applications are built to perform seamlessly across devices, ensuring an optimal experience on mobile, tablet and desktop."
+        "title": "Responsive",
+        "desc": "Consistent experience across mobile, tablet, and desktop."
       },
       "ux": {
-        "title": "High-Quality User Experience (UX)",
-        "desc": "Thoughtful design and interaction patterns create intuitive, engaging experiences that increase user satisfaction and retention."
+        "title": "Strong UX Focus",
+        "desc": "Intuitive interfaces that drive engagement and retention."
       },
       "fastness": {
-        "title": "Performance & Speed",
-        "desc": "Fast load times and responsive interactions are a priority, ensuring users stay engaged and your application feels smooth and reliable."
+        "title": "Performance-Driven",
+        "desc": "Fast load times and smooth interactions by default."
       },
       "seo": {
-        "title": "SEO-Driven Architecture",
-        "desc": "Search-engine-friendly patterns help your application be easily discovered, improving visibility and reach from day one."
+        "title": "SEO-Ready Architecture",
+        "desc": "Built to be discoverable and indexable from day one."
       }
     }
   },
+  "ai": {
+    "title": "AI as a Tool, Not a Shortcut",
+    "body": "**AI is a practical tool** to enhance productivity, improve user experiences, and support better product decisions — **not as a replacement for solid engineering**.\n\nI use AI to **speed up development workflows**, **assist with problem-solving**, and **explore product features** such as **smarter search**, **personalization**, and **automation**. I focus on integrating AI in a way that is **scalable**, **cost-aware**, and **user-friendly**, always considering trade-offs like **performance**, **reliability**, and **data responsibility**."
+  },
   "timeline": {
     "title": "Timeline of my relevant works",
+    "demo_cta": "Preview",
     "items": {
       "design-system": {
         "title": "Design System Library - Version 2",

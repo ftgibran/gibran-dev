@@ -23,6 +23,7 @@ export function useTimeline() {
         desc: t('illuvium-portal.desc'),
         width: 2940,
         height: 1844,
+        url: 'https://portal.illuvium.io',
       },
       {
         src: '/images/home/timeline/overworld-bg.webp',
@@ -32,6 +33,7 @@ export function useTimeline() {
         desc: t('overworld.desc'),
         width: 2940,
         height: 1844,
+        videoUrl: '/videos/demo/overworld_demo.webm',
       },
       {
         src: '/images/home/timeline/illuvidex-bg.webp',
@@ -41,6 +43,7 @@ export function useTimeline() {
         desc: t('illuvidex.desc'),
         width: 2940,
         height: 1844,
+        url: 'https://illuvidex.illuvium.io/arena/illuvials',
       },
       {
         src: '/images/home/timeline/account-web-bg.webp',
@@ -131,6 +134,7 @@ export function useTimeline() {
         desc: t('illsim.desc'),
         width: 2000,
         height: 1250,
+        url: 'https://illsim.gibran.dev',
       },
     ],
     [t],

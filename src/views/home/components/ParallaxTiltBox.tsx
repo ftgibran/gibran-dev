@@ -4,6 +4,7 @@ import {
   Box,
   BoxProps,
   Center,
+  useBreakpointValue,
 } from '@chakra-ui/react'
 import { useViewportYProgress } from '@utils/hooks/dom/useViewportYProgress'
 import { FC, useMemo, useState } from 'react'
@@ -40,6 +41,11 @@ export const ParallaxTiltBox: FC<ParallaxTiltBoxProps> = (props) => {
     return hoverable ? _isHover : false
   }, [_isHover, hoverable])
 
+  const tiltAngleYManual = useBreakpointValue({
+    base: inverse ? 15 : -15,
+    lg: !isHover ? (inverse ? 30 : -30) : undefined,
+  })
+
   return (
     <AspectRatio {...rest}>
       <Box
@@ -51,7 +57,7 @@ export const ParallaxTiltBox: FC<ParallaxTiltBoxProps> = (props) => {
         <ReactParallaxTilt
           perspective={1000}
           tiltReverse={true}
-          tiltAngleYManual={!isHover ? (inverse ? 30 : -30) : undefined}
+          tiltAngleYManual={tiltAngleYManual}
           tiltAngleXManual={!isHover ? (yProgress - 50) * -0.3 : undefined}
           onEnter={() => setIsHover(true)}
           onLeave={() => setIsHover(false)}

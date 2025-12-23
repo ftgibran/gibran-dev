@@ -32,7 +32,7 @@ export const SectionHero = forwardRef<HTMLDivElement, SectionProps>(
           </Stack>
         </Container>
 
-        <VStack pos={'absolute'} insetX={0} bottom={2}>
+        <VStack pos={'absolute'} insetX={0} bottom={2} hideBelow={'lg'}>
           <IconButton
             aria-label={'Scroll down'}
             size={'lg'}

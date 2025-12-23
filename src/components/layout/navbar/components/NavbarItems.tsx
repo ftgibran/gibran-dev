@@ -1,4 +1,4 @@
-import { Wrap, WrapItem, WrapProps } from '@chakra-ui/react'
+import { useDrawerContext, Wrap, WrapItem, WrapProps } from '@chakra-ui/react'
 import { useTranslation } from '@utils/i18n/useTranslation'
 import { forwardRef } from 'react'
 
@@ -8,14 +8,25 @@ export const NavbarItems = forwardRef<HTMLDivElement, WrapProps>(
   (props, ref) => {
     const { t } = useTranslation('navbar')
 
+    const { setOpen } = useDrawerContext()
+
     return (
-      <Wrap ref={ref} {...props}>
+      <Wrap
+        ref={ref}
+        flexWrap={'nowrap'}
+        onClick={() => setOpen(false)}
+        {...props}
+      >
         <WrapItem>
           <NavbarAnchor href={'#about'}>{t('about')}</NavbarAnchor>
         </WrapItem>
 
         <WrapItem>
           <NavbarAnchor href={'#feature'}>{t('features')}</NavbarAnchor>
+        </WrapItem>
+
+        <WrapItem>
+          <NavbarAnchor href={'#ai'}>{t('ai')}</NavbarAnchor>
         </WrapItem>
 
         <WrapItem>
