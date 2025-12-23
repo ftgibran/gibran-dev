@@ -78,6 +78,7 @@ export const ButtonDontClick = forwardRef<HTMLDivElement, BoxProps>(
                 width={'256'}
                 height={'256'}
                 loading={'eager'}
+                preload={true}
               />
             </Box>
           )}
