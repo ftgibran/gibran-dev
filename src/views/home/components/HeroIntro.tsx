@@ -43,6 +43,7 @@ export const HeroIntro = forwardRef<HTMLDivElement, StackProps>(
               height={'512'}
               loading={'eager'}
               preload={true}
+              fetchPriority={'high'}
             />
           </Box>
         </ReactParallaxTilt>

@@ -24,7 +24,7 @@ export function useLayout(options: LayoutParams = {}) {
 
   useEffect(() => {
     // @ts-expect-error ignore
-    import('../../../../node_modules/devicon/devicon-base.css')
+    import('devicon/devicon-base.css')
   }, [])
 
   return {
