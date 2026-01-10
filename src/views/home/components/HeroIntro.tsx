@@ -1,11 +1,16 @@
-import { Box, Heading, StackProps, VStack } from '@chakra-ui/react'
+import { Box, Heading, Skeleton, StackProps, VStack } from '@chakra-ui/react'
 import { createGradientBorder } from '@utils/chakra/createGradientBorder'
 import { useTranslation } from '@utils/i18n/useTranslation'
+import dynamic from 'next/dynamic'
 import { forwardRef } from 'react'
-import ReactParallaxTilt from 'react-parallax-tilt'
 
 import { ImageBox } from '@/components/misc/ImageBox'
 import { Prose } from '@/components/ui/prose'
+
+const ReactParallaxTilt = dynamic(() => import('react-parallax-tilt'), {
+  ssr: false,
+  loading: () => <Skeleton rounded={'full'} width={72} height={72} />,
+})
 
 export const HeroIntro = forwardRef<HTMLDivElement, StackProps>(
   (props, ref) => {
@@ -42,8 +47,9 @@ export const HeroIntro = forwardRef<HTMLDivElement, StackProps>(
               width={'512'}
               height={'512'}
               loading={'eager'}
-              preload={true}
+              priority={true}
               fetchPriority={'high'}
+              sizes={'(max-width: 768px) 100vw, 288px'}
             />
           </Box>
         </ReactParallaxTilt>

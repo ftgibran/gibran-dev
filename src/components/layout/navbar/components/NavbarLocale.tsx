@@ -32,6 +32,7 @@ export const NavbarLocale = forwardRef<HTMLButtonElement, ButtonProps>(
                         alt={t(locale)}
                         width={'20'}
                         height={'20'}
+                        sizes={'20px'}
                       />
 
                       <>{t(locale)}</>

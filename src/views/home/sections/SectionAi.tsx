@@ -29,6 +29,7 @@ export const SectionAi = forwardRef<HTMLDivElement, SectionProps>(
                 width={'600'}
                 height={'900'}
                 blendMode={'lighten'}
+                sizes={'(max-width: 768px) 100vw, 320px'}
                 WebkitMaskImage={`
                   radial-gradient(
                   ellipse 120% 120% at center,

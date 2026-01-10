@@ -4,13 +4,21 @@ import {
   Box,
   BoxProps,
   Center,
+  Skeleton,
   useBreakpointValue,
 } from '@chakra-ui/react'
 import { useViewportYProgress } from '@utils/hooks/dom/useViewportYProgress'
+import dynamic from 'next/dynamic'
 import { FC, useMemo, useState } from 'react'
-import ReactParallaxTilt from 'react-parallax-tilt'
 
 import { ImageBox } from '@/components/misc/ImageBox'
+
+const ReactParallaxTilt = dynamic(() => import('react-parallax-tilt'), {
+  ssr: false,
+  loading: () => (
+    <Skeleton borderRadius={'1rem'} width={'full'} height={'full'} />
+  ),
+})
 
 export interface ParallaxTiltBoxProps extends AspectRatioProps {
   hoverable?: boolean

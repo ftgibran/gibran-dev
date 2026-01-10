@@ -29,6 +29,7 @@ export const Logo = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
           maxW={8}
           width={128}
           height={128}
+          sizes={'32px'}
         />
 
         <Span textStyle={'logo'}>{t('app.name')}</Span>

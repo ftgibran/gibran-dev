@@ -24,6 +24,7 @@ export const ButtonLocale = forwardRef<
         alt={t(locale)}
         width={'24'}
         height={'24'}
+        sizes={'24px'}
       />
     </IconButton>
   )

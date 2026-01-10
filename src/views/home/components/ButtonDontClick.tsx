@@ -78,7 +78,8 @@ export const ButtonDontClick = forwardRef<HTMLDivElement, BoxProps>(
                 width={'256'}
                 height={'256'}
                 loading={'eager'}
-                preload={true}
+                priority={true}
+                sizes={'96px'}
               />
             </Box>
           )}
@@ -98,6 +99,7 @@ export const ButtonDontClick = forwardRef<HTMLDivElement, BoxProps>(
               maxW={'2xs'}
               width={'2151'}
               height={'2374'}
+              sizes={'(max-width: 768px) 100vw, 320px'}
             />
           </MotionBox>
         </Box>
