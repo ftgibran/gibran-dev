@@ -23,7 +23,6 @@ export function useLayout(options: LayoutParams = {}) {
   const isMounted = useIsMounted()
 
   useEffect(() => {
-    // @ts-expect-error ignore
     import('devicon/devicon-base.css')
   }, [])
 
