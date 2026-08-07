@@ -4,5 +4,6 @@
   "email": "E-mail",
   "leave_your_message": "Leave your message",
   "submit": "Submit",
-  "success_message": "Your message has been sent"
+  "success_message": "Your message has been sent",
+  "error_message": "Your message could not be sent. Please email me directly."
 }

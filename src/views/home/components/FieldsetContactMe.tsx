@@ -8,7 +8,7 @@ import {
   Stack,
   Textarea,
 } from '@chakra-ui/react'
-import { DISCORD_HOOK_URL } from '@config/constants'
+import { CONTACT_ENDPOINT } from '@config/constants'
 import { useTranslation } from '@utils/i18n/useTranslation'
 import { FC, useCallback, useState } from 'react'
 import { type SubmitHandler, useForm } from 'react-hook-form'
@@ -34,25 +34,21 @@ export const FieldsetContactMe: FC<BoxProps> = (props) => {
       setIsLoading(true)
 
       try {
-        const response = await fetch(DISCORD_HOOK_URL, {
+        const response = await fetch(CONTACT_ENDPOINT, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            content: `**Name:** ${name}\n**Email:** ${email}\n**Message:**\n${message}`,
-          }),
+          body: JSON.stringify({ name, email, message }),
         })
 
         if (!response.ok) {
-          const data = await response.json()
-
-          toaster.error({ title: data.code, description: data.message })
+          toaster.error({ title: t('error_message') })
         } else {
           toaster.success({ title: t('success_message') })
 
           reset()
         }
       } catch (e) {
-        toaster.error({ title: 'Something went wrong' })
+        toaster.error({ title: t('error_message') })
         console.error(e)
       } finally {
         setIsLoading(false)

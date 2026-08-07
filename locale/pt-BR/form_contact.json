@@ -4,5 +4,6 @@
   "email": "E-mail",
   "leave_your_message": "Deixe sua mensagem",
   "submit": "Enviar",
-  "success_message": "Sua mensagem foi enviada"
+  "success_message": "Sua mensagem foi enviada",
+  "error_message": "Não foi possível enviar sua mensagem. Me escreva diretamente por e-mail."
 }
