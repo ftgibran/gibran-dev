@@ -17,7 +17,9 @@ export const ServerLayout: FC<ServerLayoutProps> = async (props) => {
   const hasAnalytics = IS_PRODUCTION && !!GA_ID
 
   return (
-    <html lang={locale}>
+    // next-themes writes the color-mode class onto <html> before hydration, so
+    // the server markup can never match it.
+    <html lang={locale} suppressHydrationWarning>
       <body className={FONT_CLASSES}>
         {/* Server-rendered on purpose: React skips script tags rendered on the
             client, and everything below Providers is inside a client boundary. */}

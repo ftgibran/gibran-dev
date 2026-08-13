@@ -3,27 +3,26 @@ import { useCompositeProps } from '@utils/hooks/react/useCompositeProps'
 import NextImage, { ImageProps } from 'next/image'
 import { forwardRef } from 'react'
 
+// Props routed to next/image; everything else falls through to Chakra as a
+// style prop. `objectFit`/`objectPosition` stay out on purpose, so that they
+// keep being applied as CSS.
 export const imagePropNames = [
   'src',
   'alt',
   'width',
   'height',
   'fill',
+  'sizes',
   'loader',
   'quality',
-  'preload',
   'priority',
   'loading',
+  'fetchPriority',
+  'decoding',
   'placeholder',
   'blurDataURL',
   'unoptimized',
   'overrideSrc',
-  'onLoadingComplete',
-  'layout',
-  // 'objectFit',
-  // 'objectPosition',
-  'lazyBoundary',
-  'lazyRoot',
 ] as const
 
 export type ImageBoxProps = BoxProps & ImageProps

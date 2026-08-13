@@ -1,5 +1,4 @@
-import { DEFAULT_LOCALE, IS_DEVELOPMENT } from '@config/constants'
-import { Lazy } from '@utils/components/Lazy'
+import { DEFAULT_LOCALE } from '@config/constants'
 import { loadMessages } from '@utils/i18n/loadMessages'
 import type { FC, PropsWithChildren } from 'react'
 
@@ -16,11 +15,9 @@ export const Providers: FC<ProvidersProps> = async (props) => {
   const messages = await loadMessages(locale)
 
   return (
-    <Lazy isDisabled={!IS_DEVELOPMENT}>
-      <IntlProvider locale={locale} messages={messages}>
-        <DesignSystemProvider>{children}</DesignSystemProvider>
-      </IntlProvider>
-    </Lazy>
+    <IntlProvider locale={locale} messages={messages}>
+      <DesignSystemProvider>{children}</DesignSystemProvider>
+    </IntlProvider>
   )
 }
 

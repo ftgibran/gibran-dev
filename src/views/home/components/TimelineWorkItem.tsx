@@ -119,7 +119,14 @@ export const TimelineWorkItem = forwardRef<
           <Prose flex={1} {...markdownToProps(desc)} />
 
           {videoUrl && (
-            <Dialog.Root size={'xl'} placement={'center'}>
+            <Dialog.Root
+              size={'xl'}
+              placement={'center'}
+              // Without these the 6.5 MB demo video sits in the DOM from the
+              // first render; unmountOnExit frees the decoder on close.
+              lazyMount
+              unmountOnExit
+            >
               <Dialog.Trigger asChild>
                 <Button
                   w={'120px'}
@@ -161,7 +168,11 @@ export const TimelineWorkItem = forwardRef<
               alignSelf={inverse ? 'flex-end' : 'flex-start'}
               asChild
             >
-              <NextLink href={url} target={'_blank'}>
+              <NextLink
+                href={url}
+                target={'_blank'}
+                rel={'noopener noreferrer'}
+              >
                 {t('demo_cta')}
               </NextLink>
             </Button>

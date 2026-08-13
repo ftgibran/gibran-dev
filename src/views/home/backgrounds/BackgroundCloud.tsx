@@ -12,6 +12,7 @@ export const BackgroundCloud: FC<BoxProps> = (props) => {
     <Box ref={ref} {...props}>
       <ReactPlayerBox
         url={'/videos/timeline.webm'}
+        posterUrl={'/videos/posters/timeline.webp'}
         playing={isInViewport}
         playsinline={true}
         filter={'hue-rotate(70deg)'}

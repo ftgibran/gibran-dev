@@ -17,21 +17,11 @@ export function useLayoutContext(params: LayoutContextParams = {}) {
   const { fillViewport, includeNavbar = true, centerContent } = params
 
   const context = _useLayoutContext() ?? {}
-  const { navbarHeight, contentWidth, windowHeight } = context
+  const { navbarHeight } = context
 
   const offset = useMemo(
     () => (includeNavbar ? navbarHeight : 0),
     [includeNavbar, navbarHeight],
-  )
-
-  const contentHeight = useMemo(
-    () => windowHeight - offset,
-    [offset, windowHeight],
-  )
-
-  const contentRatio = useMemo(
-    () => contentWidth / contentHeight,
-    [contentHeight, contentWidth],
   )
 
   const baseProps = useMemo<SystemStyleObject>(
@@ -68,9 +58,6 @@ export function useLayoutContext(params: LayoutContextParams = {}) {
 
   return {
     offset,
-
-    contentHeight,
-    contentRatio,
 
     viewportProps,
     centerProps,

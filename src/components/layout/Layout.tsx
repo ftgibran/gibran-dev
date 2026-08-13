@@ -20,12 +20,7 @@ export const Layout: FC<LayoutProps> = (props) => {
 
   return (
     <LayoutProvider value={context}>
-      <Flex
-        direction={'column'}
-        minH={'100vh'}
-        visibility={context.isMounted ? 'visible' : 'hidden'}
-        {...rest}
-      >
+      <Flex direction={'column'} minH={'100vh'} {...rest}>
         <Navbar />
 
         <Main flex={1}>{children}</Main>

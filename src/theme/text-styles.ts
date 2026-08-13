@@ -87,7 +87,7 @@ export const textStyles = defineTextStyles({
       textTransform: 'capitalize',
       fontFamily: 'heading',
       fontSize: 'sm',
-      fontWeight: 'semiBold',
+      fontWeight: 'semibold',
       fontStyle: 'italic',
       letterSpacing: 'moderate',
       lineHeight: 'shorter',

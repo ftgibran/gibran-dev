@@ -40,6 +40,7 @@ export const SectionFeature = forwardRef<HTMLDivElement, SectionProps>(
                       maxW={32}
                       width={'512'}
                       height={'512'}
+                      sizes={'128px'}
                     />
 
                     <Stack minH={16} direction={'column-reverse'}>

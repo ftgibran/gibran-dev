@@ -24,6 +24,7 @@ export const BackgroundContact = forwardRef<HTMLDivElement, BoxProps>(
           pos={'absolute'}
           inset={0}
           url={'/videos/footer.webm'}
+          posterUrl={'/videos/posters/footer.webp'}
           playing={isInViewport}
           playsinline={true}
           filter={'hue-rotate(-40deg) brightness(1.5)'}

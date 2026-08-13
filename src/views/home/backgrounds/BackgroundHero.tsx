@@ -22,6 +22,7 @@ export const BackgroundHero = forwardRef<HTMLDivElement, BoxProps>(
           pos={'absolute'}
           inset={0}
           url={'/videos/hero.webm'}
+          posterUrl={'/videos/posters/hero.webp'}
           playing={isInViewport}
           playsinline={true}
           WebkitMaskImage={'linear-gradient(to bottom, black 50%, transparent)'}

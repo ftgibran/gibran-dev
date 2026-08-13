@@ -10,6 +10,7 @@ import { useTranslation } from '@utils/i18n/useTranslation'
 import { forwardRef } from 'react'
 
 import { Section, SectionProps } from '@/components/layout/foundation/Section'
+import { DevIcon } from '@/components/misc/DevIcon'
 import { Tooltip } from '@/components/ui/tooltip'
 
 export const SectionTechnology = forwardRef<HTMLDivElement, SectionProps>(
@@ -51,7 +52,7 @@ export const SectionTechnology = forwardRef<HTMLDivElement, SectionProps>(
                     showArrow
                   >
                     <Box fontSize={'8xl'} color={'fg.emphasized'}>
-                      <i className={it.icon} />
+                      <DevIcon name={it.icon} label={it.label} />
                     </Box>
                   </Tooltip>
                 )}

@@ -4,7 +4,6 @@ import {
   Box,
   BoxProps,
   Center,
-  Skeleton,
   useBreakpointValue,
 } from '@chakra-ui/react'
 import { useViewportYProgress } from '@utils/hooks/dom/useViewportYProgress'
@@ -13,12 +12,10 @@ import { FC, useMemo, useState } from 'react'
 
 import { ImageBox } from '@/components/misc/ImageBox'
 
-const ReactParallaxTilt = dynamic(() => import('react-parallax-tilt'), {
-  ssr: false,
-  loading: () => (
-    <Skeleton borderRadius={'1rem'} width={'full'} height={'full'} />
-  ),
-})
+// Server-rendered on purpose, see the note in HeroIntro: it puts the timeline
+// <img> in the HTML with its dimensions, which is what keeps those cards from
+// shifting once the chunk lands.
+const ReactParallaxTilt = dynamic(() => import('react-parallax-tilt'))
 
 export interface ParallaxTiltBoxProps extends AspectRatioProps {
   hoverable?: boolean
@@ -75,18 +72,26 @@ export const ParallaxTiltBox: FC<ParallaxTiltBoxProps> = (props) => {
             transformStyle: 'preserve-3d',
           }}
         >
+          {/* An <ImageBox> rather than a CSS background: `url()` backgrounds
+              skip next/image entirely, so these 16 card backdrops used to ship
+              unoptimized and, worse, eagerly. */}
           <Box
             pos={'absolute'}
             inset={0}
             transformStyle={'preserve-3d'}
-            backgroundImage={`url(${src})`}
-            backgroundRepeat={'no-repeat'}
-            backgroundSize={'cover'}
-            backgroundPositionX={'50%'}
-            backgroundPositionY={'50%'}
             borderRadius={'1rem'}
             {...backgroundProps}
-          />
+          >
+            <ImageBox
+              src={src}
+              alt={''}
+              fill={true}
+              sizes={'(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'}
+              objectFit={'cover'}
+              objectPosition={'center'}
+              borderRadius={'1rem'}
+            />
+          </Box>
 
           <Center
             pos={'absolute'}

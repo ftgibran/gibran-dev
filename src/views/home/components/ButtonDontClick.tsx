@@ -50,7 +50,7 @@ export const ButtonDontClick = forwardRef<HTMLDivElement, BoxProps>(
           minH={'2xs'}
           {...props}
         >
-          <audio ref={audioRef} src={'/audios/toasty.mp3'} preload={'auto'} />
+          <audio ref={audioRef} src={'/audios/toasty.mp3'} preload={'none'} />
 
           {!kill && (
             <Box
