@@ -33,3 +33,8 @@ export async function generateMetadata(
 export function generateStaticParams() {
   return SUPPORTED_LOCALES.map((locale) => ({ locale }))
 }
+
+// Any other single-segment path (`/cv`, `/anything`) matches this route and used
+// to blow up in generateMetadata looking for `locale/<segment>/default_head.json`,
+// answering 500 where it owes a 404.
+export const dynamicParams = false
