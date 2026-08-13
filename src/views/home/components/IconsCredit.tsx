@@ -9,7 +9,11 @@ export const IconsCredit = forwardRef<HTMLDivElement, BoxProps>(
         <>Icons made by </>
 
         <Link asChild>
-          <NextLink href={'https://www.freepik.com/'} target={'_blank'}>
+          <NextLink
+            href={'https://www.freepik.com/'}
+            target={'_blank'}
+            rel={'noopener noreferrer'}
+          >
             Freepik
           </NextLink>
         </Link>
@@ -17,7 +21,11 @@ export const IconsCredit = forwardRef<HTMLDivElement, BoxProps>(
         <> from </>
 
         <Link asChild>
-          <NextLink href={'https://www.flaticon.com'} target={'_blank'}>
+          <NextLink
+            href={'https://www.flaticon.com'}
+            target={'_blank'}
+            rel={'noopener noreferrer'}
+          >
             flaticon.com
           </NextLink>
         </Link>

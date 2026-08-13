@@ -1,3 +1,4 @@
+import { DEFAULT_LOCALE, SITE_URL } from '@config/constants'
 import { type Metadata } from 'next'
 
 import { getHeadIntl } from '@/server/getHeadIntl'
@@ -5,7 +6,20 @@ import { getHeadIntl } from '@/server/getHeadIntl'
 export async function getDefaultMetadata(locale?: string) {
   const intl = await getHeadIntl(locale)
 
+  // `/en-US` renders the same page as `/`, so it has to point search engines at
+  // the root instead of standing as a second copy of it.
+  const canonical = !locale || locale === DEFAULT_LOCALE ? '/' : `/${locale}`
+
   return {
+    metadataBase: new URL(SITE_URL),
+    alternates: {
+      canonical,
+      languages: {
+        'en-US': '/',
+        'pt-BR': '/pt-BR',
+        'x-default': '/',
+      },
+    },
     title: intl.formatMessage({ id: 'title' }),
     description: intl.formatMessage({ id: 'description' }),
     keywords: intl.formatMessage({ id: 'keywords' }),

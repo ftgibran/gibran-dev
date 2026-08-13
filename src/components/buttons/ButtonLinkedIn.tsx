@@ -15,7 +15,7 @@ export const ButtonLinkedIn = forwardRef<
     asChild
     {...props}
   >
-    <NextLink href={LINKEDIN_URL} target={'_blank'}>
+    <NextLink href={LINKEDIN_URL} target={'_blank'} rel={'noopener noreferrer'}>
       <FaLinkedin />
     </NextLink>
   </IconButton>

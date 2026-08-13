@@ -15,7 +15,7 @@ export const ButtonGithub = forwardRef<
     asChild
     {...props}
   >
-    <NextLink href={GITHUB_URL} target={'_blank'}>
+    <NextLink href={GITHUB_URL} target={'_blank'} rel={'noopener noreferrer'}>
       <FaGithub />
     </NextLink>
   </IconButton>
