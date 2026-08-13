@@ -31,6 +31,10 @@ export const NavbarItems = forwardRef<HTMLDivElement, WrapProps>(
         </WrapItem>
 
         <WrapItem>
+          <NavbarAnchor href={localePath('/#ai')}>{t('ai')}</NavbarAnchor>
+        </WrapItem>
+
+        <WrapItem>
           <NavbarAnchor href={localePath('/#career')}>
             {t('career')}
           </NavbarAnchor>

@@ -45,6 +45,10 @@
       }
     }
   },
+  "ai": {
+    "title": "Como Eu Construo com IA",
+    "body": "**Eu construo com agentes, e a responsabilidade nunca muda de lugar.** Rodo o **Claude Code** dentro do repositório, com o trabalho dividido em mudanças pequenas o bastante para eu revisar cada uma por inteiro.\n\n- **Spec antes da geração.** Intenção, restrições e critério de aceite escritos antes de qualquer código.\n- **Gates de máquina.** Tipos, lint, testes e build rodam antes de eu olhar uma linha.\n- **Eu leio todo diff que entrego.** Se eu não consigo defender, não sai.\n- **Nunca delegado.** Arquitetura, modelo de dados e fronteira de segurança continuam comigo.\n- **Toda correção vira regra.** O que eu ajusto na mão uma vez fica documentado, e o arranjo melhora junto com a base de código."
+  },
   "timeline": {
     "title": "Linha do tempo dos meus trabalhos relevantes",
     "demo_cta": "Visualizar",

@@ -45,6 +45,10 @@
       }
     }
   },
+  "ai": {
+    "title": "How I Build with AI",
+    "body": "**I build with agents, and the responsibility never moves.** I run **Claude Code** inside the repository, with the work broken into changes small enough for me to review each one in full.\n\n- **Spec first.** Intent, constraints and acceptance criteria are written before anything is generated.\n- **Machine gates.** Types, lint, tests and build run before I look at a single line.\n- **I read every diff I ship.** If I can't defend it, it doesn't go out.\n- **Never delegated.** Architecture, data model and security boundaries stay with me.\n- **Every fix becomes a rule.** What I correct by hand once gets documented, so the setup improves along with the codebase."
+  },
   "timeline": {
     "title": "Timeline of my relevant works",
     "demo_cta": "Preview",

@@ -38,6 +38,8 @@ export const PersonJsonLd: FC = () => {
       'PostgreSQL',
       'Web performance',
       'Real-time web applications',
+      'AI-assisted development',
+      'Agentic coding workflows',
     ],
   }
 
