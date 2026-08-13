@@ -1,4 +1,5 @@
 import { IconButton, IconButtonProps } from '@chakra-ui/react'
+import { LINKEDIN_URL } from '@config/constants'
 import NextLink from 'next/link'
 import { forwardRef } from 'react'
 import { FaLinkedin } from 'react-icons/fa6'
@@ -14,7 +15,7 @@ export const ButtonLinkedIn = forwardRef<
     asChild
     {...props}
   >
-    <NextLink href={'https://www.linkedin.com/in/ftgibran'} target={'_blank'}>
+    <NextLink href={LINKEDIN_URL} target={'_blank'}>
       <FaLinkedin />
     </NextLink>
   </IconButton>

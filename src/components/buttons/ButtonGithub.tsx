@@ -1,4 +1,5 @@
 import { IconButton, IconButtonProps } from '@chakra-ui/react'
+import { GITHUB_URL } from '@config/constants'
 import NextLink from 'next/link'
 import { forwardRef } from 'react'
 import { FaGithub } from 'react-icons/fa6'
@@ -14,7 +15,7 @@ export const ButtonGithub = forwardRef<
     asChild
     {...props}
   >
-    <NextLink href={'https://github.com/ftgibran'} target={'_blank'}>
+    <NextLink href={GITHUB_URL} target={'_blank'}>
       <FaGithub />
     </NextLink>
   </IconButton>

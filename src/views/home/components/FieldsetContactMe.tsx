@@ -5,10 +5,11 @@ import {
   Field,
   Fieldset,
   Input,
+  Link,
   Stack,
   Textarea,
 } from '@chakra-ui/react'
-import { CONTACT_ENDPOINT } from '@config/constants'
+import { CONTACT_EMAIL, CONTACT_ENDPOINT } from '@config/constants'
 import { useTranslation } from '@utils/i18n/useTranslation'
 import { FC, useCallback, useState } from 'react'
 import { type SubmitHandler, useForm } from 'react-hook-form'
@@ -60,8 +61,13 @@ export const FieldsetContactMe: FC<BoxProps> = (props) => {
   return (
     <Box as={'form'} w={'full'} onSubmit={handleSubmit(onSubmit)} {...props}>
       <Fieldset.Root size={'lg'}>
-        <Stack>
+        <Stack gap={1}>
           <Fieldset.Legend textStyle={'2xl'}>{t('title')}</Fieldset.Legend>
+
+          <Fieldset.HelperText>
+            {t('or_email')}{' '}
+            <Link href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</Link>
+          </Fieldset.HelperText>
         </Stack>
 
         <Fieldset.Content>

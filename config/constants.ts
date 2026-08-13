@@ -13,6 +13,11 @@ export const GA_ID = getEnvString(process.env.NEXT_PUBLIC_GA_ID)
  */
 export const CONTACT_ENDPOINT = '/api/contact'
 
+export const SITE_URL = 'https://gibran.dev'
+export const CONTACT_EMAIL = 'ft.gibran@gmail.com'
+export const GITHUB_URL = 'https://github.com/ftgibran'
+export const LINKEDIN_URL = 'https://www.linkedin.com/in/ftgibran'
+
 export const IS_DEVELOPMENT = process.env.NODE_ENV === 'development'
 export const IS_PRODUCTION = process.env.NODE_ENV === 'production'
 export const IS_TEST = process.env.NODE_ENV === 'test'

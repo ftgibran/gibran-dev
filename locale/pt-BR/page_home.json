@@ -1,123 +1,109 @@
 {
   "main": {
     "title": "Olá, eu sou Felipe Gibran",
-    "body": "Engenheiro de Software Fullstack Sênior com mais de 10 anos de experiência na construção de aplicações web escaláveis e prontas para produção."
+    "body": "Fullstack Software Engineer com 10 anos construindo produtos web. Eu levo uma feature do modelo de dados e da API até a interface e sua performance."
   },
   "career": {
     "title": "Destaques da Carreira",
     "illuvium": {
-      "title": "Illuvium",
-      "desc": "**Illuvium** é um ecossistema de jogos **baseado em blockchain** em larga escala que combina **design de jogos com qualidade AAA** e **tecnologia Web3**, possibilitando verdadeira propriedade digital por meio de **ativos in-game em formato de NFT**.\n\nTrabalho na **Illuvium** desde **2022**, atuando como **Frontend Engineer** em múltiplos produtos centrais dentro de um amplo **ecossistema de games Web3**.\n\nMeu trabalho abrange **aplicações complexas e prontas para produção**, incluindo marketplaces, experiências web relacionadas ao gameplay, **design systems**, **bibliotecas de autenticação** e **plataformas de conteúdo**, todas fortemente integradas à **infraestrutura blockchain** e a **ativos baseados em NFT**.\n\nColaboro de perto com **times de produto, design e engenharia** para construir **interfaces escaláveis e de alta performance**, com foco em arquitetura limpa, manutenibilidade e experiência do usuário."
+      "desc": "**Illuvium** é um ecossistema de jogos **baseado em blockchain** que combina design de jogos com qualidade AAA e tecnologia Web3, em **doze aplicações em produção** atendendo **mais de 10 mil usuários ativos mensais**: marketplace, staking, autenticação, sites de marketing, uma plataforma de notícias sobre CMS e clientes de jogo.\n\nEntrei em **2021** e passei quase cinco anos no time de web. Criei e mantive o **design system** por quatro anos ao longo de duas gerações de framework, liderei a **migração de Contentful para Payload CMS** que levou o Lighthouse Performance de ~25 para ~90, conduzi a **consolidação do monorepo**, movi fluxos que carregam receita para novas infraestruturas sem pausar a entrega de features, e rearquitetei um **cliente de jogo multiplayer em tempo real**."
     },
     "simpli": {
-      "title": "Simpli",
-      "desc": "Trabalhei na **Simpli** de **2016 a 2021**, uma **software house** especializada na criação de **produtos digitais do zero** para uma ampla variedade de clientes.\n\nNesse período, atuei em diversos projetos end-to-end — da concepção e MVP até produção — trabalhando em produtos como **Apptite**, **iTrack**, **Sharity** e **WOW Talent**, colaborando diretamente com clientes para transformar necessidades de negócio em soluções técnicas escaláveis.\n\nA Simpli também mantinha uma forte relação com o **ecossistema da blockchain Neo**, proporcionando contato precoce com **conceitos Web3**, aplicações descentralizadas e desenvolvimento de produtos orientados por blockchain."
+      "desc": "A **Simpli** é um **estúdio de produtos** que cria produtos digitais do zero para clientes externos. Estive lá de **2016 a 2021**, como engenheiro central em vários deles, da concepção e do MVP até produção.\n\nCuidei da arquitetura, da modernização e da camada de confiabilidade do **iTrack**, uma plataforma B2B de logística em escala real: quase **60.000 entregadores**, 2.000 empresas cadastradas, mais de 50 milhões de notas fiscais, adquirida pela MadeiraMadeira em 2021. Construí o cliente web do **Apptite**, plataforma de delivery acelerada pela **500 Startups**, e liderei o refactoring do **Abacashi**, a plataforma de crowdfunding que adquiriu o **Sharity**, produto que meu time havia construído. No backend, projetei APIs em **Spring Boot (Java)** com consultas **MySQL** otimizadas para volume de produção. É também onde meu trabalho com Web3 começou: estruturei a versão mobile da **Neon Wallet**, a maior carteira do ecossistema Neo, com mais de **US$ 1 bilhão em volume negociado**, trouxe o **WalletConnect** para a rede e implementei **atomic swaps**."
     }
   },
   "about_me": {
     "title": "Quem eu sou",
-    "body": "Sou um engenheiro de software web fullstack focado em Frontend com mais de 10 anos de experiência na entrega de produtos digitais que equilibram objetivos de negócio, necessidades dos usuários e excelência técnica. Trabalho em estreita colaboração com stakeholders para transformar ideias em aplicações confiáveis e escaláveis, tomando decisões técnicas bem fundamentadas que sustentam crescimento, performance e sustentabilidade a longo prazo.\n\nMinha abordagem é focada na construção de produtos fáceis de evoluir, eficientes em custos operacionais e intuitivos para os usuários, mantendo altos padrões de qualidade, segurança e desempenho. O resultado é um software que não apenas funciona bem, mas que gera valor real para o negócio por trás dele."
+    "body": "Eu construo produtos web de ponta a ponta, do modelo de dados e da API até a interface e sua performance. Dez anos em fintech, logística, Web3 e games, quase sempre em produtos que precisavam continuar no ar enquanto mudavam.\n\nNos últimos cinco anos, na Illuvium, assumi o trabalho estrutural por trás de um portfólio de doze aplicações: o **design system**, uma migração de CMS que levou o Lighthouse Performance de ~25 para ~90, a **consolidação do monorepo**, e um cliente de jogo multiplayer em tempo real."
   },
   "feature": {
-    "title": "O que entrego para sua aplicação",
+    "title": "O Que Eu Faço",
     "items": {
-      "technology": {
-        "title": "Stack Tecnológica Moderna",
-        "desc": "Construída com tecnologias modernas, consolidadas e amplamente adotadas pela indústria."
+      "architecture": {
+        "title": "Arquitetura Primeiro",
+        "desc": "Eu defino roteamento, fluxo de dados, cache e fronteiras de módulo antes das features, porque a estrutura decide a velocidade de tudo que vem depois."
       },
-      "code": {
-        "title": "Código Limpo e Estruturado",
-        "desc": "Código escalável e fácil de evoluir, reduzindo o débito técnico ao longo do tempo."
+      "migration": {
+        "title": "Migração Sem Parar a Operação",
+        "desc": "Três migrações de plataforma em três anos, em fluxos que carregam receita e estavam no ar, feitas de forma incremental e sem pausar a entrega."
       },
-      "automation": {
-        "title": "Automação e Flexibilidade",
-        "desc": "Soluções customizadas que escalam conforme suas necessidades e orçamento."
+      "design_system": {
+        "title": "Design Systems",
+        "desc": "Tokens, recipes, padrões de acessibilidade e documentação no Storybook, mais a parte que quase todo time pula: aposentar por completo o sistema que ele substituiu."
       },
-      "security": {
-        "title": "Segurança por Design",
-        "desc": "Boas práticas aplicadas para proteger dados, usuários e infraestrutura."
+      "performance": {
+        "title": "Performance Que Dá Para Medir",
+        "desc": "Eu transformo “está lento” num número que o time consegue acompanhar, e corrijo aquilo que o número aponta."
       },
-      "responsiveness": {
-        "title": "Responsivo",
-        "desc": "Experiência consistente em mobile, tablet e desktop."
-      },
-      "ux": {
-        "title": "Forte Foco em UX",
-        "desc": "Interfaces intuitivas que impulsionam engajamento e retenção."
-      },
-      "fastness": {
-        "title": "Orientado à Performance",
-        "desc": "Carregamento rápido e interações fluidas como padrão."
+      "ownership": {
+        "title": "Backend e Modelo de Dados",
+        "desc": "Eu desenho o schema, a API e as permissões, não só a interface que lê os dados."
       },
       "seo": {
-        "title": "Arquitetura Pronta para SEO",
-        "desc": "Construída para ser facilmente encontrada e indexada desde o primeiro dia."
+        "title": "Conteúdo e SEO",
+        "desc": "Num produto de conteúdo, o CMS é a arquitetura. Eu desenho os modelos de conteúdo junto com as rotas e os metadados que eles alimentam."
       }
     }
-  },
-  "ai": {
-    "title": "IA como Ferramenta, Não como Atalho",
-    "body": "**IA é uma ferramenta prática** para aumentar a produtividade, melhorar a experiência do usuário e apoiar melhores decisões de produto — **não um substituto para uma engenharia sólida**.\n\nUtilizo IA para **acelerar fluxos de desenvolvimento**, **auxiliar na resolução de problemas** e **explorar funcionalidades de produto** como **busca inteligente**, **personalização** e **automação**. Meu foco é integrar IA de forma **escalável**, **consciente de custos** e **amigável ao usuário**, sempre considerando trade-offs como **performance**, **confiabilidade** e **responsabilidade no uso de dados**."
   },
   "timeline": {
     "title": "Linha do tempo dos meus trabalhos relevantes",
     "demo_cta": "Visualizar",
     "items": {
       "design-system": {
-        "title": "Design System Library - Version 2",
-        "desc": "**Design System Library — Version 2** é uma evolução mais avançada e refinada do design system web original do Illuvium.\nEsta versão expandiu e amadureceu as bases estabelecidas na Versão 1, introduzindo um conjunto de componentes mais rico, melhorias no theming e maior consistência entre os produtos.\nO sistema foi totalmente integrado ao **Chakra UI v3**, aproveitando sua arquitetura moderna de estilos para aumentar a escalabilidade, a manutenibilidade e a experiência de desenvolvimento, preservando ao mesmo tempo uma identidade visual distinta para o ecossistema web do Illuvium.\n\n**Role:** Frontend Developer\n**Ano:** 2025\n"
+        "title": "Design System Library, Versão 2",
+        "desc": "**Design System Library v2** é a segunda geração do design system web do Illuvium, reconstruída do zero sobre o **Chakra UI v3**.\n\n**Problema:** o sistema de primeira geração já estava maduro, mas o Chakra v3 mudou completamente a arquitetura de estilos, então permanecer no v2 significava congelar a fundação da qual doze aplicações dependiam.\n\n**Decisão:** reconstruir em vez de remendar. Redefini tokens de tema, sistemas de cor semântica, recipes de componentes e padrões de acessibilidade sobre a nova arquitetura, e documentei toda a superfície no **Storybook**, para que onboarding e refatorações não dependessem de me perguntar.\n\n**Resultado:** uma única linguagem visual em todo o portfólio, sobre uma fundação que já sobreviveu a duas gerações de framework e a uma migração de monorepo.\n\n**Cargo:** Frontend Engineer · **Ano:** 2025\n"
       },
       "illuvium-portal": {
         "title": "Illuvium Portal News",
-        "desc": "**Illuvium Portal News** é a plataforma oficial de notícias do ecossistema Illuvium, criada para centralizar anúncios, atualizações e conteúdo editorial.\nO projeto foca em performance, SEO e escalabilidade de conteúdo, entregando uma experiência de leitura refinada enquanto suporta um fluxo de publicação de alto volume e integração fluida com a presença web mais ampla do Illuvium.\nFoi construído utilizando **Payload CMS**, um framework de gerenciamento de conteúdo headless e code-first, no qual modelos de conteúdo, controle de acesso e regras de negócio são definidos diretamente em código, permitindo alta flexibilidade, tipagem forte e profunda customização, ao mesmo tempo em que expõe conteúdo via APIs para aplicações web modernas.\n\n**Role:** Frontend Developer\n**Ano:** 2025\n"
+        "desc": "**Illuvium Portal News** é a plataforma oficial de notícias do ecossistema Illuvium, centralizando anúncios, atualizações e conteúdo editorial.\n\n**Problema:** a plataforma rodava em Contentful e era lenta, com o Lighthouse Performance em torno de **25 a 30**. Scripts de CMS que bloqueavam a renderização e over-fetching pesado eram parte do modelo do fornecedor, então não dava para otimizar pelo frontend.\n\n**Decisão:** migrar para o **Payload CMS**, justamente por ser code-first. Modelos de conteúdo, controle de acesso e regras de negócio vivem no repositório, então o schema de conteúdo e a camada de roteamento/SEO puderam ser projetados como uma coisa só, em vez de dois sistemas negociando por uma API.\n\n**Resultado:** o Lighthouse Performance foi para **~85 a 90+** mantendo 100 em Acessibilidade, Boas Práticas e SEO, com melhora significativa de LCP e TTFB, e o tempo de publicação de conteúdo caiu cerca de **40%** para o time de marketing.\n\n**Cargo:** Frontend Engineer · **Ano:** 2025\n"
       },
       "overworld": {
         "title": "Illuvium Overworld Web",
-        "desc": "**Illuvium Overworld Web** é uma experiência web projetada para simular a caça de monstros (Illuvials) dentro do universo Illuvium.\nA aplicação reproduz o loop principal de gameplay, no qual um drone captura Illuvials encontrados e os entrega como NFTs, combinando mecânicas interativas, feedback em tempo real e integração estreita com o sistema de ativos baseado em blockchain.\n\n**Role:** Frontend Developer\n**Ano:** 2024\n"
+        "desc": "**Illuvium Overworld Web** é uma experiência web que simula a caça a monstros (Illuvials) no universo Illuvium, onde um drone captura as criaturas encontradas e as entrega como NFTs.\n\n**Problema:** reproduzir um loop central de gameplay no navegador. Interativo, animado e ligado a um sistema de ativos em blockchain que é lento e pode falhar.\n\n**Decisão:** tratar tudo como uma máquina de estados, com a animação sendo consequência do estado e não o contrário, de modo que a latência e os caminhos de falha da blockchain tivessem onde morar.\n\n**Resultado:** uma experiência de gameplay na web que se mantém coerente mesmo quando a blockchain não coopera.\n\n**Cargo:** Frontend Engineer · **Ano:** 2024\n"
       },
       "illuvidex": {
         "title": "IlluviDex Marketplace",
-        "desc": "**IlluviDex Marketplace** é um marketplace web que possibilita um mercado livre e aberto para os NFTs do jogo Illuvium.\nA plataforma conecta ativos do jogo à web, permitindo que jogadores naveguem, negociem e interajam com NFTs em um ambiente de marketplace descentralizado, com forte foco em usabilidade, performance e integração fluida com carteiras digitais.\n\n**Role:** Frontend Developer\n**Ano:** 2024\n"
+        "desc": "**IlluviDex Marketplace** é o marketplace web dos NFTs do jogo Illuvium: navegação, negociação e integração com carteiras para ativos do jogo. É, com folga, a aplicação em que mais trabalhei.\n\n**Problema:** cada página de trade tinha criado sua própria implementação de filtro, busca e ordenação. Adicionar um filtro exigia mexer em várias páginas, e o comportamento divergia entre elas.\n\n**Decisão:** reconstruir como um único sistema componível, migrar cada página de trade para ele e **apagar os arquivos que a refatoração tornou obsoletos**, porque a limpeza faz parte do trabalho, não é um ticket seguinte.\n\n**Resultado:** um novo tipo de filtro virou uma mudança em um único lugar. No mesmo ano migrei detalhes de ativos, ofertas e o overlay de habilidades para a nova **camada IMX**, com o marketplace operando normalmente.\n\n**Cargo:** Frontend Engineer · **Ano:** 2024\n"
       },
       "account-web": {
-        "title": "Illuvium Login System Library - Version 1",
-        "desc": "**Illuvium Login System Library** é uma biblioteca central de autenticação responsável por gerenciar os fluxos de login em todo o ecossistema web do Illuvium.\nA biblioteca suporta múltiplos métodos de autenticação, incluindo login tradicional com email e senha, além de login via blockchain utilizando carteiras de criptomoedas como a MetaMask, oferecendo uma experiência de autenticação segura, flexível e unificada.\n\n**Role:** Frontend Developer\n**Ano:** 2023\n"
+        "title": "Illuvium Login System Library, Versão 1",
+        "desc": "**Illuvium Login System Library** é a biblioteca de autenticação compartilhada por trás do login em todo o ecossistema web do Illuvium.\n\n**Problema:** cada aplicação tratava autenticação do seu jeito, e o login Web3 (por carteira) e o tradicional (e-mail e senha) tinham quase nada em comum estruturalmente.\n\n**Decisão:** construir uma biblioteca que trate os dois como estratégias intercambiáveis atrás de uma interface única, para que as aplicações integrem autenticação uma vez e ganhem novos métodos de graça.\n\n**Resultado:** uma experiência de login unificada e segura em todo o ecossistema, entregue como biblioteca versionada e documentada.\n\n**Cargo:** Frontend Engineer · **Ano:** 2023\n"
       },
       "load-d1sk": {
         "title": "Illuvium Beyond D1SK Web",
-        "desc": "**Illuvium Beyond D1SK Web** é uma mini-aplicação dentro do ecossistema Illuvium criada para a abertura de Disks comprados que contêm cards colecionáveis em formato de NFT.\nO app oferece uma experiência interativa e envolvente, na qual os jogadores revelam ativos NFT que podem ser utilizados tanto no jogo quanto nas plataformas web do Illuvium, com ênfase em animações suaves, responsividade e integração perfeita com o ecossistema como um todo.\n\n**Role:** Frontend Developer\n**Ano:** 2023\n"
+        "desc": "**Illuvium Beyond D1SK Web** é a mini-aplicação para abrir os Disks comprados e revelar os cards NFT colecionáveis dentro deles, o momento em que o jogador finalmente vê o que comprou.\n\n**Problema:** uma revelação é uma promessa. Precisa ser gostosa de ver e não pode perder nem duplicar um ativo, em nenhum dispositivo, incluindo falhas no meio da animação.\n\n**Decisão:** assumir o fluxo de ponta a ponta, tratando animação, máquina de estados e feedback em tempo real como um sistema só, e depois refatorá-lo para mobile quando os dados mostraram onde os jogadores realmente abriam os Disks.\n\n**Resultado:** o fluxo foi entregue e evoluiu com carregamento múltiplo de disks, VFX e correções para navegadores mobile. Um [trecho de live](https://www.youtube.com/live/RGX0YbHC7hI?si=pSg6KLOu1QtKDa6M&t=3542) mostra o app em uso.\n\n**Cargo:** Frontend Engineer · **Ano:** 2023\n"
       },
       "design-legacy": {
-        "title": "Illuvium Design System Library - Version 1",
-        "desc": "**Illuvium Design System Library** é o design system fundamental criado para os produtos web do Illuvium.\nO projeto começou com um mapeamento abrangente dos assets de design e conteúdos existentes produzidos pelo time de design do Illuvium, seguido pela organização, padronização e formalização desses elementos em um sistema coeso.\nConstruído do zero, o design system estabeleceu uma linguagem visual clara e uma estrutura de componentes consistente, garantindo escalabilidade, uniformidade e uma identidade própria para o ecossistema web.\n\n**Role:** Frontend Developer\n**Ano:** 2022\n"
+        "title": "Illuvium Design System Library, Versão 1",
+        "desc": "**Illuvium Design System Library** é o design system original dos produtos web do Illuvium.\n\n**Problema:** cada produto tinha sua própria interpretação da marca, e as bibliotecas compartilhadas que existiam haviam divergido, com overrides locais empilhados por cima.\n\n**Decisão:** partir do que o time de design já tinha, mapeando e formalizando os assets existentes em tokens, temas e componentes, em vez de inventar uma linguagem visual nova que ninguém tinha acordado.\n\n**Resultado:** uma fundação única, adotada aplicação por aplicação, e então **concluída de verdade**: as bibliotecas legadas `illuvium-design` e `styled-system` foram removidas por completo, em vez de conviver com a nova.\n\n**Cargo:** Frontend Engineer · **Ano:** 2022\n"
       },
       "staking-app": {
-        "title": "Illuvium Staking App - Version 2",
-        "desc": "**Illuvium Staking App** é uma plataforma de staking redesenhada e expandida, desenvolvida para suportar a evolução da tokenomics e da base de usuários do Illuvium.\nA aplicação foca em clareza, performance e escalabilidade, oferecendo aos usuários uma experiência simplificada para fazer staking de ativos, acompanhar recompensas e interagir com dados on-chain por meio de uma interface polida e responsiva.\n\n**Role:** Frontend Developer\n**Ano:** 2022\n"
+        "title": "Illuvium Staking App, Versão 2",
+        "desc": "**Illuvium Staking App v2** é a plataforma de staking redesenhada para acompanhar a evolução da tokenomics e da base de usuários do Illuvium.\n\n**Problema:** staking pede que a pessoa trave dinheiro real com base em números numa tela. Ambiguidade na interface é um problema de confiança, não uma preferência de design.\n\n**Decisão:** assumir o frontend completo e projetar primeiro para clareza. Tornar pools, recompensas e vesting legíveis, e deixar o estado on-chain e sua latência visíveis em vez de escondidos atrás de um spinner.\n\n**Resultado:** uma interface responsiva e performática na qual o usuário consegue agir com confiança.\n\n**Cargo:** Frontend Engineer · **Ano:** 2022\n"
       },
       "ndapp": {
         "title": "NDapp",
-        "desc": "**NDapp** é uma plataforma de informações focada em agregar notícias, insights e dados sobre aplicações descentralizadas construídas na blockchain Neo.\nO projeto oferece um hub centralizado para descoberta e entendimento dos desenvolvimentos mais recentes do ecossistema Neo, com ênfase em clareza, acessibilidade e informações técnicas sempre atualizadas.\n\n**Role:** Fullstack Developer\n**Ano:** 2021\n"
+        "desc": "**NDapp** se tornou a galeria oficial de dApps da rede Neo: informação detalhada e atualização automática de cada aplicação descentralizada, com dados puxados diretamente das blockchains NeoLegacy, Neo N3 e Neo X.\n\n**Minha parte:** defini a estrutura inicial do projeto e construí suas primeiras funcionalidades, cobrindo a camada de agregação de dados e a interface em cima dela. É aqui que meu trabalho com Web3 começou, vários anos antes de virar minha linha principal.\n\n**Cargo:** Fullstack Engineer · **Ano:** 2021\n"
       },
       "wow": {
         "title": "WOW Talent",
-        "desc": "**WOW Talent** é uma plataforma digital que destaca os WOW Ambassadors — jovens profissionais que já construíram carreiras impactantes e servem como referência para novos talentos.\nA experiência evidencia jornadas pessoais, conquistas e insights profissionais, incentivando talentos em início de carreira a aprender, se conectar e fazer parte de uma comunidade em crescimento.\n\n**Role:** Fullstack Developer\n**Ano:** 2021\n"
+        "desc": "**WOW Talent** é uma plataforma que apresenta os WOW Ambassadors, jovens profissionais cujas carreiras servem de referência para novos talentos, destacando trajetórias e insights para que outras pessoas aprendam e se conectem.\n\n**Minha parte:** fullstack, da modelagem de conteúdo até a interface. Um produto orientado a conteúdo, onde o fluxo editorial importava tanto quanto o front.\n\n**Cargo:** Fullstack Engineer · **Ano:** 2021\n"
       },
       "apptite": {
-        "title": "Apptite Web",
-        "desc": "**Apptite Web** é uma plataforma de delivery que conecta chefs independentes a clientes em busca de refeições artesanais e caseiras.\nA aplicação web permite que usuários descubram chefs, explorem cardápios e façam pedidos de lunch boxes em São Paulo, com foco em uma experiência de compra fluida e apresentação clara das opções gastronômicas.\n\n**Role:** Frontend Developer\n**Ano:** 2020\n"
+        "title": "Apptite",
+        "desc": "**Apptite** é uma plataforma de delivery que conecta chefs independentes a clientes em busca de refeições artesanais e caseiras em São Paulo: descobrir chefs, explorar cardápios e pedir lunch boxes. Passou pela aceleradora **500 Startups** e virou referência no mercado de comida artesanal.\n\n**Minha parte:** atuei no desenvolvimento web da plataforma. O fluxo de pedido só existia nos apps de iOS e Android, e eu o reproduzi inteiro na web, da descoberta do chef e da navegação pelo cardápio até a finalização do pedido. Esse fluxo é onde um usuário navegando vira um usuário pagante, que é onde as exigências de confiabilidade são mais altas.\n\n**Cargo:** Frontend Engineer · **Ano:** 2016 a 2017\n"
       },
       "sharity": {
         "title": "Sharity",
-        "desc": "**Sharity** é uma plataforma online de crowdfunding criada para tornar simples, rápida e acessível a criação de campanhas e a arrecadação de fundos para causas relevantes.\nA plataforma prioriza usabilidade, transparência e fluxos eficientes de doação, permitindo que indivíduos e organizações se conectem com apoiadores e mobilizem recursos para as causas e pessoas que consideram importantes.\n\n**Role:** Fullstack Developer\n**Ano:** 2019\n"
+        "desc": "**Sharity** é uma plataforma de crowdfunding criada para tornar simples e acessível a criação de campanhas e a arrecadação para causas relevantes, com foco em usabilidade, transparência e fluxos de doação eficientes. Foi adquirida pelo **Abacashi**, que depois trouxe meu time para modernizar a própria plataforma dele.\n\n**Minha parte:** fullstack, cobrindo a modelagem de campanhas e o fluxo de doação. Movimentação de dinheiro e exigências de transparência moldaram a maior parte das decisões técnicas. Depois da aquisição, liderei o refactoring do Abacashi: seleção de tecnologias, definição da arquitetura do sistema, orientação dos desenvolvedores e code review.\n\n**Cargo:** Fullstack Engineer · **Ano:** 2019 a 2021\n"
       },
       "itrack": {
         "title": "iTrack",
-        "desc": "**iTrack** é uma plataforma de monitoramento, verificação e gestão de entregas, projetada para oferecer visibilidade completa de ponta a ponta, do despacho à última milha, diretamente na palma da mão.\nO sistema foca em rastreamento em tempo real, transparência operacional e gestão logística eficiente, permitindo melhores decisões e maior desempenho nas entregas.\n\n**Role:** Fullstack Developer\n**Ano:** 2018\n"
+        "desc": "**iTrack** é uma plataforma B2B de monitoramento, verificação e gestão de entregas que oferece visibilidade de ponta a ponta, do despacho à última milha. Rodava em escala real: quase **60.000 entregadores**, **2.000 empresas cadastradas** e mais de **50 milhões de notas fiscais**. Foi adquirida pela MadeiraMadeira em 2021.\n\n**Minha parte:** contribuidor técnico central em uma plataforma de alto volume. Decisões de arquitetura e modernização do sistema ao lado de lideranças staff, integração entre múltiplos sistemas e otimização do acesso a grandes volumes de dados. Além do trabalho de monitoramento, alertas e performance do qual a confiabilidade operacional depende. APIs de backend em **Spring Boot (Java)** sobre **MySQL**, otimizadas para volume de produção.\n\n**Cargo:** Fullstack Engineer · **Ano:** 2016 a 2018\n"
       },
       "illsim": {
         "title": "Illness Simulator",
-        "desc": "**Illness Simulator (Illsim)** é um projeto acadêmico desenvolvido em 2017 com foco na modelagem e análise da propagação de um vírus em uma população.\nO projeto simula dinâmicas de infecção ao longo do tempo e avalia diferentes estratégias de vacinação para compreender sua eficácia na contenção de surtos e na redução do impacto geral.\nO estudo enfatiza experimentação orientada por dados, permitindo o ajuste de cenários para observar como variáveis como taxa de infecção, tamanho da população e cobertura vacinal influenciam a propagação da doença.\n\n**Role:** Frontend Developer\n**Ano:** 2017\n"
+        "desc": "**Illness Simulator (Illsim)** modela a propagação de um vírus em uma população e avalia como diferentes estratégias de vacinação mudam o resultado, permitindo ajustar taxa de infecção, tamanho da população e cobertura vacinal para observar o efeito.\n\n**Minha parte:** um projeto acadêmico, e o mais antigo desta lista. Está aqui porque o instinto é o mesmo com que eu ainda trabalho: torne as variáveis ajustáveis e deixe o dado responder à pergunta.\n\n**Cargo:** Frontend Engineer · **Ano:** 2017\n"
       }
     }
   },
@@ -125,6 +111,7 @@
     "title": "Tecnologias que eu utilizo"
   },
   "code_language": {
-    "title": "Linguagens mais utilizadas"
+    "title": "Linguagens mais utilizadas",
+    "secondary": "Secundárias"
   }
 }

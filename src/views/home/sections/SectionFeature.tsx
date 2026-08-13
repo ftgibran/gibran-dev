@@ -26,7 +26,7 @@ export const SectionFeature = forwardRef<HTMLDivElement, SectionProps>(
           <VStack gap={12}>
             <Heading textAlign={'center'}>{t('title')}</Heading>
 
-            <SimpleGrid columns={{ base: 1, md: 2, xl: 4 }} gapX={8} gapY={16}>
+            <SimpleGrid columns={{ base: 1, md: 2, xl: 3 }} gapX={8} gapY={16}>
               <For each={features}>
                 {(it, i) => (
                   <VStack
